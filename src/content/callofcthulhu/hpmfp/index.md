@@ -1,4 +1,6 @@
 +++
+title = "Hercule Poirot's Machine for Pigs"
+date = "2022-01-19"
 +++
 
 ![Hercule Poirot's Machine for Pigs](./hpmfp.png)
