@@ -17,12 +17,12 @@ rm -rf images/
 rm -rf posts/
 
 # Copy built files
-cp 404.html .
-cp index.html .
-cp robots.txt .
-cp sitemap.xml .
-cp style.css .
-cp -r about/ .
-cp -r hpmfp/ .
-cp -r images/ .
-cp -r posts/ .
+cp src/public/404.html .
+cp src/public/index.html .
+cp src/public/robots.txt .
+cp src/public/sitemap.xml .
+cp src/public/style.css .
+cp -r src/public/about/ .
+cp -r src/public/hpmfp/ .
+cp -r src/public/images/ .
+cp -r src/public/posts/ .
