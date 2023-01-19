@@ -12,10 +12,13 @@ rm -f index.html
 rm -f robots.txt
 rm -f sitemap.xml
 rm -f style.css
+rm -f extra.css
+rm -f morkborg.css
 rm -rf about/
-rm -rf hpmfp/
 rm -rf images/
 rm -rf posts/
+rm -rf morkborg/
+rm -rf callofcthulhu/
 
 # Copy built files
 cp src/public/404.html .
@@ -23,7 +26,10 @@ cp src/public/index.html .
 cp src/public/robots.txt .
 cp src/public/sitemap.xml .
 cp src/public/style.css .
+cp src/public/extra.css .
+cp src/public/morkborg.css .
 cp -r src/public/about/ .
-cp -r src/public/hpmfp/ .
 cp -r src/public/images/ .
 cp -r src/public/posts/ .
+cp -r src/public/morkborg/ .
+cp -r src/public/callofcthulhu/ .
