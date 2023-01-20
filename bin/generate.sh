@@ -19,6 +19,7 @@ rm -rf images/
 rm -rf posts/
 rm -rf morkborg/
 rm -rf callofcthulhu/
+rm -rf fonts/
 
 # Copy built files
 cp src/public/404.html .
@@ -33,3 +34,4 @@ cp -r src/public/images/ .
 cp -r src/public/posts/ .
 cp -r src/public/morkborg/ .
 cp -r src/public/callofcthulhu/ .
+cp -r src/public/fonts/ .
