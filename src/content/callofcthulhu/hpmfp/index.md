@@ -419,6 +419,10 @@ company, the Emmett Works Co., which was contracted to build and run the
 factory. This arrangement results in a lot of value for money for
 Stjohn, so Recalcitrance's eccentricities are tolerated.
 
+> 💡 **Note:** Whilst he is not actually a villain he is supposed to be a
+> suspicious character and draw the attention of the investigators. He
+> is prickly, secretive and unhelpful.
+
 # Locations
 
 ## Oxford

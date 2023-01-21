@@ -5,7 +5,7 @@ template = "morkborg.html"
 +++
 
 This is a simple introductory scenario I made for [MÖRK BORG][morkborg] based on
-output from the fabulous [dngngen][dngngen].
+output from the fabulous [dngngen][dngngen] in order to learn the ropes.
 
 ![Dngngen output](dngn.png)
 
