@@ -15,9 +15,7 @@ rm -f style.css
 rm -f extra.css
 rm -f morkborg.css
 rm -f poirot.css
-rm -rf about/
 rm -rf images/
-rm -rf posts/
 rm -rf morkborg/
 rm -rf callofcthulhu/
 rm -rf fonts/
@@ -31,9 +29,7 @@ cp src/public/style.css .
 cp src/public/extra.css .
 cp src/public/morkborg.css .
 cp src/public/poirot.css .
-cp -r src/public/about/ .
 cp -r src/public/images/ .
-cp -r src/public/posts/ .
 cp -r src/public/morkborg/ .
 cp -r src/public/callofcthulhu/ .
 cp -r src/public/fonts/ .

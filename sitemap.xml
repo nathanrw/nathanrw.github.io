@@ -4,9 +4,6 @@
         <loc>https://nathanrw.github.io/</loc>
     </url>
     <url>
-        <loc>https://nathanrw.github.io/about/</loc>
-    </url>
-    <url>
         <loc>https://nathanrw.github.io/callofcthulhu/</loc>
     </url>
     <url>
@@ -19,16 +16,5 @@
     <url>
         <loc>https://nathanrw.github.io/morkborg/mbqs/</loc>
         <lastmod>2023-01-19</lastmod>
-    </url>
-    <url>
-        <loc>https://nathanrw.github.io/posts/</loc>
-    </url>
-    <url>
-        <loc>https://nathanrw.github.io/posts/post1/</loc>
-        <lastmod>2022-01-01</lastmod>
-    </url>
-    <url>
-        <loc>https://nathanrw.github.io/posts/post2/</loc>
-        <lastmod>2022-01-02</lastmod>
     </url>
 </urlset>
