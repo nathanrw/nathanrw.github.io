@@ -1,6 +1,6 @@
 +++
 title = "MÖRK BORG Quick Start"
-date = "2022-01-19"
+date = "2023-01-19"
 template = "morkborg.html"
 +++
 

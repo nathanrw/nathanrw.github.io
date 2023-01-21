@@ -1,29 +1,56 @@
 +++
 title = "Hercule Poirot's Machine for Pigs"
-date = "2022-01-19"
+date = "2021-12-23"
+template = "poirot.html"
 +++
 
-![Hercule Poirot's Machine for Pigs](./hpmfp.png)
+<div class="poirot-title">
+    <h1>
+    Hercule Poirot's <br>
+    <span class="machine-for-pigs">MACHINE FOR PIGS</span>
+    </h1>
+</div>
+
+This is a scenario for [_Call of Cthulhu_][coc] or similar systems. It is a
+loose parody of [_Hercule Poirot's Christmas_][hpc] and [_Amnesia: A Machine for
+Pigs_][mfp], though it is mainly about the midlanders' insatiable lust for pork.
+
+Despite the name, it can be played with any set of investigators.
+
+> ⚠️ **Warning:** Any references to real entities, history or geography are
+> likely to be wildly inaccurate or misleading. In particular the stuff
+> featuring Egyptian history wants going over to make it better informed and to
+> avoid the sort of Orientalism you tend to find in works such as this,
+> assembled from tropes and wikipedia. These materials are my notes from running
+> the scenario precisely once and have not been substantially edited; they are
+> provided as-is.
+
+# Premise
+
+You, a prominent investigator and/or writer, have been staying at one of the
+colleges at Oxford University on professional business over the Christmas
+holiday. You receieve summons to the country estate of Stjohn Cavendish, wealthy
+owner of a pork pie factory, who fears for his life...
+
+# Contents
+
+<div class="columns">
+<!-- toc -->
+</div>
 
 # Character List
 
+<div class="columns">
+
 ## Investigators
 
-**Agatha Crane**, academic & paranormal investigator
-
-**Wilbur Crane**, her husband
-
-**Hercule Poirot**, famous detective
-
-**Mrs Lemon**, his secretary
-
-**Inspector Japp**, policeman
+See below.
 
 ## Cavendish household
 
 **Stjohn Cavendish**, financier & industrialist
 
-**Miriam Cavendish**, his wife, deceased.
+**Miriam Cavendish**, his wife, American, archaeologist, deceased.
 
 **Geoffrey 'Jeffers' Butler**, manservant
 
@@ -43,6 +70,8 @@ date = "2022-01-19"
 
 **Recalcitrance Emmett**, an engineer
 
+</div>
+
 # Background
 
 ## Timeline
@@ -52,65 +81,66 @@ temple complex near Cairo, Egypt. For 1000 years their activities
 feed the Entity. The cult is suppressed by various powers, from
 the Ptolemies to the Romans, though it persists.
 
--   > 646, Cult all but eradicated during Islamic conquest when Egypt is
-    > wrested from the Romans (Byzantine or Eastern Roman Empire.)
+-   646, Cult all but eradicated during Islamic conquest when Egypt is
+    wrested from the Eastern Roman Empire.
 
--   > 1842, Mineworkers exposed to the Dudley Barrow Tablet, infected by
-    > the Hunger.
+-   1842, Mineworkers exposed to the Dudley Barrow Tablet, infected by
+    the Hunger.
 
--   > 1886, Recalcitrance Emmett born into the afflicted community
+-   1886, Recalcitrance Emmett born into the afflicted community
 
 -   1924, Miriam returned from expedition
 
 -   1925, Emmett Works Co. contracted to build the Cavendish Works.
 
 -   1926, Miriam discovers translation tablet, publishes paper on the
-    > subject
+    subject
 
 -   1926, Miriam receives anonymous letters warning her not to publish
-    > further and to desists from her work.
+    further and to desists from her work.
 
 -   1927, Cavendish Works completed
 
 -   1927, Miriam succumbs to the Hunger and is hanged - or so it
-    > seems...
+    seems...
 
 -   1927, Cavendish Works opens
 
 ## Beneath the City of the Dead
 
 -   Pigs actually a substitute for cannibalism, and their sacrifice
-    > intended to ward off an entity that possesses the minds of its
-    > victims and hungers for human flesh
+    intended to ward off an entity that possesses the minds of its
+    victims and hungers for human flesh
 
 -   Cult suppressed following the Islamic conquest in 646AD and their
-    > tunnels were sealed and built over. Yet rumour had it that the
-    > hunger persisted in anyone who spoke their accursed language or
-    > read their texts, which were systematically destroyed.
+    tunnels were sealed and built over. Yet rumour had it that the
+    hunger persisted in anyone who spoke their accursed language or
+    read their texts, which were systematically destroyed.
 
 -   The entity can possess you if you read its words and understand
-    > them. Its presence can also emanate a short distance from the
-    > objects in which its essence is trapped.
+    them. Its presence can also emanate a short distance from the
+    objects in which its essence is trapped.
 
 -   The practice of cannibalism creates a bridge to the entity and
-    > allows it to manifest itself and imprint itself on the cannibals.
+    allows it to manifest itself and imprint itself on the cannibals.
+    This is why its cults manifest in disparate locations.
 
 ## The Dudley Barrow
 
 -   A tablet in a script similar to that found in the City of the Dead
-    > was found in a barrow near Dudley which was disturbed by early
-    > surface coal mining. The script was badly damaged, yet
-    > translations in Old English and Latin were better preserved. The
-    > tablet was found by locals who found themselves being slowly but
-    > surely transformed. They face a daily increasing lust for flesh
-    > which can only be temporarily sated through consumption of pork
-    > products. Eventually they will be overcome with the desire to
-    > consume their fellow men.
+    was found in a barrow near Dudley which was disturbed by early
+    surface coal mining. The script was badly damaged, yet
+    translations in Old English and Latin were better preserved. The
+    tablet was found by locals who found themselves being slowly but
+    surely transformed. They face a daily increasing lust for flesh
+    which can only be temporarily sated through consumption of pork
+    products. Eventually they will be overcome with the desire to
+    consume their fellow men.
 
 -   The great engineer Recalcitrance Emmett, secretly one of their
-    > number, seeks a solution. To begin with he settles on the idea of
-    > limitless pork. He offers to build a factory for Stjohn at a
-    > knockdown price...
+    number, seeks a solution. To begin with he settles on the idea of
+    limitless pork. He offers to build a factory for Stjohn at a
+    knockdown price...
 
 ## The Statue
 
@@ -139,28 +169,48 @@ momentarily strengthened, and complex rituals are needed to keep it in
 check. The tunnels under Cairo followed this design - as does the
 Factory.
 
-# Characters
+# The Investigators
+
+Feel free to substitute a different set of investigators. The only
+real requirement is that they be prominent detectives or investigators
+of strange events. We used the following; you would need to make your
+own character sheets for them.
 
 ## Agatha Crane
 
+Parapsychologist and paranormal investigator, from [Mansions of Madness 2nd Edition][mom2e].
+
+On sabbatical at the University of Oxford, writing a book on the
+paranormal.
+
 ## Wilbur Crane
+
+Her husband, see [Mansions of Madness 2nd Edition][mom2e].
 
 ## Hercule Poirot
 
-## Mrs Lemon
+[Famous detective.][poirot]
+
+Skeptical of the paranormal, as it does not gel with his orderly and
+rational view of the world, but respects use of the scientific method.
+
+## Miss Lemon
+
+[His secretary.][lemon]
+
+Fascinated by the occult.
 
 ## Inspector Japp
 
-## Stjohn Cavendish
+The [only policeman in the entire country][japp]. Some say there are 
+multiple copies of him. Will likely arrive if the police become 
+involved.
 
-Stjohn thinks he has seen the ghost of Miriam haunting the house at
-night. Locks have been found smashed, but nothing taken. The police
-found no other evidence of burglary. He doesn't know what to believe,
-but fears for his safety - could it be the families of the servants sent
-to the gallows exacting their revenge? He has therefore sent for the
-best detective and the best paranormal investigator to find out.
+# Characters
 
 ## Miriam Cavendish
+
+Archaeologist from Boston, Massatchusetts.
 
 In 1924, Miriam Cavendish returned from an archaeological expedition
 beneath the City of the Dead in Cairo, Egypt. The dig had found an
@@ -173,8 +223,8 @@ to have been combined in mummification with those of pigs. Miriam
 brought back with her a small statue along with several stone tablets
 covered in indecipherable text.
 
-Miriam\'s dig was funded by the new American University at Cairo, which
-was seeking to raise it\'s profile by making an archeological discovery.
+Miriam's dig was funded by the new American University at Cairo, which
+was seeking to raise its profile by making an archeological discovery.
 The initial discovery was made when a tomb floor collapsed in the city
 of the dead, revealing a much older network of tunnels which had been
 bricked up some time around 600AD. Some, particularly a group of
@@ -235,21 +285,106 @@ into the house. Eventually, she will find that what she needs is the
 idol, in order to release the Hunger from its prison. But Recalcitrance
 will already have stolen it!
 
+### Current state
+
+Miriam is a ghoul who knows the Mesmerise spell.
+
+## Stjohn Cavendish
+
+Wealthy man who made his fortune trading futures contracts using capital
+bequeathed to him by his uncle. After many years of success, including during
+the war, through a clerical error he came into posession of a large number of
+'pork futures' which came due almost immediately. When life gives you pork, make
+pork pies; he is now a big name in the meat pie business and the pie works is
+his most profitable asset.
+
+He is an amateur Egyptologist; he met his late wife Miriam at a lecture at the
+Natural History Museum. He financed her expeditions after she was cut off by
+Miskatonic University.
+
+No 'mythos' knowledge as such; he does not understand the significance of
+anything he might have gleaned. But has a keen interest in antiquities and
+has a sharp mind.
+
+Stjohn thinks he has seen the ghost of Miriam haunting the house at
+night. Locks have been found smashed, but nothing taken. The police
+found no other evidence of burglary. He doesn't know what to believe,
+but fears for his safety - could it be the families of the servants sent
+to the gallows exacting their revenge? He has therefore sent for the
+best detective and the best paranormal investigator to find out.
+
 ## Geoffery 'Jeffers' Butler
 
-Has his fingers in the till -
+- Longstanding member of the household
+- Has his fingers in the till
+  - If you inspect his records, you find some odd purchases (accounting)
+  - If confronted he will admit they were fake and that he took the money
+    (persuade/intimidate)
+- No interest in Miriam's work
+- Thought the statue had 'bad vibes'.
 
 ## Gertrude White
 
+- The cook
+- Make something up!
+
 ## Stjohn Cavendish Jnr
+
+A tory MP
+
+- Eldest son of Stjohn Cavendish. Miriam wanted him named after his
+  father in the American fashion.
+- Managed to get out of fighting in the war pleading ill health; he
+  got his father to make a substantial donation to a relevant official.
+- Supports the idea of a surprise attack on France and will not shut
+  up about it -- "it's the last thing they will expect!"
+- Relies on an allowance for income and wishes there was more
+- Alcoholic
 
 ## Anne Cavendish
 
+- Wife of Junior
+- Brains of the operation; manages political career
+- née Bucket
+- Quarrels with Stjohn Snr over his Liberal leanings
+- Immaculate appearance
+- Womens Institute
+- Wants allowance raised
+
 ## Reginald Cavendish
+
+- Gambler
+- Opium smoker "it's for the old leg you know"
+- Went to pieces after his mothers death and spends his time gambling
+- Formerly a financier like his father
+- Might he steal to fund his gambling and opium? He has stolen jewelery from
+  Emily in the past.
+- A captain in the war, decorated for bravery, shrapnel wound in leg
 
 ## Emily Cavendish
 
+- Adventurer
+- Ran away to join the circus and travel the world. Spent time in
+  Alexandria and Cairo. Speaks Latin, Greek and Arabic. Handy with
+  a revolver.
+- Rescued Barry from assailants in Damascus
+- Was attempting to investigate her mother's work in Egypt in order
+  to understand her disappearance but had to leave after the authorities
+  got wind of it.
+- Tried to contact institutions of her mothers Egyptian contacts, they seem to
+  know something but dont let on.
+- Was a fortune teller and medium in the circus. Doesn't believe in
+  it though.
+
 ## Barry Lovegood
+
+- A magician and diamond geezer
+- The family disapprove of him and will not allow him in the house
+- He visits in secret anyway
+- Escapology expert
+- Met Emily whilst travelling in the Orient.
+- Speaks Arabic very badly
+- Private in the war.
 
 ## Recalcitrance Emmett
 
@@ -303,27 +438,147 @@ industry. Animals and materials are delivered by train; the animals are
 slaughtered on site and then processed immediately into pies and pork
 products.
 
+> 💡 **Note:** This map uses [Mansions of Madness 2nd Edition][mom2e] tiles, but
+> this isn't necessary.
+
+![Factory layout](./factory.png)
+
 ## The House
 
-## The Tunnels
+An old stately home on a country estate.
+
+All the usual Cluedo rooms.
+
+> 💡 **Note:** This map uses [Mansions of Madness 2nd Edition][mom2e] tiles, but
+> this isn't necessary.
+
+![House layout](./house.png)
+
+## The Tunnel
+
+Tunnel from the house to the factory.
+
+![Tunnel layout](./tunnels.png)
+
+The secret door should be very hard to find and almost impossible to open
+unless you have found Emmett's journal which explains it and the ritual.
+
+## The Ritual Chamber
+
+Secret tunnels accessible from the main tunnel but hidden. Secret
+ritual chamber.
+
+The appearance is the same as that of the lower chamber described in
+Miriam's journal since it follows the same design. Drains from the
+factory above flow into ducts which bring blood to a central point.
+
+This is where the statue needs to go in order to perform the ritual
+of banishment.
+
+If you have the spell and the statue and get here, Miriam will
+attack! You must race to complete the ritual whilst fending her
+off and resisting the influence of the Entity.
 
 ## The Deep Tunnels
 
+Warren of tunnels off the main tunnel. Entrance not obvious. Hard
+to navigate -- like potholing. Ghoul burrow is somewhere off here
+but should be very hard to find; the 'intended' showdown with Miriam
+is during the ritual to banish the entity.
+
 ## Domesday
+
+Village where the workers' barracks is located.
 
 ## Melton Mowbray
 
+Town famous for its pies.
+
 ## Melton Mowbray Police Station
 
+The cop shop in Melton Mowbray. This is where Emmett (or anyone else arrested)
+will be taken.
+
 ## The Prison
+
+Prison near leicester where Miriam was supposedly hanged. The investigaters
+may choose to go here and look around.
+
+> 💡 **Note:** We didn't go here.
 
 # Plot
 
 ## Oxford, Morning, 22nd December, 1933
 
+Perhaps the investigators are doing their Christmas shopping before returning to
+their lodgings.
+
+This is a chance to flesh out why they are here and what they are like.
+
+On your return, you find the central heating is broken (or perhaps there is a
+water leak.) It cannot be repaired before Christmas! Drat! Soon after, the phone
+rings. It is Geoffrey Butler, the butler to Stjohn Cavendish. His master has
+heard of you, and insists you join him at his estate for Christmas -- he fears
+for his life and has need of your expertise. He suspects the danger to be
+supernatural in nature.
+
+Prepare to travel to the estate and arrange travel.
+
 ## Train to Leicester, Morning, 23rd December, 1933
 
+Get the train to Melton Mowbray. Change at Leicester.
+
+The train races through countryside that is blanketed in thick snow, though the
+sun is shining and the sky is clear.
+
+Arrive in Melton Mowbray around 1PM, to be met by Butler in a car. Any other
+investigaters who arrived in a different way will also be here. Butler drives
+you all to the _factory office_ of Stjohn Cavendish.
+
 ## Cavendish Works, Afternoon, 23rd December, 1933
+
+You are dropped at the entrance.
+
+> 💡 Describe the factory. It's an imposing building in the Egyptian Revival
+> art deco style, with ornate collonades and reliefs and statues of pigs.
+
+The door is open and you can talk to the receptionist. Most of the factory
+is off limits.
+
+You are ushered upstairs to Stjohn's office. It is an ornately furnished
+room, full of contemporary furniture and Egyptian antiquities. Stjohn sits
+behind a large walnut desk, and gestures for you to sit. He explains his
+concerns:
+
+- The tragic death of his wife some years ago
+- The recent break-in
+- How he was sure he saw the figure of his late wife standing over
+  him during an incident of sleep paralysis, as well as glimpses
+  roaming the halls at night
+
+You can press him on the circumstances of her death. He will tell you
+what he knows.
+
+> **Handout:** Newspaper covering Miriam's death
+
+- He is suspicious that the victims' families might be enacting their
+  revenge on him, but he can't shake the feeling that he has actually
+  seen a ghost.
+- If you ask about the factory, he will tell you about Recalcitrance (who is at
+  work in the factory right now) and his ingenious construction and surly
+  temperament. How the style is a result of his and Miriam's shared love of
+  ancient Egypt.
+- Trouble with the local pie makers
+- You can ask for a tour, but most of the factory is off limits right now
+  because it is working and therefore not safe
+
+If you attempt to leave the foyer the receptionist will attempt to stop
+you and summon stout lads if you persist.
+
+The apartment upstairs (where Recalcitrance lives) is marked as off
+limits and is locked.
+
+When you are done, Butler will collect you and take you to the house.
 
 ## Cavendish House, Afternoon-Evening, 23rd December, 1933
 
@@ -348,8 +603,8 @@ conversation points pertinent to themselves.
 Eventually, somebody notices that Stjohn's prize statue is missing! He
 is furious, and after much kerfuffle requests Agatha and Poirot search
 the house. Someone e.g. Junior remarks that everyone hated that damned
-thing anyway. \[Recalcitrance has stolen it and hidden it in his
-apartment, which he did via the tunnels.\]
+thing anyway. **Recalcitrance has stolen it and hidden it in his
+apartment, which he did via the tunnels.**
 
 Can search the house and interview suspects
 
@@ -365,7 +620,7 @@ Can search the house and interview suspects
 
 -   Barry is hiding in Emily's room.
 
--   Entrance to the tunnels in the basement \[VERY hard to find\].
+-   Entrance to the tunnels in the basement **VERY hard to find**.
 
 -   Recalcitrance stays with Stjohn in the drawing room.
 
@@ -406,7 +661,7 @@ Agatha can decide what to investigate and where to go:
 That evening at dinner, there are some suspicious absences.... Emmett is
 at work too.
 
-## Cavendish House, Midnight, 23rd December 1933
+## Cavendish House, Midnight, 24th December 1933
 
 The murder!
 
@@ -422,7 +677,7 @@ In the foyer is Stjohn's mangled body. There is blood everywhere. On the
 walls there is blood. On the ceiling, blood. His head has been pulled
 from his body and the rest of him has been torn to pieces. He is covered
 in blood. On examination you can see that great bloody chunks seemingly
-have been bitten from him. On [close]{.underline} examination (a good
+have been bitten from him. On <u>close</u> examination (a good
 roll) you can see that this was the work of a human jaw but with canine
 teeth. Bloody footprints lead away from the body towards the wine
 cellar. Elsewhere in the house, Miriam's study has again been ransacked.
@@ -466,7 +721,244 @@ the statue as evidence.
 Christmas! Walter and Agatha exchange gifts. Perhaps she bought one for
 Poirot too!
 
-What do you do next?\
-\
+What do you do next?
+
 Tonight Miriam will assault the police station to get the statue (or
 Emmett's apartment if it is still there.)
+
+## Remainder
+
+At this point all the pieces should be in place, either you find Miriam
+and seal away the hunger or you will be hunted down and killed. Or you
+can run away and everyone at the house will die.
+
+# Emmett's Journal
+
+Make a handout
+
+- Factory/ritual based on Miriam's notes
+  - Location of secret door to tunnels if not already found
+  - Location of secret door to ritual chamber from tunnels +
+    how to open it e.g. a lever or key
+- _Contain the Hunger_ spell
+- Community of those afflicted by the Dudley tablet
+
+# Miriam's Journal
+
+Found in Emmett's Desk.  In cryptic shorthand.  Each handout takes
+some time to decipher from the journal.  It should not be possible
+for the investigators to obtain all of the information too early, 
+but they should be able to get it all by the time they need it, so
+adjust the difficulty based on when the journal is found.
+
+> 💡 **Note:** There is perhaps too much material here and it might be
+> best to cut it down.
+
+> **Handout: 1925-26, Day 48**
+>
+> Day 48 of the dig. We have already learned so much, yet we have barely
+> scratched the surface!  And I mean this quite precisely. Yesterday, we
+> discovered a vertical shaft, about 100 feet in diameter. A ramp would have
+> originally spiralled down, yet the woodwork has long since decayed. I will need
+> to secure additional funds in order to further plumb the depths, yet I cannot
+> resist the lure of the unknown -- tomorrow, I will descend the shaft on a rope,
+> using a winch powered by our diesel engine. The shaft descends almost to the
+> extent of our longest rope, but we are in luck; I can just about make it. I will
+> make what explorations and sketches as I can before my electric torch is
+> exhausted and then return to finish our work on the upper level. 
+> 
+> Speaking of which, I already have enough material for at least two papers,
+> perhaps more. From the objects and remains that we found, we can determine some
+> of the nature of the society that left them along with a little of their
+> history. The tunnel complex stems from before Roman or Ptolemaic rule, and it
+> would seem what lies below is even older. The religion being practised here
+> seems of a type with ancient Egyptian religions, such as we know of them, though
+> the fixation on the pig is unusual -- absent are the sorts of animal typically
+> venerated by the ancients. Disturbingly, from human remains we have examined, it
+> is clear that these people at one point or another practised cannibalism --
+> human bite marks and signs of cooking are evident on some of the bones. The
+> remains were not simply cast aside, but were found arranged in a sort of
+> ossuary, curiously intermixed with those of swine, perhaps as part of some
+> religious practice.
+>
+> Amongst the objects scattered in the tunnels, of particular note are a small
+> statue which depicts a man and a woman with the heads of pigs, bearing a
+> chalice from either side, and several stone tablets covered in the
+> indecipherable glyphs of an unknown language. 
+> 
+> From an examination of the masonry at the entrance, and of human remains found
+> on the upper level -- which bear the traces of violence done with weapons, and
+> some of which possess curiously canine teeth -- we have determined that the cult
+> was put to the sword and consigned to oblivion during the Islamic conquest of
+> Egypt in the 7th century. I hope that tomorrow's survey of the depths will
+> provide further insight.
+
+> **Handout: Day 49**
+>
+> **Entry 1**
+>
+> Blast and damnation! Those gutless fools at the University have informed us
+> that we have to stop our work at once! The site must be sealed immediately and
+> no-one is to be allowed access. I am to attend a meetring this afternoon, where
+> I intend to demand an explanation for this outrage! I have sequestered the
+> statue I found, along with the best preserved of the cryptic stone tablets, with
+> my luggage -- my work with those, at least, will continue.
+>
+> **Entry 2**
+>
+> Met with the Dean of my institution, along with two individuals claiming to be
+> members of a secret society of scholars at Al-Azhar University. They say that
+> they are guardians of of secret knowledge passed down from hundreds of years ago
+> when the university was a centre of philosophical learning under the Fatimid
+> Caliphate. When the vast library of the university was burned by Saladin, they
+> preserved certain arcane manuscripts which were deemed too precious -- or too
+> dangerous -- to be lost. Among these is a journal dating to the 7th century,
+> which speaks of an underground cult of pig-eaters, whose excesses had developed
+> into cannibalism, and whose language would afflict the reader or speaker with an
+> insatiable hunger. They were put to the sword by brave men who blindfolded
+> themselves and sealed their ears with wax so as not to be swayed by the cult's
+> devilish whisperings. Neverthless, the legends tell of those who heard the
+> eldritch words of that accursed tongue, or who attempted translations of it, who
+> found themselves cursed. The strongest of these sealed themselves in stone
+> chambers, there to perish, lest they give in to what they called 'the hunger'.
+> Those who did not do so were consumed by it, and stories tell of the 'ghouls'
+> who roam at night and feast on the flesh of the dead.
+> 
+> Clearly, this is no more than a lurid superstition, and I will argue most
+> stridently for the re-opening of the site! For now, I will return to England,
+> consult experts on languages, and work on my papers.
+
+> **Handout: 2 Months Later**
+>
+> Gave a lecture today at the British Museum with my preliminary findings,
+> trying to drum up interest. Made quite a stir! Am in constant correspondance
+> with the University, trying to get them to find their nerve, and things
+> appear to be moving in our favour! I pulled a few strings at the foreign
+> office and the secret scholars have been arrested for sedition; it 
+> looks like we will be able to go ahead.
+
+> **Handout: 1 week later**
+>
+> Have received an anonymous letter titled 'beware the translations!' They are
+> attempting to throw me off! Either this is one ofo the remaining secret scholars
+> who slipped the net, or one of my rivals has found out about them and is
+> attempting the same thing! No matter, I will continue! I must return to Egypt.
+
+> **Handout: 1 month later**
+>
+> Egypt. We have re-opened the dig site. Things are as we left them thanks to the
+> guards we posted at the entrance. We will continue our survey -- I have secured
+> a grant from my alma mater Miskatonic University and have used it to purchase
+> the supplies and labour necessary to expand our operation beyond the bottom of
+> the great shaft. We have electric light and power, winches and climbing gear.
+> Tomorrow, I make the initial descent.
+
+> **Handout: next day**
+>
+> Numerous tunnels head off from the shaft at different levels. Of these, I
+> have explored two, both of which were small chambers of unclear function. Another
+> tunnel had collapsed, being blocked by fallen masonry. At the very bottom of the
+> shaft, I made a most marvellous find -- a grand entrance flanked by pig-headed
+> statues. Through this doorway, I entered what appeared to be a vast sacrificial chamber,
+> containing a stone altar and channels in the floor leading to a series of drains -- evoking
+> the Roman practice of augury. Beneath this chamber, accessed via a stairway, is another
+> chamber of similar size, with ducts leading to a central pedestal -- perhaps a
+> place for the priest or sacred receptacle to receive the blood from above.  On
+> my way back through the shaft, I made what could be my most significant find. An
+> _intact_ stone tablet, containing Arabic and Coptic inscriptions in addition to
+> the strange language we have encountered elsewhere. I enclose sketches of the
+> temple layout. (These are enclosed).
+
+Note: if you know the factory plans you can see it follows the same layout
+as the sacrificial chamber
+
+> **Handout: 2 months later, England**
+>
+> I have left the dig in the capable hands of my team, and have returned to
+> England bearing the new tablet. The Arabic text was translated for me thus:
+>
+>     This is the home of the people
+>     who are delivered from their hunger
+>     by the flesh of swine
+>     long may these words be its prison
+>
+> the tablet appears to be a multilingual sign that would have been displayed
+> at the entrance. Its message is rather banal -- though on reading the words
+> I must admit a stirring within me -- but a comparison between the arabic, 
+> the coptic and the original text should allow us to unlock other secrets
+> as did the Rosetta stone for ancient Egyptian. I will redouble my efforts
+> with the original tablets armed with new knowledge.
+
+> **Handout: December 1926, England**
+>
+> As I unlock the secrets of the tablets, I have become certain that the
+> warnings of the scholars, which I had dismissed as so much foolishness, were
+> terrifyingly correct. Each night I am wracked by dreams of bloody slaughter, and
+> each day I draw no nourishment from food save for meat. I dare not spend time
+> amongst other people lest I lose control; I am confined now to my study. My one
+> glimmer of hope is in the continuing translation of the tablets -- the ancients
+> were afflicted with this same hunger, yet they had developed techniques and
+> rituals with which to suppress it. These measures eventually failed, but they
+> bought considerable time. And the tablets hint at a great ritual to imprison the
+> hunger forever, using their language itself as its prison...
+
+> **Handout: May 1927**
+>
+> I feel a great clarify in my mind -- how foolish and ignorant I was before!
+> Such sights have I beheld in my dreams...
+>
+> (the remainder is nonsense, until...) <!-- TODO: Make the below a made up language. -->
+>
+> 𓀀 𓀁	𓀂 𓀃	𓀄	𓀅	𓀆	𓀇	𓀈	𓀉	𓀊	𓀋	𓀌	𓀍
+>
+> (A series of unintelligible signs in an unknown language. You feel
+> hunger stirring within you. **1/d3 horror.**)
+
+# Spells
+
+## Mesmerise
+
+This is _Dominate_ from the CoC rulebook.
+
+Opposed POW roll.
+
+Miriam controls your actions. She has to look into your eyes in order to
+initiate but from then on the link is psychic. Must recast each round.
+
+## Contain the Hunger
+
+This is _Dismiss Deity_ from the CoC rulebook.
+
+The Hunger has POW300, so 12MP is necessary to open the way.
+
+Cost: 1MP per participant
+Casting time: 1 round per participant
+
+Hunger can attempt Mesmerise whilst being dismissed.
+
+Each further MP sacrificed increases dismissal chance by 5%.
+
+# Adversaries
+
+## Miriam
+
+Ghoul with _Mesmerise_.
+
+Could be accompanied by other ghouls or have stats buffed as needed.
+
+She can mesmerise any number of people so she could be assisted by
+mind-controlled humans.
+
+## The Entity
+
+Use stats for something big e.g. Yog Sothoth. But it can't physically
+manifest. It will try to control you during the ritual so you must
+resist its POW.
+
+[mom2e]: https://www.fantasyflightgames.com/en/products/mansions-of-madness-second-edition/
+[poirot]: https://www.agathachristie.com/en/characters/hercule-poirot#about
+[lemon]: https://en.wikipedia.org/wiki/Hercule_Poirot#Miss_Felicity_Lemon
+[japp]: https://en.wikipedia.org/wiki/Hercule_Poirot#Chief_Inspector_James_Harold_Japp
+[hpc]: https://en.wikipedia.org/wiki/Hercule_Poirot%27s_Christmas
+[mfp]: https://store.steampowered.com/app/239200/Amnesia_A_Machine_for_Pigs/
+[coc]: https://www.chaosium.com/call-of-cthulhu-rpg/
