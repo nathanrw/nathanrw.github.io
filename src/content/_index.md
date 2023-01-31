@@ -13,7 +13,8 @@ a computer programmer in Birmingham, UK
 (filled out and linked as & when I add relevant pages)
 
 - programming, software engineering
-  - game development
+  - [single-header C libraries in Python][single-header-c-python] [[slides][single-header-c-python-slides]] 
+- game development
 - computer games
   - crpgs, '4x', simulation, horror, ...
 - tabletop games
@@ -22,7 +23,8 @@ a computer programmer in Birmingham, UK
     - [MÖRK BORG](./morkborg)
   - board games
     - mansions of madness, ...
-  - [warhammer][40k-army-lists]
+  - warhammer 40k
+    - [army lists][40k-army-lists] [[git][40k-army-lists-git]]
 - cycling
 - heavy metal
 - socialism
@@ -53,3 +55,6 @@ a simple, fast, no-nonsense website
 [coc]: https://www.chaosium.com/call-of-cthulhu-rpg/
 [mb]: https://morkborg.com/
 [40k-army-lists]: https://nathanrw.github.io/40k_army_lists/
+[40k-army-lists-git]: https://github.com/nathanrw/40k_army_lists
+[single-header-c-python]: https://github.com/nathanrw/single-header-c-libs-in-python
+[single-header-c-python-slides]: https://nathanrw.github.io/single-header-c-libs-in-python/#/
