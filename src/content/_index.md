@@ -22,6 +22,7 @@ a computer programmer in Birmingham, UK
     - [MÖRK BORG](./morkborg)
   - board games
     - mansions of madness, ...
+  - [warhammer][40k-army-lists]
 - cycling
 - heavy metal
 - socialism
@@ -51,3 +52,4 @@ a simple, fast, no-nonsense website
 [mbqs]: ./morkborg/mbqs
 [coc]: https://www.chaosium.com/call-of-cthulhu-rpg/
 [mb]: https://morkborg.com/
+[40k-army-lists]: https://nathanrw.github.io/40k_army_lists/
