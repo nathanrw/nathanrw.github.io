@@ -8,6 +8,7 @@
 
 # Delete built files
 rm -f 404.html
+rm -f atom.xml
 rm -f index.html
 rm -f robots.txt
 rm -f sitemap.xml
@@ -29,6 +30,7 @@ cp src/public/style.css .
 cp src/public/extra.css .
 cp src/public/morkborg.css .
 cp src/public/poirot.css .
+cp src/public/atom.xml .
 cp -r src/public/images/ .
 cp -r src/public/morkborg/ .
 cp -r src/public/callofcthulhu/ .
