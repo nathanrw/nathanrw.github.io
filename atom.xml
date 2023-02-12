@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 	<title>nathanrw</title>
-	<link href="https://nathanrw.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://nathanrw.github.io"/>
+	<link href="https://nathanrw.dev/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nathanrw.dev"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2023-01-19T00:00:00+00:00</updated>
-	<id>https://nathanrw.github.io/atom.xml</id>
+	<id>https://nathanrw.dev/atom.xml</id>
 	<entry xml:lang="en">
 		<title>MÖRK BORG Quick Start</title>
 		<published>2023-01-19T00:00:00+00:00</published>
 		<updated>2023-01-19T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://nathanrw.github.io/morkborg/mbqs/" type="text/html"/>
-		<id>https://nathanrw.github.io/morkborg/mbqs/</id>
+		<link rel="alternate" href="https://nathanrw.dev/morkborg/mbqs/" type="text/html"/>
+		<id>https://nathanrw.dev/morkborg/mbqs/</id>
 		<content type="html">&lt;p&gt;This is a simple introductory scenario I made for &lt;a href=&quot;https:&#x2F;&#x2F;morkborg.com&#x2F;&quot;&gt;MÖRK BORG&lt;&#x2F;a&gt; based on
 output from the fabulous &lt;a href=&quot;https:&#x2F;&#x2F;dngngen.makedatanotlore.dev&#x2F;&quot;&gt;dngngen&lt;&#x2F;a&gt; in order to learn the ropes.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;morkborg&#x2F;mbqs&#x2F;dngn.png&quot; alt=&quot;Dngngen output&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;morkborg&#x2F;mbqs&#x2F;dngn.png&quot; alt=&quot;Dngngen output&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
     Prerequisites
 &lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
@@ -39,7 +39,7 @@ output from the fabulous &lt;a href=&quot;https:&#x2F;&#x2F;dngngen.makedatanotl
     The world
 &lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;The world is ending as prophesied by the two-headed basilisks.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;morkborg&#x2F;mbqs&#x2F;world.png&quot; alt=&quot;World map&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;morkborg&#x2F;mbqs&#x2F;world.png&quot; alt=&quot;World map&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;-2&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
     The end of the world
 &lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
@@ -58,7 +58,7 @@ crashing down into the shallow meltwater below. As the ice settles, silence
 returns. Ahead, protruding from the water like a shipwreck at low tide, at the
 foot of the glacier, you see a plinth of cyclopean masonry emerging from the
 ice.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;morkborg&#x2F;mbqs&#x2F;kergus.png&quot; alt=&quot;Kergus&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;morkborg&#x2F;mbqs&#x2F;kergus.png&quot; alt=&quot;Kergus&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kergüs is a desolate icy expanse&lt;&#x2F;li&gt;
 &lt;li&gt;To the north is the obsidian citadel Alliáns, wherein resides the
@@ -473,7 +473,7 @@ tenebrous reliquary. The rest contain random loot.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;-20&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
     Appendix
 &lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;morkborg&#x2F;mbqs&#x2F;dungeon.png&quot; alt=&quot;Dungeon map&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;morkborg&#x2F;mbqs&#x2F;dungeon.png&quot; alt=&quot;Dungeon map&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;-21&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
     Rules
 &lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
@@ -484,8 +484,8 @@ tenebrous reliquary. The rest contain random loot.&lt;&#x2F;p&gt;
 		<title>Hercule Poirot&#x27;s Machine for Pigs</title>
 		<published>2021-12-23T00:00:00+00:00</published>
 		<updated>2021-12-23T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://nathanrw.github.io/callofcthulhu/hpmfp/" type="text/html"/>
-		<id>https://nathanrw.github.io/callofcthulhu/hpmfp/</id>
+		<link rel="alternate" href="https://nathanrw.dev/callofcthulhu/hpmfp/" type="text/html"/>
+		<id>https://nathanrw.dev/callofcthulhu/hpmfp/</id>
 		<content type="html">&lt;div class=&quot;poirot-title&quot;&gt;
     &lt;h1&gt;
     Hercule Poirot&#x27;s &lt;br&gt;
@@ -872,7 +872,7 @@ products.&lt;&#x2F;p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Note:&lt;&#x2F;strong&gt; This map uses &lt;a href=&quot;https:&#x2F;&#x2F;www.fantasyflightgames.com&#x2F;en&#x2F;products&#x2F;mansions-of-madness-second-edition&#x2F;&quot;&gt;Mansions of Madness 2nd Edition&lt;&#x2F;a&gt; tiles, but
 this isn&#x27;t necessary.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;callofcthulhu&#x2F;hpmfp&#x2F;.&#x2F;factory.png&quot; alt=&quot;Factory layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;callofcthulhu&#x2F;hpmfp&#x2F;.&#x2F;factory.png&quot; alt=&quot;Factory layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-house&quot;&gt;The House&lt;&#x2F;h2&gt;
 &lt;p&gt;An old stately home on a country estate.&lt;&#x2F;p&gt;
 &lt;p&gt;All the usual Cluedo rooms.&lt;&#x2F;p&gt;
@@ -880,10 +880,10 @@ this isn&#x27;t necessary.&lt;&#x2F;p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Note:&lt;&#x2F;strong&gt; This map uses &lt;a href=&quot;https:&#x2F;&#x2F;www.fantasyflightgames.com&#x2F;en&#x2F;products&#x2F;mansions-of-madness-second-edition&#x2F;&quot;&gt;Mansions of Madness 2nd Edition&lt;&#x2F;a&gt; tiles, but
 this isn&#x27;t necessary.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;callofcthulhu&#x2F;hpmfp&#x2F;.&#x2F;house.png&quot; alt=&quot;House layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;callofcthulhu&#x2F;hpmfp&#x2F;.&#x2F;house.png&quot; alt=&quot;House layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-tunnel&quot;&gt;The Tunnel&lt;&#x2F;h2&gt;
 &lt;p&gt;Tunnel from the house to the factory.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.github.io&#x2F;callofcthulhu&#x2F;hpmfp&#x2F;.&#x2F;tunnels.png&quot; alt=&quot;Tunnel layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;callofcthulhu&#x2F;hpmfp&#x2F;.&#x2F;tunnels.png&quot; alt=&quot;Tunnel layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;The secret door should be very hard to find and almost impossible to open
 unless you have found Emmett&#x27;s journal which explains it and the ritual.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-ritual-chamber&quot;&gt;The Ritual Chamber&lt;&#x2F;h2&gt;

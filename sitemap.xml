@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://nathanrw.github.io/</loc>
+        <loc>https://nathanrw.dev/</loc>
     </url>
     <url>
-        <loc>https://nathanrw.github.io/callofcthulhu/</loc>
+        <loc>https://nathanrw.dev/callofcthulhu/</loc>
     </url>
     <url>
-        <loc>https://nathanrw.github.io/callofcthulhu/hpmfp/</loc>
+        <loc>https://nathanrw.dev/callofcthulhu/hpmfp/</loc>
         <lastmod>2021-12-23</lastmod>
     </url>
     <url>
-        <loc>https://nathanrw.github.io/morkborg/</loc>
+        <loc>https://nathanrw.dev/morkborg/</loc>
     </url>
     <url>
-        <loc>https://nathanrw.github.io/morkborg/mbqs/</loc>
+        <loc>https://nathanrw.dev/morkborg/mbqs/</loc>
         <lastmod>2023-01-19</lastmod>
     </url>
 </urlset>
