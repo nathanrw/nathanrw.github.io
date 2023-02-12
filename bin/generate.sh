@@ -19,6 +19,7 @@ rm -f poirot.css
 rm -rf images/
 rm -rf morkborg/
 rm -rf callofcthulhu/
+rm -rf projects/
 rm -rf fonts/
 
 # Copy built files
@@ -34,4 +35,5 @@ cp src/public/atom.xml .
 cp -r src/public/images/ .
 cp -r src/public/morkborg/ .
 cp -r src/public/callofcthulhu/ .
+cp -r src/public/projects/ .
 cp -r src/public/fonts/ .

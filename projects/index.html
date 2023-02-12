@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <title>nathanrw</title>
+        
+        <meta name="title" content="nathanrw">
+        <meta name="author" content="nathanrw">
+        
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nathanrw.dev/projects/">
+        <meta property="og:site_name" content="nathanrw">
+        <meta property="og:title" content="nathanrw">
+        
+        
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://nathanrw.dev/projects/">
+        <meta property="twitter:title" content="nathanrw">
+        
+        
+        
+        <link rel="canonical" href="https://nathanrw.dev/projects/">
+        
+        <script type="application/ld+json">
+            {
+                
+                "url":"https://nathanrw.dev/projects/",
+                "@type":"WebSite",
+                "headline":"nathanrw",
+                "name":"nathanrw",
+                "author":{
+                    "@type":"Person",
+                    "name":"nathanrw"
+                },
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://nathanrw.dev/atom.xml">
+        
+        
+        
+<link rel="stylesheet" href="https://nathanrw.dev/style.css"/>
+<link rel="stylesheet" href="https://nathanrw.dev/extra.css"/>
+
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                
+<p><a href="&#x2F;projects&#x2F;..">..</a>&#x2F;projects&#x2F;</p>
+
+<h1></h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+<h1 id="projects">projects</h1>
+<p><a href="https://github.com/nathanrw">github</a></p>
+<p>These are a selection of <em>spare time</em> projects of mine. Most of my professional
+work is on closed-source proprietary software and these are <em>not</em> necessarily
+representative of professional-quality code.</p>
+<h2 id="space-game">space_game</h2>
+<blockquote>
+<p>⚠️ <strong>Note:</strong> This has not been maintained for some time and probably
+will not run unmodified. It is awaiting a weekend or so of 'dusting off'.</p>
+</blockquote>
+<p><a href="https://github.com/nathanrw/space_game">github</a></p>
+<p><img src="https://nathanrw.dev/projects/space_game.gif" alt="space_game" /></p>
+<p>A space game written in Python. It's currently a very simple arcade space shooter.</p>
+<h3 id="features">features</h3>
+<ul>
+<li>Simple, custom 'entity component system' object model whereby entities are imbued
+with data and behaviours by adding 'components' to them.</li>
+<li>Abstract rendering architecture with software and 'modern' (for the time!) OpenGL renderers.
+<ul>
+<li>Graphical effects such as bloom.</li>
+<li>Batching and ordering of draw calls.</li>
+<li>Aimed at low-end netbook hardware, which is what I wrote it on.</li>
+<li>Snapshot of a work in progress, as detailed in extensive comments.</li>
+</ul>
+</li>
+<li>'nuklear' IMGUI integration.</li>
+<li>'pymunk' physics engine integration. Physics bodies synced with data model.</li>
+</ul>
+<h2 id="single-header-c-libraries-in-python">single-header C libraries in Python</h2>
+<p><a href="https://github.com/nathanrw/single-header-c-libs-in-python">github</a> <a href="https://www.nathanrw.dev/single-header-c-libs-in-python/#/">slides</a></p>
+<p>This is a presentation I did on a technique I used for consuming single header C libraries from Python in a personal project, utilising the hard work of other people so that I did not have to do any!</p>
+<p>Given a single-header dependency with no existing binding, you can easily create (and build, and package) one by feeding the header directly to <code>cffi</code>, with some simple text transformations to remove problematic syntax.</p>
+<h2 id="nuklear-cffi">nuklear-cffi</h2>
+<blockquote>
+<p>⚠️ <strong>Note:</strong> This has not been maintained for some time and probably
+will not run unmodified. It is awaiting a weekend or so of 'dusting off'.</p>
+</blockquote>
+<p><a href="https://github.com/nathanrw/nuklear-cffi">github</a></p>
+<p>A semi-automatic Python binding for the nuklear C library.</p>
+<p>The core of this is a python program that parses the nuklear.h header for declarations and passes this to the 'cffi' Python binding generator.</p>
+<p>Declarations are extracted using a C preprocessor followed by some simple ad hoc text transformations. The 'pcpp' preprocessor is used. This is a C preprocessor written in Python, so the preprocessing step doesn't actually require a C compiler to be installed.</p>
+<p>However, the process of generating the Python binding requires a C compiler.</p>
+<p>Some code for interfacing nuklear with pygame is provided under pynk.nkpygame.</p>
+
+
+
+
+<ul>
+
+</ul>
+
+
+            </main>
+            <footer>
+                
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        

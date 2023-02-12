@@ -5,6 +5,7 @@ a computer programmer in Birmingham, UK
 
 ## highlights
 
+- [projects](./projects)
 - [hercule poirot's machine for pigs][hpmfp], a scenario for [Call of Cthulhu][coc]
 - [MÖRK BORG quick start][mbqs], a scenario for [MÖRK BORG][mb]
 
@@ -15,6 +16,7 @@ a computer programmer in Birmingham, UK
 - programming, software engineering
   - [single-header C libraries in Python][single-header-c-python] [[slides][single-header-c-python-slides]] 
 - game development
+  - [projects](./projects)
 - computer games
   - crpgs, '4x', simulation, horror, ...
 - tabletop games
