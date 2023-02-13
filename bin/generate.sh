@@ -7,6 +7,7 @@
 ( cd src && zola build ) || exit 1
 
 # Delete built files
+rm -f CV.pdf
 rm -f 404.html
 rm -f atom.xml
 rm -f index.html
@@ -23,6 +24,7 @@ rm -rf projects/
 rm -rf fonts/
 
 # Copy built files
+cp src/public/CV.pdf .
 cp src/public/404.html .
 cp src/public/index.html .
 cp src/public/robots.txt .

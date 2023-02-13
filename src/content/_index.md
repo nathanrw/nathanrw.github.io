@@ -1,7 +1,7 @@
 +++
 +++
 
-a computer programmer in Birmingham, UK
+a computer programmer in Birmingham, UK [[cv](./CV.pdf)]
 
 ## highlights
 
@@ -46,6 +46,10 @@ a simple, fast, no-nonsense website
     - [PoiretOne][poiret-one]
     - [PirataOne][pirata-one]
     - [Creepster][creepster]
+
+## contact
+
+[contact@nathanrw.dev](contact@nathanrw.dev)
 
 [zola]: https://www.getzola.org/
 [theme]: https://gitlab.com/4bcx/no-style-please
