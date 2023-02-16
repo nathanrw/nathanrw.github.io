@@ -1,7 +1,7 @@
 +++
 +++
 
-a computer programmer in Birmingham, UK [[cv](./CV.pdf)]
+a computer programmer in Birmingham, UK
 
 ## highlights
 
