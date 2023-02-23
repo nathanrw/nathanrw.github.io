@@ -3,11 +3,7 @@
 
 a computer programmer in Birmingham, UK
 
-## highlights
-
-- [projects](./projects)
-- [hercule poirot's machine for pigs][hpmfp], a scenario for [Call of Cthulhu][coc]
-- [MÖRK BORG quick start][mbqs], a scenario for [MÖRK BORG][mb]
+[projects](./projects)
 
 ## topics
 
@@ -22,7 +18,9 @@ a computer programmer in Birmingham, UK
 - tabletop games
   - rpgs
     - [call of cthulhu](./callofcthulhu)
+      - [hercule poirot's machine for pigs][hpmfp], a scenario for [Call of Cthulhu][coc]
     - [MÖRK BORG](./morkborg)
+      - [MÖRK BORG quick start][mbqs], a scenario for [MÖRK BORG][mb]
   - board games
     - mansions of madness, ...
   - warhammer 40k

@@ -18,7 +18,7 @@ With that out of the way...
 
 ## space_game
 
-> ⚠️ **Note:** This has not been maintained for some time and probably
+> ⚠️ **Note:** This has not been maintained for some time and
 > will not run unmodified. It is awaiting a weekend or so of 'dusting off'.
 
 [github](https://github.com/nathanrw/space_game)
@@ -49,7 +49,7 @@ Given a single-header dependency with no existing binding, you can easily create
 
 ## nuklear-cffi
 
-> ⚠️ **Note:** This has not been maintained for some time and probably
+> ⚠️ **Note:** This has not been maintained for some time and
 > will not run unmodified. It is awaiting a weekend or so of 'dusting off'.
 
 [github](https://github.com/nathanrw/nuklear-cffi)
