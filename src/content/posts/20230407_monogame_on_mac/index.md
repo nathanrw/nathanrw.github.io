@@ -20,10 +20,10 @@ development environment on Mac. These contain instructions to run a
 tool [mojoshader][mojoshader] to transate HLSL shaders into GLSL in the
 `Desktop.GL` backend, which is the default cross-platform desktop backend.
 
-This tool only works only works on Windows. On Linux and Mac, shader compilation
-requires Wine. When the environment variable `MGFXC_WINE_PATH` is detected, the
-MonoGame effect compiler will re-invoke itself via a `dotnet` installed in the
-Wine prefix at that path.
+This tool only works on Windows. On Linux and Mac, shader compilation requires
+Wine. When the environment variable `MGFXC_WINE_PATH` is detected, the MonoGame
+effect compiler will re-invoke itself via a `dotnet` installed in the Wine
+prefix at that path.
 
 The setup script creates this Wine prefix and adds a line to `.profile` and
 `.zprofile` to create that environment variable. The MonoGame project template

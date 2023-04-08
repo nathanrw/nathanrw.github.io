@@ -28,10 +28,10 @@ development environment on Mac. These contain instructions to run a
 &lt;a href=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;MonoGame&#x2F;MonoGame&#x2F;master&#x2F;Tools&#x2F;MonoGame.Effect.Compiler&#x2F;mgfxc_wine_setup.sh&quot;&gt;script&lt;&#x2F;a&gt; in order for shader compilation to work. MonoGame uses a
 tool &lt;a href=&quot;https:&#x2F;&#x2F;icculus.org&#x2F;mojoshader&#x2F;&quot;&gt;mojoshader&lt;&#x2F;a&gt; to transate HLSL shaders into GLSL in the
 &lt;code&gt;Desktop.GL&lt;&#x2F;code&gt; backend, which is the default cross-platform desktop backend.&lt;&#x2F;p&gt;
-&lt;p&gt;This tool only works only works on Windows. On Linux and Mac, shader compilation
-requires Wine. When the environment variable &lt;code&gt;MGFXC_WINE_PATH&lt;&#x2F;code&gt; is detected, the
-MonoGame effect compiler will re-invoke itself via a &lt;code&gt;dotnet&lt;&#x2F;code&gt; installed in the
-Wine prefix at that path.&lt;&#x2F;p&gt;
+&lt;p&gt;This tool only works on Windows. On Linux and Mac, shader compilation requires
+Wine. When the environment variable &lt;code&gt;MGFXC_WINE_PATH&lt;&#x2F;code&gt; is detected, the MonoGame
+effect compiler will re-invoke itself via a &lt;code&gt;dotnet&lt;&#x2F;code&gt; installed in the Wine
+prefix at that path.&lt;&#x2F;p&gt;
 &lt;p&gt;The setup script creates this Wine prefix and adds a line to &lt;code&gt;.profile&lt;&#x2F;code&gt; and
 &lt;code&gt;.zprofile&lt;&#x2F;code&gt; to create that environment variable. The MonoGame project template
 creates a configuration file in the project directory which points to particular
