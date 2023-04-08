@@ -92,15 +92,23 @@ extract &lt;code&gt;d3dcompiler_47.dll&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;I got errors compiling a texture. Thankfully I was not using it, so I deleted
 it. I will probably end up needing to deal with this at some point&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;&#x2F;h2&gt;
-&lt;p&gt;SharpFont fails to load freetype.&lt;&#x2F;p&gt;
-&lt;p&gt;Suspect this could be a binary compatibility issue.&lt;&#x2F;p&gt;
+&lt;p&gt;SharpFont fails to load freetype. This is a binary compatibility issue.&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;lipo -info dotnet-mgcb&#x2F;3.8.1.303&#x2F;tools&#x2F;net6.0&#x2F;any&#x2F;libfreetype6.dylib 
 &lt;&#x2F;span&gt;&lt;span&gt;Non-fat file: dotnet-mgcb&#x2F;3.8.1.303&#x2F;tools&#x2F;net6.0&#x2F;any&#x2F;libfreetype6.dylib is architecture: x86_64
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;lipo -info &#x2F;usr&#x2F;local&#x2F;share&#x2F;dotnet&#x2F;dotnet
 &lt;&#x2F;span&gt;&lt;span&gt;Non-fat file: &#x2F;usr&#x2F;local&#x2F;share&#x2F;dotnet&#x2F;dotnet is architecture: arm64
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;This is an arm64 mac.&lt;&#x2F;p&gt;
+&lt;p&gt;This is an arm64 mac. The .NET SDK is arm64. The freetype bundled with MonoGame is x64.&lt;&#x2F;p&gt;
+&lt;p&gt;I installed freetype using homebrew. Then I copied the &lt;code&gt;.dylib&lt;&#x2F;code&gt; to a temporary directory using
+the expected name.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;DYLD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;Users&#x2F;nathan&#x2F;Projects&#x2F;NGLBuild&#x2F;NGLMonoGame&#x2F;libs
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;dotnet&lt;&#x2F;span&gt;&lt;span&gt; mgcb Content&#x2F;Fonts&#x2F;File.spritefont
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This worked!&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;vs-plugin&quot;&gt;VS Plugin&lt;&#x2F;h2&gt;
 &lt;p&gt;Does not install successfully. Need to debug this some more. Thankfully everything
 seems to work without it more or less, so not as urgent.&lt;&#x2F;p&gt;

@@ -103,9 +103,7 @@ it. I will probably end up needing to deal with this at some point
 
 ## Fonts
 
-SharpFont fails to load freetype.
-
-Suspect this could be a binary compatibility issue.
+SharpFont fails to load freetype. This is a binary compatibility issue.
 
 ```
 lipo -info dotnet-mgcb/3.8.1.303/tools/net6.0/any/libfreetype6.dylib 
@@ -117,7 +115,20 @@ lipo -info /usr/local/share/dotnet/dotnet
 Non-fat file: /usr/local/share/dotnet/dotnet is architecture: arm64
 ```
 
-This is an arm64 mac.
+This is an arm64 mac. The .NET SDK is arm64. The freetype bundled with MonoGame is x64.
+
+I installed freetype using homebrew. Then I copied the `.dylib` to a temporary directory using
+the expected name.
+
+```Bash
+#!/bin/bash
+
+export DYLD_LIBRARY_PATH=/Users/nathan/Projects/NGLBuild/NGLMonoGame/libs
+
+dotnet mgcb Content/Fonts/File.spritefont
+```
+
+This worked!
 
 ## VS Plugin
 

@@ -160,15 +160,23 @@ extract <code>d3dcompiler_47.dll</code>.</p>
 <p>I got errors compiling a texture. Thankfully I was not using it, so I deleted
 it. I will probably end up needing to deal with this at some point</p>
 <h2 id="fonts">Fonts</h2>
-<p>SharpFont fails to load freetype.</p>
-<p>Suspect this could be a binary compatibility issue.</p>
+<p>SharpFont fails to load freetype. This is a binary compatibility issue.</p>
 <pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>lipo -info dotnet-mgcb/3.8.1.303/tools/net6.0/any/libfreetype6.dylib 
 </span><span>Non-fat file: dotnet-mgcb/3.8.1.303/tools/net6.0/any/libfreetype6.dylib is architecture: x86_64
 </span></code></pre>
 <pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>lipo -info /usr/local/share/dotnet/dotnet
 </span><span>Non-fat file: /usr/local/share/dotnet/dotnet is architecture: arm64
 </span></code></pre>
-<p>This is an arm64 mac.</p>
+<p>This is an arm64 mac. The .NET SDK is arm64. The freetype bundled with MonoGame is x64.</p>
+<p>I installed freetype using homebrew. Then I copied the <code>.dylib</code> to a temporary directory using
+the expected name.</p>
+<pre data-lang="Bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#65737e;">#!/bin/bash
+</span><span>
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">DYLD_LIBRARY_PATH</span><span>=</span><span style="color:#a3be8c;">/Users/nathan/Projects/NGLBuild/NGLMonoGame/libs
+</span><span>
+</span><span style="color:#bf616a;">dotnet</span><span> mgcb Content/Fonts/File.spritefont
+</span></code></pre>
+<p>This worked!</p>
 <h2 id="vs-plugin">VS Plugin</h2>
 <p>Does not install successfully. Need to debug this some more. Thankfully everything
 seems to work without it more or less, so not as urgent.</p>
