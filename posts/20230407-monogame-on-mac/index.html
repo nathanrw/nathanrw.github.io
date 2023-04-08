@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <title>MonoGame on Mac</title>
+        
+        <meta name="title" content="MonoGame on Mac">
+        <meta name="author" content="nathanrw">
+        
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nathanrw.dev/posts/20230407-monogame-on-mac/">
+        <meta property="og:site_name" content="nathanrw">
+        <meta property="og:title" content="MonoGame on Mac">
+        
+        
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://nathanrw.dev/posts/20230407-monogame-on-mac/">
+        <meta property="twitter:title" content="MonoGame on Mac">
+        
+        
+        
+        <link rel="canonical" href="https://nathanrw.dev/posts/20230407-monogame-on-mac/">
+        
+        <script type="application/ld+json">
+            {
+                
+                "url":"https://nathanrw.dev/posts/20230407-monogame-on-mac/",
+                "@type":"WebSite",
+                "headline":"MonoGame on Mac",
+                "name":"MonoGame on Mac",
+                "author":{
+                    "@type":"Person",
+                    "name":"nathanrw"
+                },
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://nathanrw.dev/atom.xml">
+        
+        
+        
+<link rel="stylesheet" href="https://nathanrw.dev/style.css"/>
+<link rel="stylesheet" href="https://nathanrw.dev/extra.css"/>
+
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                
+<p><a href="..">..</a>/20230407-monogame-on-mac</p>
+<p class="post-meta"><time datetime="2023-04-08">2023-04-08</time></p>
+<h1>MonoGame on Mac</h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+
+
+
+<p>I have been migrating my game project from Unity to MonoGame because of various
+issues I had with Unity. Mostly I use a Windows PC but sometimes I use a
+Macbook. So I need my project to build on both. MonoGame works fine on Windows,
+but the process of getting it to work on Mac has not been smooth.</p>
+<h1 id="content-builder">Content Builder</h1>
+<p>This was the most serious, though not the first, problem. So I will start here.</p>
+<h2 id="shaders">Shaders</h2>
+<p>MonoGame comes with <a href="https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_macos.html">official instructions</a> for setting up your
+development environment on Mac. These contain instructions to run a
+<a href="https://raw.githubusercontent.com/MonoGame/MonoGame/master/Tools/MonoGame.Effect.Compiler/mgfxc_wine_setup.sh">script</a> in order for shader compilation to work. MonoGame uses a
+tool <a href="https://icculus.org/mojoshader/">mojoshader</a> to transate HLSL shaders into GLSL in the
+<code>Desktop.GL</code> backend, which is the default cross-platform desktop backend.</p>
+<p>This tool only works only works on Windows. On Linux and Mac, shader compilation
+requires Wine. When the environment variable <code>MGFXC_WINE_PATH</code> is detected, the
+MonoGame effect compiler will re-invoke itself via a <code>dotnet</code> installed in the
+Wine prefix at that path.</p>
+<p>The setup script creates this Wine prefix and adds a line to <code>.profile</code> and
+<code>.zprofile</code> to create that environment variable. The MonoGame project template
+creates a configuration file in the project directory which points to particular
+versions of the <code>dotnet-mgcb*</code> tools, so running <code>dotnet mgcb-editor</code> in your
+project directory will run the correct version of the editor and (provided you
+ran it from an environment with the <code>MGFXC_WINE_PATH</code> variable set) it will be
+able to compile effects.</p>
+<p>The first problem is that Visual Studio does <em>not</em> (of course) have that
+environment variable set as a consequence of changing <code>.profile</code>. So starting
+the content editor from within Visual Studio results in a content editor that
+cannot build shaders. OK, fine, I will start it from the terminal.</p>
+<p>Starting the content builder from the terminal, I was able to get it to find
+Wine. Hurrah! But effect compilation failed with no error message.</p>
+<p>I think the Wine prefix configured by the script was suppressing error
+messages, but I could be wrong:</p>
+<pre data-lang="Bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#65737e;"># disable wine crash dialog
+</span><span style="color:#bf616a;">cat </span><span>&gt; &quot;$</span><span style="color:#bf616a;">SCRIPT_DIR</span><span>&quot;/crashdialog.reg &lt;&lt;</span><span style="color:#b48ead;">_EOF_
+</span><span style="color:#a3be8c;">REGEDIT4
+</span><span style="color:#a3be8c;">[HKEY_CURRENT_USER</span><span style="color:#96b5b4;">\\</span><span style="color:#a3be8c;">Software</span><span style="color:#96b5b4;">\\</span><span style="color:#a3be8c;">Wine</span><span style="color:#96b5b4;">\\</span><span style="color:#a3be8c;">WineDbg]
+</span><span style="color:#a3be8c;">&quot;ShowCrashDialog&quot;=dword:00000000
+</span><span style="color:#b48ead;">_EOF_
+</span></code></pre>
+<p>Anyway, I read the source code of the effect compiler to figure out what
+it was trying to do, and wrote a script to do the same thing. It was
+something like</p>
+<pre data-lang="Bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#b48ead;">export </span><span style="color:#bf616a;">WINEARCH</span><span>=</span><span style="color:#a3be8c;">win64
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">WINEDLLOVERRIDES</span><span>=</span><span style="color:#a3be8c;">d3dcompiler_47=n
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">WINEPREFIX</span><span>=</span><span style="color:#a3be8c;">/Users/nathan/.winemonogame
+</span><span>
+</span><span style="color:#bf616a;">assembly</span><span>=&quot;</span><span style="color:#a3be8c;">/Users/nathan/.nuget/packages/dotnet-mgcb/3.8.1.303/tools/net6.0/any/mgfxc.dll</span><span>&quot;
+</span><span>
+</span><span style="color:#bf616a;">wine64</span><span> dotnet &quot;$</span><span style="color:#bf616a;">assembly</span><span>&quot; &quot;$</span><span style="color:#bf616a;">@</span><span>&quot;
+</span></code></pre>
+<p>At this point I did a lot of googling, tried various Wine versions, and got a
+bunch of different error messages. But nothing actually worked. After some time,
+and after stumbling across the correct answer in a forum post, it turns out the
+problem was that the <a href="https://github.com/MonoGame/MonoGame/blob/15fd99a8189bfc9f4319ac39f5eb1c0bbe2ec66b/Tools/MonoGame.Effect.Compiler/mgfxc_wine_setup.sh">script</a> linked in the official instructions at
+time of writing installed the 32-bit .NET SDK to the Wine prefix. Recent macs
+have no support for 32-bit applications. So it did not work. The fix, as
+mentioned in <a href="https://community.monogame.net/t/mgfxc-8-3-1-wine/17809">this forum thread</a>, is to install the 64-bit .NET SDK
+instead. Indeed, this has already been done in the <code>develop</code> branch of MonoGame.
+But it has not reached <code>master</code>, and the docs link to the script from <code>master</code>.
+This meant I had originally dismissed this as the cause of the problem, since I
+had seen that it had been fixed. It was not until I carefully re-read the setup
+script I noticed it still had the problem.</p>
+<h3 id="what-is-the-wine-prefix-setup-script-doing">What is the Wine prefix setup script doing?</h3>
+<p>If you boil it down to the essentials, it's not doing all that much.</p>
+<pre data-lang="Bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#b48ead;">export </span><span style="color:#bf616a;">WINEARCH</span><span>=</span><span style="color:#a3be8c;">win64
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">WINEPREFIX</span><span>=$</span><span style="color:#bf616a;">HOME</span><span style="color:#a3be8c;">/.winemonogame
+</span><span style="color:#bf616a;">wine64</span><span> wineboot
+</span><span>
+</span><span style="color:#bf616a;">7z</span><span> x &quot;</span><span style="color:#a3be8c;">/Users/nathan/Downloads/dotnet-sdk.zip</span><span>&quot;</span><span style="color:#bf616a;"> -o</span><span>&quot;$</span><span style="color:#bf616a;">WINEPREFIX</span><span style="color:#a3be8c;">/drive_c/windows/system32/</span><span>&quot;
+</span><span style="color:#bf616a;">cp -f </span><span>&quot;</span><span style="color:#a3be8c;">/Users/nathan/Downloads/d3dcompiler_47.dll</span><span>&quot; &quot;$</span><span style="color:#bf616a;">WINEPREFIX</span><span style="color:#a3be8c;">/drive_c/windows/system32/d3dcompiler_47.dll</span><span>&quot;
+</span></code></pre>
+<p>The actual script downloads the .NET SDK. It also downloads Firefox in order to
+extract <code>d3dcompiler_47.dll</code>.</p>
+<h2 id="textures">Textures</h2>
+<p>I got errors compiling a texture. Thankfully I was not using it, so I deleted
+it. I will probably end up needing to deal with this at some point</p>
+<h2 id="fonts">Fonts</h2>
+<p>SharpFont fails to load freetype. Need to debug this some more.</p>
+<h2 id="vs-plugin">VS Plugin</h2>
+<p>Does not install successfully. Need to debug this some more. Thankfully everything
+seems to work without it more or less, so not as urgent.</p>
+
+
+            </main>
+            <footer>
+                
+<p class="taxonomies">
+
+</p>
+
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        

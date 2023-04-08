@@ -17,11 +17,12 @@ rm -f style.css
 rm -f extra.css
 rm -f morkborg.css
 rm -f poirot.css
-rm -rf images/
-rm -rf morkborg/
-rm -rf callofcthulhu/
-rm -rf projects/
-rm -rf fonts/
+rm -rf images
+rm -rf morkborg
+rm -rf callofcthulhu
+rm -rf projects
+rm -rf fonts
+rm -rf posts
 
 # Copy built files
 cp src/public/CV.pdf .
@@ -34,8 +35,9 @@ cp src/public/extra.css .
 cp src/public/morkborg.css .
 cp src/public/poirot.css .
 cp src/public/atom.xml .
-cp -r src/public/images/ .
-cp -r src/public/morkborg/ .
-cp -r src/public/callofcthulhu/ .
-cp -r src/public/projects/ .
-cp -r src/public/fonts/ .
+cp -r src/public/images .
+cp -r src/public/morkborg .
+cp -r src/public/callofcthulhu .
+cp -r src/public/projects .
+cp -r src/public/fonts .
+cp -r src/public/posts .
