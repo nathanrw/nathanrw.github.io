@@ -103,7 +103,21 @@ it. I will probably end up needing to deal with this at some point
 
 ## Fonts
 
-SharpFont fails to load freetype. Need to debug this some more.
+SharpFont fails to load freetype.
+
+Suspect this could be a binary compatibility issue.
+
+```
+lipo -info dotnet-mgcb/3.8.1.303/tools/net6.0/any/libfreetype6.dylib 
+Non-fat file: dotnet-mgcb/3.8.1.303/tools/net6.0/any/libfreetype6.dylib is architecture: x86_64
+```
+
+```
+lipo -info /usr/local/share/dotnet/dotnet
+Non-fat file: /usr/local/share/dotnet/dotnet is architecture: arm64
+```
+
+This is an arm64 mac.
 
 ## VS Plugin
 
