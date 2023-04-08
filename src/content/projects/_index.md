@@ -8,14 +8,6 @@ work is on closed-source proprietary software; these repositories are _not wholl
 representative of professional-quality code, although _parts_ of them are probably
 up to scratch.
 
-Professional code is _simple, robust, documented and tested_, and there simply 
-isn't time for all of those things all of the time when working on personal 
-projects with an audience of one. It's also, obviously, important to group 
-changes meaningfully and explain them, e.g. [here](https://github.com/Autodesk/AutomaticComponentToolkit/pull/154),
-rather than comitting straight to `main`, when working with other people.
-
-With that out of the way...
-
 ## space_game
 
 > ⚠️ **Note:** This has not been maintained for some time and

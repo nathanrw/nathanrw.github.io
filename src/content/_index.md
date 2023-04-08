@@ -5,6 +5,8 @@ a computer programmer in Birmingham, UK
 
 [projects](./projects)
 
+[posts](./posts)
+
 ## topics
 
 (filled out and linked as & when I add relevant pages)
