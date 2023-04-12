@@ -23,6 +23,7 @@ rm -rf callofcthulhu
 rm -rf projects
 rm -rf fonts
 rm -rf posts
+rm -rf tags
 
 # Copy built files
 cp src/public/CV.pdf .
@@ -41,3 +42,4 @@ cp -r src/public/callofcthulhu .
 cp -r src/public/projects .
 cp -r src/public/fonts .
 cp -r src/public/posts .
+cp -r src/public/tags .

@@ -11,6 +11,12 @@
         <lastmod>2021-12-23</lastmod>
     </url>
     <url>
+        <loc>https://nathanrw.dev/categories/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/contexts/</loc>
+    </url>
+    <url>
         <loc>https://nathanrw.dev/morkborg/</loc>
     </url>
     <url>
@@ -25,6 +31,23 @@
         <lastmod>2023-04-08</lastmod>
     </url>
     <url>
+        <loc>https://nathanrw.dev/posts/20230411-a-picture/</loc>
+        <lastmod>2023-04-11</lastmod>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/posts/20230411-the-spear/</loc>
+        <lastmod>2023-04-12</lastmod>
+    </url>
+    <url>
         <loc>https://nathanrw.dev/projects/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/tags/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/tags/books/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/tags/cursed/</loc>
     </url>
 </urlset>
