@@ -4,7 +4,11 @@ compile_sass = true
 build_search_index = false
 theme = "no-style-please"
 generate_feed = true
-
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories", feed = true },
+    { name = "contexts", feed = true }
+]
 
 [markdown]
 highlight_code = true
