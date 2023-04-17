@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>nathanrw - monogame</title>
+	<link href="https://nathanrw.dev/tags/monogame/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nathanrw.dev"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-04-08T00:00:00+00:00</updated>
+	<id>https://nathanrw.dev/tags/monogame/atom.xml</id>
+	<entry xml:lang="en">
+		<title>MonoGame on Mac</title>
+		<published>2023-04-08T00:00:00+00:00</published>
+		<updated>2023-04-08T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://nathanrw.dev/posts/20230407-monogame-on-mac/" type="text/html"/>
+		<id>https://nathanrw.dev/posts/20230407-monogame-on-mac/</id>
+		<content type="html">&lt;p&gt;I have been migrating my game project from Unity to MonoGame because of various
+issues I had with Unity. Mostly I use a Windows PC but sometimes I use a
+Macbook. So I need my project to build on both. MonoGame works fine on Windows,
+but the process of getting it to work on Mac has not been smooth.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;content-builder&quot;&gt;Content Builder&lt;&#x2F;h1&gt;
+&lt;p&gt;This was the most serious, though not the first, problem. So I will start here.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;shaders&quot;&gt;Shaders&lt;&#x2F;h2&gt;
+&lt;p&gt;MonoGame comes with &lt;a href=&quot;https:&#x2F;&#x2F;docs.monogame.net&#x2F;articles&#x2F;getting_started&#x2F;1_setting_up_your_development_environment_macos.html&quot;&gt;official instructions&lt;&#x2F;a&gt; for setting up your
+development environment on Mac. These contain instructions to run a
+&lt;a href=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;MonoGame&#x2F;MonoGame&#x2F;master&#x2F;Tools&#x2F;MonoGame.Effect.Compiler&#x2F;mgfxc_wine_setup.sh&quot;&gt;script&lt;&#x2F;a&gt; in order for shader compilation to work. MonoGame uses a
+tool &lt;a href=&quot;https:&#x2F;&#x2F;icculus.org&#x2F;mojoshader&#x2F;&quot;&gt;mojoshader&lt;&#x2F;a&gt; to transate HLSL shaders into GLSL in the
+&lt;code&gt;Desktop.GL&lt;&#x2F;code&gt; backend, which is the default cross-platform desktop backend.&lt;&#x2F;p&gt;
+&lt;p&gt;This tool only works on Windows. On Linux and Mac, shader compilation requires
+Wine. When the environment variable &lt;code&gt;MGFXC_WINE_PATH&lt;&#x2F;code&gt; is detected, the MonoGame
+effect compiler will re-invoke itself via a &lt;code&gt;dotnet&lt;&#x2F;code&gt; installed in the Wine
+prefix at that path.&lt;&#x2F;p&gt;
+&lt;p&gt;The setup script creates this Wine prefix and adds a line to &lt;code&gt;.profile&lt;&#x2F;code&gt; and
+&lt;code&gt;.zprofile&lt;&#x2F;code&gt; to create that environment variable. The MonoGame project template
+creates a configuration file in the project directory which points to particular
+versions of the &lt;code&gt;dotnet-mgcb*&lt;&#x2F;code&gt; tools, so running &lt;code&gt;dotnet mgcb-editor&lt;&#x2F;code&gt; in your
+project directory will run the correct version of the editor and (provided you
+ran it from an environment with the &lt;code&gt;MGFXC_WINE_PATH&lt;&#x2F;code&gt; variable set) it will be
+able to compile effects.&lt;&#x2F;p&gt;
+&lt;p&gt;The first problem is that Visual Studio does &lt;em&gt;not&lt;&#x2F;em&gt; (of course) have that
+environment variable set as a consequence of changing &lt;code&gt;.profile&lt;&#x2F;code&gt;. So starting
+the content editor from within Visual Studio results in a content editor that
+cannot build shaders. OK, fine, I will start it from the terminal.&lt;&#x2F;p&gt;
+&lt;p&gt;Starting the content builder from the terminal, I was able to get it to find
+Wine. Hurrah! But effect compilation failed with no error message.&lt;&#x2F;p&gt;
+&lt;p&gt;I think the Wine prefix configured by the script was suppressing error
+messages, but I could be wrong:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# disable wine crash dialog
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cat &lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; &amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SCRIPT_DIR&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&#x2F;crashdialog.reg &amp;lt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;_EOF_
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;REGEDIT4
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;[HKEY_CURRENT_USER&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\\&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Software&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\\&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Wine&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\\&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;WineDbg]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;ShowCrashDialog&amp;quot;=dword:00000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;_EOF_
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Anyway, I read the source code of the effect compiler to figure out what
+it was trying to do, and wrote a script to do the same thing. It was
+something like&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEARCH&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;win64
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEDLLOVERRIDES&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;d3dcompiler_47=n
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEPREFIX&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;Users&#x2F;nathan&#x2F;.winemonogame
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;assembly&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;Users&#x2F;nathan&#x2F;.nuget&#x2F;packages&#x2F;dotnet-mgcb&#x2F;3.8.1.303&#x2F;tools&#x2F;net6.0&#x2F;any&#x2F;mgfxc.dll&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wine64&lt;&#x2F;span&gt;&lt;span&gt; dotnet &amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;assembly&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;@&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At this point I did a lot of googling, tried various Wine versions, and got a
+bunch of different error messages. But nothing actually worked. After some time,
+and after stumbling across the correct answer in a forum post, it turns out the
+problem was that the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;MonoGame&#x2F;MonoGame&#x2F;blob&#x2F;15fd99a8189bfc9f4319ac39f5eb1c0bbe2ec66b&#x2F;Tools&#x2F;MonoGame.Effect.Compiler&#x2F;mgfxc_wine_setup.sh&quot;&gt;script&lt;&#x2F;a&gt; linked in the official instructions at
+time of writing installed the 32-bit .NET SDK to the Wine prefix. Recent macs
+have no support for 32-bit applications. So it did not work. The fix, as
+mentioned in &lt;a href=&quot;https:&#x2F;&#x2F;community.monogame.net&#x2F;t&#x2F;mgfxc-8-3-1-wine&#x2F;17809&quot;&gt;this forum thread&lt;&#x2F;a&gt;, is to install the 64-bit .NET SDK
+instead. Indeed, this has already been done in the &lt;code&gt;develop&lt;&#x2F;code&gt; branch of MonoGame.
+But it has not reached &lt;code&gt;master&lt;&#x2F;code&gt;, and the docs link to the script from &lt;code&gt;master&lt;&#x2F;code&gt;.
+This meant I had originally dismissed this as the cause of the problem, since I
+had seen that it had been fixed. It was not until I carefully re-read the setup
+script I noticed it still had the problem.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-is-the-wine-prefix-setup-script-doing&quot;&gt;What is the Wine prefix setup script doing?&lt;&#x2F;h3&gt;
+&lt;p&gt;If you boil it down to the essentials, it&#x27;s not doing all that much.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEARCH&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;win64
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEPREFIX&lt;&#x2F;span&gt;&lt;span&gt;=$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;.winemonogame
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wine64&lt;&#x2F;span&gt;&lt;span&gt; wineboot
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;7z&lt;&#x2F;span&gt;&lt;span&gt; x &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;Users&#x2F;nathan&#x2F;Downloads&#x2F;dotnet-sdk.zip&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEPREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;drive_c&#x2F;windows&#x2F;system32&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cp -f &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;Users&#x2F;nathan&#x2F;Downloads&#x2F;d3dcompiler_47.dll&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WINEPREFIX&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;drive_c&#x2F;windows&#x2F;system32&#x2F;d3dcompiler_47.dll&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The actual script downloads the .NET SDK. It also downloads Firefox in order to
+extract &lt;code&gt;d3dcompiler_47.dll&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;textures&quot;&gt;Textures&lt;&#x2F;h2&gt;
+&lt;p&gt;I got errors compiling a texture. Thankfully I was not using it, so I deleted
+it. I will probably end up needing to deal with this at some point&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;&#x2F;h2&gt;
+&lt;p&gt;SharpFont fails to load freetype. This is a binary compatibility issue.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;lipo -info dotnet-mgcb&#x2F;3.8.1.303&#x2F;tools&#x2F;net6.0&#x2F;any&#x2F;libfreetype6.dylib 
+&lt;&#x2F;span&gt;&lt;span&gt;Non-fat file: dotnet-mgcb&#x2F;3.8.1.303&#x2F;tools&#x2F;net6.0&#x2F;any&#x2F;libfreetype6.dylib is architecture: x86_64
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;lipo -info &#x2F;usr&#x2F;local&#x2F;share&#x2F;dotnet&#x2F;dotnet
+&lt;&#x2F;span&gt;&lt;span&gt;Non-fat file: &#x2F;usr&#x2F;local&#x2F;share&#x2F;dotnet&#x2F;dotnet is architecture: arm64
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is an arm64 mac. The .NET SDK is arm64. The freetype bundled with MonoGame is x64.&lt;&#x2F;p&gt;
+&lt;p&gt;I installed freetype using homebrew. Then I copied the &lt;code&gt;.dylib&lt;&#x2F;code&gt; to a temporary directory using
+the expected name.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;DYLD_LIBRARY_PATH&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;Users&#x2F;nathan&#x2F;Projects&#x2F;NGLBuild&#x2F;NGLMonoGame&#x2F;libs
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;dotnet&lt;&#x2F;span&gt;&lt;span&gt; mgcb Content&#x2F;Fonts&#x2F;File.spritefont
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This worked!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;vs-plugin&quot;&gt;VS Plugin&lt;&#x2F;h2&gt;
+&lt;p&gt;Does not install successfully. Need to debug this some more. Thankfully everything
+seems to work without it more or less, so not as urgent.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

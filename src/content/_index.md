@@ -3,17 +3,13 @@
 
 a computer programmer in Birmingham, UK
 
-[projects](./projects)
-
-[posts](./posts)
-
 ## topics
 
 (filled out and linked as & when I add relevant pages)
 
-- programming, software engineering
+- [programming](./tags/programming), software engineering
   - [single-header C libraries in Python][single-header-c-python] [[slides][single-header-c-python-slides]] 
-- game development
+- [game development](./tags/gamedev)
   - [projects](./projects)
 - computer games
   - crpgs, '4x', simulation, horror, ...
@@ -32,7 +28,7 @@ a computer programmer in Birmingham, UK
 - socialism
   - economic planning
 - food, recipes
-- books
+- [books](./tags/books)
   - fantasy, science fiction, horror
 - train travel
 
