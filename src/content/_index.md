@@ -10,6 +10,7 @@ a computer programmer in Birmingham, UK
 - [programming](./tags/programming), software engineering
   - [single-header C libraries in Python][single-header-c-python] [[slides][single-header-c-python-slides]] 
 - [game development](./tags/gamedev)
+  - [contingency](./tags/contingency)
   - [projects](./projects)
 - computer games
   - crpgs, '4x', simulation, horror, ...

@@ -8,6 +8,18 @@ work is on closed-source proprietary software; these repositories are _not wholl
 representative of professional-quality code, although _parts_ of them are probably
 up to scratch.
 
+## contingency
+
+![contingency image](./screen3.jpg)
+
+Things are what they are, but they don't have to be.
+
+Provision for future eventualities. The absence of certainty.
+
+I've been working on a simulation project in my spare time that I've called 'contingency'.
+
+[info](../posts/20230915-contingency)
+
 ## space_game
 
 > ⚠️ **Note:** This has not been maintained for some time and
