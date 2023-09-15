@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <title>Contingency</title>
+        
+        <meta name="title" content="Contingency">
+        <meta name="author" content="nathanrw">
+        
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nathanrw.dev/posts/20230915-contingency/">
+        <meta property="og:site_name" content="nathanrw">
+        <meta property="og:title" content="Contingency">
+        
+        
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://nathanrw.dev/posts/20230915-contingency/">
+        <meta property="twitter:title" content="Contingency">
+        
+        
+        
+        <link rel="canonical" href="https://nathanrw.dev/posts/20230915-contingency/">
+        
+        <script type="application/ld+json">
+            {
+                
+                "url":"https://nathanrw.dev/posts/20230915-contingency/",
+                "@type":"WebSite",
+                "headline":"Contingency",
+                "name":"Contingency",
+                "author":{
+                    "@type":"Person",
+                    "name":"nathanrw"
+                },
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://nathanrw.dev/atom.xml">
+        
+        
+        
+<link rel="stylesheet" href="https://nathanrw.dev/style.css"/>
+<link rel="stylesheet" href="https://nathanrw.dev/extra.css"/>
+
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                
+<p><a href="..">..</a>/20230915-contingency</p>
+<p class="post-meta"><time datetime="2023-09-15">2023-09-15</time></p>
+<h1>Contingency</h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+
+
+
+<p>Things are what they are, but they don't have to be. </p>
+<p>Provision for future eventualities. The absence of certainty.</p>
+<p>I've been working on a simulation project in my spare time that I've called
+'contingency'. It's early days, and progress is fairly slow. But it's reached a
+stage now where I feel I have something to post about. This post will be a bit
+of a 'brain dump' of the current state of things, and then I might make further
+posts on interesting problems I have encountered.</p>
+<h2 id="summary">Summary</h2>
+<p><a href="./images/screen3.jpg"><img src="https://nathanrw.dev/posts/20230915-contingency/./images/screen3.jpg" alt="rivers" /></a></p>
+<p>Contingency is a map-based game about running an economy, which you will watch
+develop over time. The current plan is for the game to play out in real-time,
+like a <a href="https://en.wikipedia.org/wiki/Paradox_Interactive">Paradox</a> game, because the game should be a little like a train
+set - you should be able to watch things tick along pleasantly, with people
+going about their business in various ways. I am hedging my bets a little
+though. My thinking is that I can code everything around real time increments
+and physical units, and should I wish to go with a turn-based approach I could
+make ‘end turn’ run the simulation for a certain length of time. The sorts of
+decisions you need to make in the game should not take effect immediately
+anyway.</p>
+<h2 id="points-of-interest">Points of interest</h2>
+<p>In no particular order.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y_lYy0olepk?si=HoxmbyqvFO3qZXJt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h3 id="terrain-generation">Terrain generation</h3>
+<p>Approach is based on the excellent <a href="https://www.redblobgames.com/x/2022-voronoi-maps-tutorial/">voronoi maps</a> page at Red Blob
+Games. I intend to revisit it at some point.</p>
+<h3 id="hydrology">Hydrology</h3>
+<p>Rainfall is calculated per-tile and based on this rivers flow downhill. The
+biggest rivers get drawn.</p>
+<h3 id="map-representation">Map representation</h3>
+<p>The map topology is represented as a graph. Arbitrary topologies are supported:
+square tiles, hexagonal tiles, or polygonal tiles (as pictured.)  I'll probably
+use the hexes for something one day, but for this project the voronoi polygons
+seem to give the most pleasing results.</p>
+<h3 id="land-distribution">Land distribution</h3>
+<p><a href="./images/screen4.png"><img src="https://nathanrw.dev/posts/20230915-contingency/./images/screen4.png" alt="land distribution" /></a></p>
+<p>Land on a tile is subdivided into categories and is measured in square
+kilometers. Certain kinds of feature can 'use' land. Entities at a tile with the
+LandUse component consume land. Farms use land, and so do Forests. Tile drawing
+reflects the land use distribution.</p>
+<h3 id="name-generation">Name generation</h3>
+<p>Place, river and person names are generated using a simple Markov Chain word
+generator. The generator is fed a corpus of British place names (and river
+names, and person names) and spits out (for the most part) uncannily plausible
+sounding made-up names. To be honest it could be replaced with a simple list of
+names, but this is more fun.</p>
+<h3 id="data-model">Data model</h3>
+<p>Everything lives in <a href="https://github.com/genaray/Arch">Arch ECS</a>. It's in early development but is very
+simple and fast, and the author is very helpful and friendly. Other such
+libraries were either not simple (Svelto) or not fast (Entitas.)</p>
+<h3 id="ui-library">UI library</h3>
+<p>The UI is implemented using <a href="https://github.com/ocornut/imgui">Dear ImGUI</a>, the Only Good UI library.</p>
+<p>One day when there is a playable game, I might replace this with a more
+'aesthetic' interface, but for now this is perfect as it's easy to work with.</p>
+<h3 id="social-simulation">Social simulation</h3>
+<p>As well as the coarse-grained economic simulation, I have a fine-grained
+'sample' set of individual people. The idea is that eventually the economic
+simulation will cause things to happen to them.</p>
+<h3 id="map-drawing">Map drawing</h3>
+<p>Most work is done in the shader. The same simple mesh (which uses a vertex
+attribute to associate vertices with tile ids) can be drawn in various ways.</p>
+<p>MonoGame doesn't support passing an arbitrary buffer as input to a shader, so I
+encode various tile data as textures and decode that in the fragment shader. It
+wouldn't surprise me if this was less efficient than just generating a bigger
+mesh on the CPU, but it's certainly fun. I haven't tried to optimise the shader;
+the slow thing at the moment is actually calculating the land use to pass to the
+shader.</p>
+<p>Based on a per-tile land-use vector, the shader splits each tile into a number
+of subtiles proportional to the land-use breakdown specified by the vector.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#65737e;">/// @brief A shader that assigns colour based on terrain texture.
+</span><span>float4 </span><span style="color:#8fa1b3;">TileTerrainTextureWithLandUsePS</span><span>(VertexShaderOutput </span><span style="color:#bf616a;">input</span><span>) : COLOR
+</span><span>{
+</span><span>    </span><span style="color:#b48ead;">int</span><span> TileIndex = </span><span style="color:#b48ead;">int</span><span>(input.</span><span style="color:#bf616a;">TileId</span><span>);
+</span><span>    </span><span style="color:#b48ead;">float</span><span> TileValue = </span><span style="color:#bf616a;">ReadBufferValue</span><span>(
+</span><span>        TileValuesSampler, TileIndex, TileValuesWidth).</span><span style="color:#bf616a;">r</span><span>;
+</span><span>    </span><span style="color:#b48ead;">float</span><span> TileElevation = </span><span style="color:#bf616a;">ReadBufferValue</span><span>(
+</span><span>        TileElevationsSampler, TileIndex, TileValuesWidth).</span><span style="color:#bf616a;">r</span><span>;
+</span><span>    </span><span style="color:#b48ead;">int</span><span> TileTerrainIndex = </span><span style="color:#bf616a;">ReadBufferValueAsInt</span><span>(
+</span><span>        TileTerrainsSampler, TileIndex, TileValuesWidth);
+</span><span>
+</span><span>    </span><span style="color:#65737e;">// Read land type proportions.
+</span><span>    </span><span style="color:#b48ead;">float</span><span> proportionForest = 
+</span><span>        </span><span style="color:#bf616a;">ReadLandUseValue</span><span>(TileIndex, LAND_USE_FOREST);
+</span><span>    </span><span style="color:#b48ead;">float</span><span> proportionHabitation = 
+</span><span>        </span><span style="color:#bf616a;">ReadLandUseValue</span><span>(TileIndex, LAND_USE_HABITATION);
+</span><span>    </span><span style="color:#b48ead;">float</span><span> proportionFarm = 
+</span><span>        </span><span style="color:#bf616a;">ReadLandUseValue</span><span>(TileIndex, LAND_USE_FARM);
+</span><span>    </span><span style="color:#b48ead;">float</span><span> proportionBare = 
+</span><span>        </span><span style="color:#bf616a;">ReadLandUseValue</span><span>(TileIndex, LAND_USE_BARE);
+</span><span>    </span><span style="color:#b48ead;">float</span><span> proportionMountain = 
+</span><span>        </span><span style="color:#bf616a;">ReadLandUseValue</span><span>(TileIndex, LAND_USE_MOUNTAIN);
+</span><span>
+</span><span>    </span><span style="color:#65737e;">// Calculate thresholds.
+</span><span>    </span><span style="color:#b48ead;">float</span><span> maxForest = proportionForest;
+</span><span>    </span><span style="color:#b48ead;">float</span><span> maxHabitation = maxForest + proportionHabitation;
+</span><span>    </span><span style="color:#b48ead;">float</span><span> maxFarm = maxHabitation + proportionFarm;
+</span><span>    </span><span style="color:#b48ead;">float</span><span> maxBare = maxFarm + proportionBare;
+</span><span>    </span><span style="color:#b48ead;">float</span><span> maxMountain = maxBare + proportionMountain;
+</span><span>
+</span><span>    </span><span style="color:#65737e;">// UV should be roughly in interval 0..1. So map to subtile like
+</span><span>    </span><span style="color:#65737e;">// so
+</span><span>    </span><span style="color:#b48ead;">int</span><span> uSubdivs = </span><span style="color:#d08770;">3</span><span>;
+</span><span>    </span><span style="color:#b48ead;">int</span><span> uvX = </span><span style="color:#b48ead;">int</span><span>(</span><span style="color:#bf616a;">frac</span><span>(input.</span><span style="color:#bf616a;">UV</span><span>.</span><span style="color:#bf616a;">x</span><span>) * </span><span style="color:#b48ead;">float</span><span>(uSubdivs));
+</span><span>    </span><span style="color:#b48ead;">int</span><span> uvY = </span><span style="color:#b48ead;">int</span><span>(</span><span style="color:#bf616a;">frac</span><span>(input.</span><span style="color:#bf616a;">UV</span><span>.</span><span style="color:#bf616a;">y</span><span>) * </span><span style="color:#b48ead;">float</span><span>(uSubdivs));
+</span><span>    </span><span style="color:#b48ead;">int</span><span> uvIndex = uvY * uSubdivs + uvX;
+</span><span>
+</span><span>    </span><span style="color:#65737e;">// Now, based on the land distribution, assign a land use to the
+</span><span>    </span><span style="color:#65737e;">// subtile.
+</span><span>    </span><span style="color:#b48ead;">int</span><span> textureIndex = TerrainTextures[TileTerrainIndex];
+</span><span>    </span><span style="color:#b48ead;">float</span><span> uvDistance = </span><span style="color:#b48ead;">float</span><span>(uvIndex) / </span><span style="color:#b48ead;">float</span><span>(uSubdivs * uSubdivs);
+</span><span>    </span><span style="color:#b48ead;">if </span><span>(uvDistance &lt; maxForest) {
+</span><span>        textureIndex = LandUseTextures[LAND_USE_FOREST];
+</span><span>    } </span><span style="color:#b48ead;">else if </span><span>(uvDistance &lt; maxHabitation) {
+</span><span>        textureIndex = LandUseTextures[LAND_USE_HABITATION];
+</span><span>    } </span><span style="color:#b48ead;">else if </span><span>(uvDistance &lt; maxFarm) {
+</span><span>        textureIndex = LandUseTextures[LAND_USE_FARM];
+</span><span>    } </span><span style="color:#b48ead;">else if </span><span>(uvDistance &lt; maxBare) {
+</span><span>        </span><span style="color:#65737e;">// Use terrain.
+</span><span>    } </span><span style="color:#b48ead;">else if </span><span>(uvDistance &lt; maxMountain) {
+</span><span>        textureIndex = LandUseTextures[LAND_USE_MOUNTAIN];
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="color:#65737e;">// Now sample the appropriate terrain texture.
+</span><span>    float2 xy = input.</span><span style="color:#bf616a;">WorldXY</span><span>;
+</span><span>    float4 TileTerrainColour = </span><span style="color:#bf616a;">SampleTextureAtlas</span><span>(
+</span><span>        TerrainTextureAtlasSampler,
+</span><span>        TerrainTextureAtlasWidth,
+</span><span>        TerrainTextureAtlasTextureWidth,
+</span><span>        textureIndex,
+</span><span>        xy * TerrainTextureScale);
+</span><span>    </span><span style="color:#b48ead;">float</span><span> elevationFactor = </span><span style="color:#d08770;">0.4</span><span>;
+</span><span>    float3 baseColour = TileTerrainColour.</span><span style="color:#bf616a;">xyz</span><span>;
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">float4</span><span>(baseColour * (</span><span style="color:#d08770;">1 </span><span>- elevationFactor) + 
+</span><span>                      baseColour * TileElevation * elevationFactor, 
+</span><span>                  </span><span style="color:#d08770;">1</span><span>);
+</span><span>}
+</span></code></pre>
+<h2 id="what-took-all-this-time">What took all this time???</h2>
+<p>I started working on this some time in late 2021. Much of the early time was
+spent learning Unity whilst working on an initial prototype. Throughout 2022 I
+worked on this prototype off and on, whilst growing more frustrated with Unity
+-- why is serialization so hard? why is there no good user interface library?
+Why is it so hard to debug? The list of frustrations went on and on. As an
+attempt to alleviate the frustrations, I ended up writing a separate WPF
+frontend to the simulation (which I had deliberately structured to be ignoring
+of Unity) which was more pleasant to work with than Unity. But then I had the
+problem of maintaining two different clients, neither of which was ideal.</p>
+<p>By the end of 2022 I decided to bin Unity and use MonoGame -- more of a library
+than a game engine -- instead. The straw that broke the camel's back was
+attempting to use the Unity profiler, which used all of the memory on my
+machine. In a sense it's probably my own fault for attempting to use my 7 year
+old computer for development, but at the same time, man got to the moon with
+much less!</p>
+<p>Switching to MonoGame would allow me to combine the best of the Unity and WPF
+integrations into a single program and (eventually!) allow me to make progress
+faster. At the same time, I found that my simulation prototype needed some sort
+of structured data model. I had deliberately avoided Unity DOTS and GameObject
+as I did not want to couple my code to Unity (which is what made it relatively
+straightforward to 'port' it to MonoGame) and had followed the philosophy of
+'just write some code', which worked well up to a point but became unwieldly
+with the introduction of more different kinds of entity, and as I attempted to
+make changes to the code. So I experimented with various 'entity component
+system' libraries and settled on the very pleasant Arch.</p>
+<p>Much of 2023 has been concerned with finishing the MonoGame port. Whilst it's
+more pleasant to work with (for me, as a programmer) than Unity, there are
+various things you simply have to implement yourself which came 'out of the box'
+with Unity, and that takes time. I've also been working on an adventure game,
+also using MonoGame, which I might post about at another point, and that took a
+few months of work.</p>
+<p>Finally, I got a bit bogged down thinking about how to represent land use, and
+users of land -- is a Farm an entity on a Tile, or is a component of a Tile?
+That kind of thing. I seem to have cracked that one recently though, so now
+(fingers crossed) it's time to make a bit more progress.</p>
+<h2 id="next-steps">Next steps?</h2>
+<ul>
+<li>Make rivers look nicer (perhaps animate them)</li>
+<li>Make water look nicer (perhaps animate it)</li>
+<li>Functioning economy
+<ul>
+<li>At the moment people simply consume food. Goal for the prototype has always
+been to get various commodities circulating in some sort of equilibrium.</li>
+</ul>
+</li>
+</ul>
+
+
+            </main>
+            <footer>
+                
+<p class="taxonomies">
+
+
+<a href="/tags/programming">#programming</a>
+
+<a href="/tags/gamedev">#gamedev</a>
+
+<a href="/tags/monogame">#monogame</a>
+
+<a href="/tags/contingency">#contingency</a>
+
+
+
+
+</p>
+
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        

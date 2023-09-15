@@ -4,8 +4,199 @@
 	<link href="https://nathanrw.dev/tags/programming/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://nathanrw.dev"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2023-04-08T00:00:00+00:00</updated>
+	<updated>2023-09-15T00:00:00+00:00</updated>
 	<id>https://nathanrw.dev/tags/programming/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Contingency</title>
+		<published>2023-09-15T00:00:00+00:00</published>
+		<updated>2023-09-15T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://nathanrw.dev/posts/20230915-contingency/" type="text/html"/>
+		<id>https://nathanrw.dev/posts/20230915-contingency/</id>
+		<content type="html">&lt;p&gt;Things are what they are, but they don&#x27;t have to be. &lt;&#x2F;p&gt;
+&lt;p&gt;Provision for future eventualities. The absence of certainty.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve been working on a simulation project in my spare time that I&#x27;ve called
+&#x27;contingency&#x27;. It&#x27;s early days, and progress is fairly slow. But it&#x27;s reached a
+stage now where I feel I have something to post about. This post will be a bit
+of a &#x27;brain dump&#x27; of the current state of things, and then I might make further
+posts on interesting problems I have encountered.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;.&#x2F;images&#x2F;screen3.jpg&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20230915-contingency&#x2F;.&#x2F;images&#x2F;screen3.jpg&quot; alt=&quot;rivers&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Contingency is a map-based game about running an economy, which you will watch
+develop over time. The current plan is for the game to play out in real-time,
+like a &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Paradox_Interactive&quot;&gt;Paradox&lt;&#x2F;a&gt; game, because the game should be a little like a train
+set - you should be able to watch things tick along pleasantly, with people
+going about their business in various ways. I am hedging my bets a little
+though. My thinking is that I can code everything around real time increments
+and physical units, and should I wish to go with a turn-based approach I could
+make ‘end turn’ run the simulation for a certain length of time. The sorts of
+decisions you need to make in the game should not take effect immediately
+anyway.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;points-of-interest&quot;&gt;Points of interest&lt;&#x2F;h2&gt;
+&lt;p&gt;In no particular order.&lt;&#x2F;p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Y_lYy0olepk?si=HoxmbyqvFO3qZXJt&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h3 id=&quot;terrain-generation&quot;&gt;Terrain generation&lt;&#x2F;h3&gt;
+&lt;p&gt;Approach is based on the excellent &lt;a href=&quot;https:&#x2F;&#x2F;www.redblobgames.com&#x2F;x&#x2F;2022-voronoi-maps-tutorial&#x2F;&quot;&gt;voronoi maps&lt;&#x2F;a&gt; page at Red Blob
+Games. I intend to revisit it at some point.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hydrology&quot;&gt;Hydrology&lt;&#x2F;h3&gt;
+&lt;p&gt;Rainfall is calculated per-tile and based on this rivers flow downhill. The
+biggest rivers get drawn.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;map-representation&quot;&gt;Map representation&lt;&#x2F;h3&gt;
+&lt;p&gt;The map topology is represented as a graph. Arbitrary topologies are supported:
+square tiles, hexagonal tiles, or polygonal tiles (as pictured.)  I&#x27;ll probably
+use the hexes for something one day, but for this project the voronoi polygons
+seem to give the most pleasing results.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;land-distribution&quot;&gt;Land distribution&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;.&#x2F;images&#x2F;screen4.png&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20230915-contingency&#x2F;.&#x2F;images&#x2F;screen4.png&quot; alt=&quot;land distribution&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Land on a tile is subdivided into categories and is measured in square
+kilometers. Certain kinds of feature can &#x27;use&#x27; land. Entities at a tile with the
+LandUse component consume land. Farms use land, and so do Forests. Tile drawing
+reflects the land use distribution.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;name-generation&quot;&gt;Name generation&lt;&#x2F;h3&gt;
+&lt;p&gt;Place, river and person names are generated using a simple Markov Chain word
+generator. The generator is fed a corpus of British place names (and river
+names, and person names) and spits out (for the most part) uncannily plausible
+sounding made-up names. To be honest it could be replaced with a simple list of
+names, but this is more fun.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;data-model&quot;&gt;Data model&lt;&#x2F;h3&gt;
+&lt;p&gt;Everything lives in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;genaray&#x2F;Arch&quot;&gt;Arch ECS&lt;&#x2F;a&gt;. It&#x27;s in early development but is very
+simple and fast, and the author is very helpful and friendly. Other such
+libraries were either not simple (Svelto) or not fast (Entitas.)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ui-library&quot;&gt;UI library&lt;&#x2F;h3&gt;
+&lt;p&gt;The UI is implemented using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ocornut&#x2F;imgui&quot;&gt;Dear ImGUI&lt;&#x2F;a&gt;, the Only Good UI library.&lt;&#x2F;p&gt;
+&lt;p&gt;One day when there is a playable game, I might replace this with a more
+&#x27;aesthetic&#x27; interface, but for now this is perfect as it&#x27;s easy to work with.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;social-simulation&quot;&gt;Social simulation&lt;&#x2F;h3&gt;
+&lt;p&gt;As well as the coarse-grained economic simulation, I have a fine-grained
+&#x27;sample&#x27; set of individual people. The idea is that eventually the economic
+simulation will cause things to happen to them.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;map-drawing&quot;&gt;Map drawing&lt;&#x2F;h3&gt;
+&lt;p&gt;Most work is done in the shader. The same simple mesh (which uses a vertex
+attribute to associate vertices with tile ids) can be drawn in various ways.&lt;&#x2F;p&gt;
+&lt;p&gt;MonoGame doesn&#x27;t support passing an arbitrary buffer as input to a shader, so I
+encode various tile data as textures and decode that in the fragment shader. It
+wouldn&#x27;t surprise me if this was less efficient than just generating a bigger
+mesh on the CPU, but it&#x27;s certainly fun. I haven&#x27;t tried to optimise the shader;
+the slow thing at the moment is actually calculating the land use to pass to the
+shader.&lt;&#x2F;p&gt;
+&lt;p&gt;Based on a per-tile land-use vector, the shader splits each tile into a number
+of subtiles proportional to the land-use breakdown specified by the vector.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F;&#x2F; @brief A shader that assigns colour based on terrain texture.
+&lt;&#x2F;span&gt;&lt;span&gt;float4 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;TileTerrainTextureWithLandUsePS&lt;&#x2F;span&gt;&lt;span&gt;(VertexShaderOutput &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span&gt;) : COLOR
+&lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; TileIndex = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt;(input.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;TileId&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; TileValue = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadBufferValue&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        TileValuesSampler, TileIndex, TileValuesWidth).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;r&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; TileElevation = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadBufferValue&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        TileElevationsSampler, TileIndex, TileValuesWidth).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;r&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; TileTerrainIndex = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadBufferValueAsInt&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        TileTerrainsSampler, TileIndex, TileValuesWidth);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Read land type proportions.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; proportionForest = 
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadLandUseValue&lt;&#x2F;span&gt;&lt;span&gt;(TileIndex, LAND_USE_FOREST);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; proportionHabitation = 
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadLandUseValue&lt;&#x2F;span&gt;&lt;span&gt;(TileIndex, LAND_USE_HABITATION);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; proportionFarm = 
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadLandUseValue&lt;&#x2F;span&gt;&lt;span&gt;(TileIndex, LAND_USE_FARM);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; proportionBare = 
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadLandUseValue&lt;&#x2F;span&gt;&lt;span&gt;(TileIndex, LAND_USE_BARE);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; proportionMountain = 
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ReadLandUseValue&lt;&#x2F;span&gt;&lt;span&gt;(TileIndex, LAND_USE_MOUNTAIN);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Calculate thresholds.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; maxForest = proportionForest;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; maxHabitation = maxForest + proportionHabitation;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; maxFarm = maxHabitation + proportionFarm;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; maxBare = maxFarm + proportionBare;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; maxMountain = maxBare + proportionMountain;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; UV should be roughly in interval 0..1. So map to subtile like
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; so
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; uSubdivs = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; uvX = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;frac&lt;&#x2F;span&gt;&lt;span&gt;(input.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;UV&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;) * &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt;(uSubdivs));
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; uvY = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;frac&lt;&#x2F;span&gt;&lt;span&gt;(input.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;UV&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;y&lt;&#x2F;span&gt;&lt;span&gt;) * &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt;(uSubdivs));
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; uvIndex = uvY * uSubdivs + uvX;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Now, based on the land distribution, assign a land use to the
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; subtile.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; textureIndex = TerrainTextures[TileTerrainIndex];
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; uvDistance = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt;(uvIndex) &#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt;(uSubdivs * uSubdivs);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(uvDistance &amp;lt; maxForest) {
+&lt;&#x2F;span&gt;&lt;span&gt;        textureIndex = LandUseTextures[LAND_USE_FOREST];
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if &lt;&#x2F;span&gt;&lt;span&gt;(uvDistance &amp;lt; maxHabitation) {
+&lt;&#x2F;span&gt;&lt;span&gt;        textureIndex = LandUseTextures[LAND_USE_HABITATION];
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if &lt;&#x2F;span&gt;&lt;span&gt;(uvDistance &amp;lt; maxFarm) {
+&lt;&#x2F;span&gt;&lt;span&gt;        textureIndex = LandUseTextures[LAND_USE_FARM];
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if &lt;&#x2F;span&gt;&lt;span&gt;(uvDistance &amp;lt; maxBare) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Use terrain.
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if &lt;&#x2F;span&gt;&lt;span&gt;(uvDistance &amp;lt; maxMountain) {
+&lt;&#x2F;span&gt;&lt;span&gt;        textureIndex = LandUseTextures[LAND_USE_MOUNTAIN];
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Now sample the appropriate terrain texture.
+&lt;&#x2F;span&gt;&lt;span&gt;    float2 xy = input.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WorldXY&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    float4 TileTerrainColour = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SampleTextureAtlas&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;        TerrainTextureAtlasSampler,
+&lt;&#x2F;span&gt;&lt;span&gt;        TerrainTextureAtlasWidth,
+&lt;&#x2F;span&gt;&lt;span&gt;        TerrainTextureAtlasTextureWidth,
+&lt;&#x2F;span&gt;&lt;span&gt;        textureIndex,
+&lt;&#x2F;span&gt;&lt;span&gt;        xy * TerrainTextureScale);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; elevationFactor = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.4&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    float3 baseColour = TileTerrainColour.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;xyz&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;float4&lt;&#x2F;span&gt;&lt;span&gt;(baseColour * (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span&gt;- elevationFactor) + 
+&lt;&#x2F;span&gt;&lt;span&gt;                      baseColour * TileElevation * elevationFactor, 
+&lt;&#x2F;span&gt;&lt;span&gt;                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;what-took-all-this-time&quot;&gt;What took all this time???&lt;&#x2F;h2&gt;
+&lt;p&gt;I started working on this some time in late 2021. Much of the early time was
+spent learning Unity whilst working on an initial prototype. Throughout 2022 I
+worked on this prototype off and on, whilst growing more frustrated with Unity
+-- why is serialization so hard? why is there no good user interface library?
+Why is it so hard to debug? The list of frustrations went on and on. As an
+attempt to alleviate the frustrations, I ended up writing a separate WPF
+frontend to the simulation (which I had deliberately structured to be ignoring
+of Unity) which was more pleasant to work with than Unity. But then I had the
+problem of maintaining two different clients, neither of which was ideal.&lt;&#x2F;p&gt;
+&lt;p&gt;By the end of 2022 I decided to bin Unity and use MonoGame -- more of a library
+than a game engine -- instead. The straw that broke the camel&#x27;s back was
+attempting to use the Unity profiler, which used all of the memory on my
+machine. In a sense it&#x27;s probably my own fault for attempting to use my 7 year
+old computer for development, but at the same time, man got to the moon with
+much less!&lt;&#x2F;p&gt;
+&lt;p&gt;Switching to MonoGame would allow me to combine the best of the Unity and WPF
+integrations into a single program and (eventually!) allow me to make progress
+faster. At the same time, I found that my simulation prototype needed some sort
+of structured data model. I had deliberately avoided Unity DOTS and GameObject
+as I did not want to couple my code to Unity (which is what made it relatively
+straightforward to &#x27;port&#x27; it to MonoGame) and had followed the philosophy of
+&#x27;just write some code&#x27;, which worked well up to a point but became unwieldly
+with the introduction of more different kinds of entity, and as I attempted to
+make changes to the code. So I experimented with various &#x27;entity component
+system&#x27; libraries and settled on the very pleasant Arch.&lt;&#x2F;p&gt;
+&lt;p&gt;Much of 2023 has been concerned with finishing the MonoGame port. Whilst it&#x27;s
+more pleasant to work with (for me, as a programmer) than Unity, there are
+various things you simply have to implement yourself which came &#x27;out of the box&#x27;
+with Unity, and that takes time. I&#x27;ve also been working on an adventure game,
+also using MonoGame, which I might post about at another point, and that took a
+few months of work.&lt;&#x2F;p&gt;
+&lt;p&gt;Finally, I got a bit bogged down thinking about how to represent land use, and
+users of land -- is a Farm an entity on a Tile, or is a component of a Tile?
+That kind of thing. I seem to have cracked that one recently though, so now
+(fingers crossed) it&#x27;s time to make a bit more progress.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;next-steps&quot;&gt;Next steps?&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make rivers look nicer (perhaps animate them)&lt;&#x2F;li&gt;
+&lt;li&gt;Make water look nicer (perhaps animate it)&lt;&#x2F;li&gt;
+&lt;li&gt;Functioning economy
+&lt;ul&gt;
+&lt;li&gt;At the moment people simply consume food. Goal for the prototype has always
+been to get various commodities circulating in some sort of equilibrium.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>MonoGame on Mac</title>
 		<published>2023-04-08T00:00:00+00:00</published>
