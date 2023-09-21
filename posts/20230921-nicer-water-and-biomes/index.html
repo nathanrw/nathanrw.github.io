@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <title>Nicer water and biomes</title>
+        
+        <meta name="title" content="Nicer water and biomes">
+        <meta name="author" content="nathanrw">
+        
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nathanrw.dev/posts/20230921-nicer-water-and-biomes/">
+        <meta property="og:site_name" content="nathanrw">
+        <meta property="og:title" content="Nicer water and biomes">
+        
+        
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://nathanrw.dev/posts/20230921-nicer-water-and-biomes/">
+        <meta property="twitter:title" content="Nicer water and biomes">
+        
+        
+        
+        <link rel="canonical" href="https://nathanrw.dev/posts/20230921-nicer-water-and-biomes/">
+        
+        <script type="application/ld+json">
+            {
+                
+                "url":"https://nathanrw.dev/posts/20230921-nicer-water-and-biomes/",
+                "@type":"WebSite",
+                "headline":"Nicer water and biomes",
+                "name":"Nicer water and biomes",
+                "author":{
+                    "@type":"Person",
+                    "name":"nathanrw"
+                },
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://nathanrw.dev/atom.xml">
+        
+        
+        
+<link rel="stylesheet" href="https://nathanrw.dev/style.css"/>
+<link rel="stylesheet" href="https://nathanrw.dev/extra.css"/>
+
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                
+<p><a href="..">..</a>/20230921-nicer-water-and-biomes</p>
+<p class="post-meta"><time datetime="2023-09-21">2023-09-21</time></p>
+<h1>Nicer water and biomes</h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+
+
+
+<p>I've played around a bit with how rivers and the sea are drawn, as well as with
+the assignment of biomes to tiles based on moisture and temperature. It's
+looking quite nice now.</p>
+<p>Rivers have flow direction. I pass this to the shader as vertex attribute. I
+then sample Perlin noise in the fragment shader offset along this direction to
+make the water appear to flow. I also darken the river towards the centre to
+give the illusion of deeper water. I find it looks very pleasing.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qcwl4bF31RE?si=ga_1U3t18lSkDjt1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h2 id="shader-tweaker">Shader Tweaker</h2>
+<p>You can also see the little shader parameter tweaker I made to help tune the
+ocean rendering. MonoGame exposes shader uniforms, so I can simply query what is
+there and if the types match something I know how to edit, I can display an edit
+field to tweak them. I have a simple scene graph where the geometry to be
+rendered with a shader lives under a node with a reference to that shader, so
+the tweaking fields are shown in the scene graph debug viewer.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6tLu0XMCdrc?si=F381518U5HPeXAya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </main>
+            <footer>
+                
+<p class="taxonomies">
+
+
+<a href="/tags/programming">#programming</a>
+
+<a href="/tags/gamedev">#gamedev</a>
+
+<a href="/tags/monogame">#monogame</a>
+
+<a href="/tags/contingency">#contingency</a>
+
+
+
+
+</p>
+
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        

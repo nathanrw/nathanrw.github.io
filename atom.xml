@@ -4,8 +4,31 @@
 	<link href="https://nathanrw.dev/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://nathanrw.dev"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2023-09-15T00:00:00+00:00</updated>
+	<updated>2023-09-21T00:00:00+00:00</updated>
 	<id>https://nathanrw.dev/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Nicer water and biomes</title>
+		<published>2023-09-21T00:00:00+00:00</published>
+		<updated>2023-09-21T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://nathanrw.dev/posts/20230921-nicer-water-and-biomes/" type="text/html"/>
+		<id>https://nathanrw.dev/posts/20230921-nicer-water-and-biomes/</id>
+		<content type="html">&lt;p&gt;I&#x27;ve played around a bit with how rivers and the sea are drawn, as well as with
+the assignment of biomes to tiles based on moisture and temperature. It&#x27;s
+looking quite nice now.&lt;&#x2F;p&gt;
+&lt;p&gt;Rivers have flow direction. I pass this to the shader as vertex attribute. I
+then sample Perlin noise in the fragment shader offset along this direction to
+make the water appear to flow. I also darken the river towards the centre to
+give the illusion of deeper water. I find it looks very pleasing.&lt;&#x2F;p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;qcwl4bF31RE?si=ga_1U3t18lSkDjt1&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h2 id=&quot;shader-tweaker&quot;&gt;Shader Tweaker&lt;&#x2F;h2&gt;
+&lt;p&gt;You can also see the little shader parameter tweaker I made to help tune the
+ocean rendering. MonoGame exposes shader uniforms, so I can simply query what is
+there and if the types match something I know how to edit, I can display an edit
+field to tweak them. I have a simple scene graph where the geometry to be
+rendered with a shader lives under a node with a reference to that shader, so
+the tweaking fields are shown in the scene graph debug viewer.&lt;&#x2F;p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;6tLu0XMCdrc?si=F381518U5HPeXAya&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Contingency</title>
 		<published>2023-09-15T00:00:00+00:00</published>
