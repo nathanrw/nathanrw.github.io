@@ -30,6 +30,39 @@ the tweaking fields are shown in the scene graph debug viewer.&lt;&#x2F;p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;6tLu0XMCdrc?si=F381518U5HPeXAya&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;</content>
 	</entry>
 	<entry xml:lang="en">
+		<title>Better hydrology</title>
+		<published>2023-09-21T00:00:00+00:00</published>
+		<updated>2023-09-21T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://nathanrw.dev/posts/20230924-better-hydrology/" type="text/html"/>
+		<id>https://nathanrw.dev/posts/20230924-better-hydrology/</id>
+		<content type="html">&lt;p&gt;Thinking about improvements to hydrology.&lt;&#x2F;p&gt;
+&lt;p&gt;Rainfall per-tile should be measured in mm.&lt;&#x2F;p&gt;
+&lt;p&gt;Multiply by area to get volume of water. Measure this in m&lt;sup&gt;3&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;This is river flow at that tile, unless tile is a water tile.&lt;&#x2F;p&gt;
+&lt;p&gt;How much moisture evaporates from an ocean tile? How much atmospheric moisture falls as rain?&lt;&#x2F;p&gt;
+&lt;p&gt;Quite hard to find data for this.&lt;&#x2F;p&gt;
+&lt;p&gt;A couple of approachs at redblob. One just uses distance from water to determine
+moisture. The other simulates the water cycle.&lt;&#x2F;p&gt;
+&lt;p&gt;Approach 1:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;simblob.blogspot.com&#x2F;2010&#x2F;09&#x2F;polygon-map-generation-part-2.html&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Approach 2:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;simblob.blogspot.com&#x2F;2018&#x2F;09&#x2F;mapgen4-rainfall.html&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;My approach was based on approach 2. But I don&#x27;t do any sorting, I traverse the
+board following the wind direction. I didn&#x27;t really follow the precipitation
+rules to the letter either. Simply making my approach line up more with the
+approach given there would probably improve my results a bit.&lt;&#x2F;p&gt;
+&lt;p&gt;To be honest though what I have right now looks OK. The main worry is about
+physical units, and about how i&#x27;m conflating rainfall and river flow in terms of
+moisture at a tile.&lt;&#x2F;p&gt;
+&lt;p&gt;In terms of physical units, I can probably stick with some variation of the
+current approach, but convert to physical units where appropriate.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
 		<title>Contingency</title>
 		<published>2023-09-15T00:00:00+00:00</published>
 		<updated>2023-09-15T00:00:00+00:00</updated>

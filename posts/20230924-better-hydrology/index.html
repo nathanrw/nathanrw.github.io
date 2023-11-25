@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <title>Better hydrology</title>
+        
+        <meta name="title" content="Better hydrology">
+        <meta name="author" content="nathanrw">
+        
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nathanrw.dev/posts/20230924-better-hydrology/">
+        <meta property="og:site_name" content="nathanrw">
+        <meta property="og:title" content="Better hydrology">
+        
+        
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://nathanrw.dev/posts/20230924-better-hydrology/">
+        <meta property="twitter:title" content="Better hydrology">
+        
+        
+        
+        <link rel="canonical" href="https://nathanrw.dev/posts/20230924-better-hydrology/">
+        
+        <script type="application/ld+json">
+            {
+                
+                "url":"https://nathanrw.dev/posts/20230924-better-hydrology/",
+                "@type":"WebSite",
+                "headline":"Better hydrology",
+                "name":"Better hydrology",
+                "author":{
+                    "@type":"Person",
+                    "name":"nathanrw"
+                },
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://nathanrw.dev/atom.xml">
+        
+        
+        
+<link rel="stylesheet" href="https://nathanrw.dev/style.css"/>
+<link rel="stylesheet" href="https://nathanrw.dev/extra.css"/>
+
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                
+<p><a href="..">..</a>/20230924-better-hydrology</p>
+<p class="post-meta"><time datetime="2023-09-21">2023-09-21</time></p>
+<h1>Better hydrology</h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+
+
+
+<p>Thinking about improvements to hydrology.</p>
+<p>Rainfall per-tile should be measured in mm.</p>
+<p>Multiply by area to get volume of water. Measure this in m<sup>3</sup>.</p>
+<p>This is river flow at that tile, unless tile is a water tile.</p>
+<p>How much moisture evaporates from an ocean tile? How much atmospheric moisture falls as rain?</p>
+<p>Quite hard to find data for this.</p>
+<p>A couple of approachs at redblob. One just uses distance from water to determine
+moisture. The other simulates the water cycle.</p>
+<p>Approach 1:</p>
+<ul>
+<li>https://simblob.blogspot.com/2010/09/polygon-map-generation-part-2.html</li>
+</ul>
+<p>Approach 2:</p>
+<ul>
+<li>https://simblob.blogspot.com/2018/09/mapgen4-rainfall.html</li>
+</ul>
+<p>My approach was based on approach 2. But I don't do any sorting, I traverse the
+board following the wind direction. I didn't really follow the precipitation
+rules to the letter either. Simply making my approach line up more with the
+approach given there would probably improve my results a bit.</p>
+<p>To be honest though what I have right now looks OK. The main worry is about
+physical units, and about how i'm conflating rainfall and river flow in terms of
+moisture at a tile.</p>
+<p>In terms of physical units, I can probably stick with some variation of the
+current approach, but convert to physical units where appropriate.</p>
+
+
+            </main>
+            <footer>
+                
+<p class="taxonomies">
+
+
+<a href="/tags/programming">#programming</a>
+
+<a href="/tags/gamedev">#gamedev</a>
+
+<a href="/tags/monogame">#monogame</a>
+
+<a href="/tags/contingency">#contingency</a>
+
+
+
+
+</p>
+
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        
