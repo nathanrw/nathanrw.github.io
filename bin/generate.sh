@@ -17,6 +17,7 @@ rm -f style.css
 rm -f extra.css
 rm -f morkborg.css
 rm -f poirot.css
+rm -f bloodeagle.css
 rm -rf images
 rm -rf morkborg
 rm -rf callofcthulhu
@@ -35,6 +36,7 @@ cp src/public/style.css .
 cp src/public/extra.css .
 cp src/public/morkborg.css .
 cp src/public/poirot.css .
+cp src/public/bloodeagle.css .
 cp src/public/atom.xml .
 cp -r src/public/images .
 cp -r src/public/morkborg .

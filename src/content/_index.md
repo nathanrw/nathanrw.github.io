@@ -34,6 +34,8 @@ a computer programmer in Birmingham, UK
 - [books](./tags/books)
   - fantasy, science fiction, horror
 - train travel
+- murder mysteries
+  - [the curse of the blood eagle](./posts/20231125-the-curse-of-the-blood-eagle/)
 
 ## about
 
@@ -45,6 +47,7 @@ a simple, fast, no-nonsense website
     - [PoiretOne][poiret-one]
     - [PirataOne][pirata-one]
     - [Creepster][creepster]
+    - [Merriweather][merriweather]
 
 ## contact
 
@@ -55,6 +58,7 @@ a simple, fast, no-nonsense website
 [poiret-one]: https://fonts.google.com/specimen/Poiret+One
 [pirata-one]: https://fonts.google.com/specimen/Pirata+One
 [creepster]: https://fonts.google.com/specimen/Creepster
+[merriweather]: https://fonts.google.com/specimen/Merriweather
 [hpmfp]: ./callofcthulhu/hpmfp
 [mbqs]: ./morkborg/mbqs
 [coc]: https://www.chaosium.com/call-of-cthulhu-rpg/
