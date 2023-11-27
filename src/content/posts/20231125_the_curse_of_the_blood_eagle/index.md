@@ -236,6 +236,8 @@ The dead people should equip themselves with masks and cloaks and run in to mena
 
 If the curse is broken, the real Halfdan Selby, possessed by the Blood Eagle, is found dead in the dining room next to the original body. He has two parallel wounds in his skull, as if impaled on two swords...
 
+<hr/>
+
 # Handouts and clues
 
 ## Guest Introduction Handout
@@ -921,6 +923,8 @@ The cause of death appears to be <i>bludgeoning to the back of the head.</i>
 
 </div>
 
+<hr/>
+
 # Errata
 
 Things that aren't quite right.
@@ -1016,3 +1020,32 @@ arithmetic.
 
 Some character sheets hint at clues that don't exist. I ran out of time to make
 them.
+
+## Clue formatting
+
+Clues are currently jpegs as this was quickest; clue text should be transcribed
+and formatted properly.
+
+<hr/>
+
+# Unused Ideas
+
+Some things I thought of doing, but did not have time for or couldn't quite
+figure out.
+
+- During the 'murder in the dark' section, whilst the murders are happening,
+  play a [suitably](https://youtu.be/Av1_AE--4Xw?feature=shared&t=58)
+  [ominous](https://youtu.be/19XuxziBaH4?feature=shared&t=158)
+  [snippet](https://www.youtube.com/watch?v=4KeuUyzEi1c) of
+  [music](https://youtu.be/PhXQEUEFAx0?feature=shared&t=87).
+- Use remote control lights for flashes of lightning
+- Use a short throw projector to establish atmosphere, project images of the
+  house, fireplace etc.
+- Use a portable record player as a 'gramophone' and pretend to play a recorded
+  message on it.
+- 'Sanity' or 'horror' system whereby certain clues become accessible to you
+  after you have sustained sufficient 'psychic damage'
+- Scatter speakers throughout the house with spooky sound effects. Use them for
+  a jump scare.
+- Have a room in complete darkness with unsettling sounds, a torch and battery
+  can be found somewhere.
