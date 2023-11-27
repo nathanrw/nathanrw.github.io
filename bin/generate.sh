@@ -19,8 +19,6 @@ rm -f morkborg.css
 rm -f poirot.css
 rm -f bloodeagle.css
 rm -rf images
-rm -rf morkborg
-rm -rf callofcthulhu
 rm -rf projects
 rm -rf fonts
 rm -rf posts
@@ -39,8 +37,6 @@ cp src/public/poirot.css .
 cp src/public/bloodeagle.css .
 cp src/public/atom.xml .
 cp -r src/public/images .
-cp -r src/public/morkborg .
-cp -r src/public/callofcthulhu .
 cp -r src/public/projects .
 cp -r src/public/fonts .
 cp -r src/public/posts .

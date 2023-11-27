@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>nathanrw - morkborg</title>
+	<link href="https://nathanrw.dev/tags/morkborg/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nathanrw.dev"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-01-19T00:00:00+00:00</updated>
+	<id>https://nathanrw.dev/tags/morkborg/atom.xml</id>
+	<entry xml:lang="en">
+		<title>MÖRK BORG Quick Start</title>
+		<published>2023-01-19T00:00:00+00:00</published>
+		<updated>2023-01-19T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://nathanrw.dev/posts/20230119-mbqs/" type="text/html"/>
+		<id>https://nathanrw.dev/posts/20230119-mbqs/</id>
+		<content type="html">&lt;p&gt;This is a simple introductory scenario I made for &lt;a href=&quot;https:&#x2F;&#x2F;morkborg.com&#x2F;&quot;&gt;MÖRK BORG&lt;&#x2F;a&gt; based on
+output from the fabulous &lt;a href=&quot;https:&#x2F;&#x2F;dngngen.makedatanotlore.dev&#x2F;&quot;&gt;dngngen&lt;&#x2F;a&gt; in order to learn the ropes.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20230119-mbqs&#x2F;dngn.png&quot; alt=&quot;Dngngen output&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    Prerequisites
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Character sheets&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Rules reference&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Set of dice: d20, d10, 2d6, d4&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Pencils&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Paper&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;-1&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    The world
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The world is ending as prophesied by the two-headed basilisks.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20230119-mbqs&#x2F;world.png&quot; alt=&quot;World map&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-2&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    The end of the world
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The world will end after seven miseries have befallen it. Roll 2d6 to determine the first misery.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-3&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    You
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Create a character. Either pick a premade one, or &lt;a href=&quot;https:&#x2F;&#x2F;scvmbirther.makedatanotlore.dev&#x2F;&quot;&gt;roll a new one.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-4&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    Where are you?
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;After several days travel into the mountains of the Kergus wastes, you approach
+the ice-blue wall of a glacier, its frozen ramparts bearing down from the gloomy
+sky. A thunderclap rolls along the valley and a sheet of ice calves off,
+crashing down into the shallow meltwater below. As the ice settles, silence
+returns. Ahead, protruding from the water like a shipwreck at low tide, at the
+foot of the glacier, you see a plinth of cyclopean masonry emerging from the
+ice.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20230119-mbqs&#x2F;kergus.png&quot; alt=&quot;Kergus&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kergüs is a desolate icy expanse&lt;&#x2F;li&gt;
+&lt;li&gt;To the north is the obsidian citadel Alliáns, wherein resides the
+Blood-Countess Anthelia&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;-5&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    Why are you here?
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You heard a rumour?&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whilst travelling, you happen upon an old man with one eye, one
+ear, one arm, one finger, one leg and one toe. He tells you
+that on the advent of the first misery, a sealed vault in the
+icy wastes of Kergus was opened...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;You were hired?&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Immediately following the first misery, you are summoned from
+the dungeons beneath the obsidian citadel of Allians. The
+steward of the Blood Countess offers you freedom. In exchange,
+you will plumb the depths of an ancient vault which has opened
+inside a glacier...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;You had a dream?&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the night of the first misery, your sleep is disturbed by
+terrible visions. Walls of flesh and bone beneath the ice,
+monstrous and limbless birds that spread terrible plagues. You
+find yourself compelled to walk into the mountains...&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;You read about it?&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whilst studying in the archives of the obsidian citadel, you
+happen across mention of an ancient vault beneath a glacier.
+You head off in search of riches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;-6&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    The entrance
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A massive stonework plinth emerges from the shallow lake of meltwater at
+the foot of the glacier. You know this marks the entrance. Ice
+occasionally falls from the glacier and hits the plinth below. Water
+runs off it in streams.&lt;&#x2F;p&gt;
+&lt;p&gt;Getting to the top of the plinth will require climbing up from the
+bottom - or down from atop the glacier.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-7&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    The Inquisitors
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Atop the plinth is a camp. On PRESENCE DR10 you notice smoke from
+the campfire.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The camp belongs to D3+1 &lt;span class=&quot;gothic&quot;&gt;
+    Inquisitors.
+&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&quot;gothic&quot;&gt;
+    Inquisitors
+&lt;&#x2F;span&gt; seek out and punish heresy against
+the church of the Two-Headed Basilisks.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;span class=&quot;gothic&quot;&gt;
+    Inquisitors
+&lt;&#x2F;span&gt; wear masks and robes, and under
+their robes is armour.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Stats and weapon as Berserker but without the Special.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The camp contains equipment and items&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;D4 random items&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;An oil lamp&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Several torches&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Flint and tinder&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;span class=&quot;gothic&quot;&gt;
+    Inquisitors
+&lt;&#x2F;span&gt; claim to be guarding the site from
+heretics. Heretics such as &lt;strong&gt;YOU!&lt;&#x2F;strong&gt;. To the side of the camp lie the bodies
+of previously encountered heretics. They have been staked to the ground,
+their chests split open, and their lungs removed.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If approached, the &lt;span class=&quot;gothic&quot;&gt;
+    Inquisitors
+&lt;&#x2F;span&gt; will be hostile
+and attempt to kill you.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It might be possible (very difficult) to convince them
+otherwise.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The Inquisitors are really after the treasure.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;During the day, they will be attempting to get into the vault.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;-8&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    The Gateway
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;At the centre of the plinth is a massive stone gateway. The gateway is sealed by
+&lt;span class=&quot;gothic&quot;&gt;
+    an overgrowth of pulsating flesh and teeth,
+&lt;&#x2F;span&gt; but the &lt;span class=&quot;gothic&quot;&gt;
+    Inquisitors
+&lt;&#x2F;span&gt; have been at it with tools. Perhaps there is a
+knack to it? Or maybe brute strength will get you through.&lt;&#x2F;p&gt;
+&lt;p&gt;Once you open the gate, more ice breaks off the glacier and the plinth cracks.
+You feel the earth tremble beneath you and you are thrown to the ground. (Test
+AGILITY to avoid damage.) When you regain your feet, the ground beneath you has
+dropped several feet and is noticeably sloping. Water streams down the stairs,
+mixing with the gore from the fleshburg. This place won&#x27;t last long!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-9&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    The Dungeon
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;-10&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    0. Collapse
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Every 6 times you move between rooms, roll d6. On a 1, the earth shakes.
+The dungeon sinks deeper into the earth. Cracks appear in the walls and
+the torrent of water from above grows stronger. The 3rd time this
+happens, the entrance collapses and you are sealed inside.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-11&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    1. Staircase
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;You enter the maw. A stream of meltwater, viscera and black bile flows
+into darkness and the walls are pulsating fleshy matter studded with
+nubs of bone; eventually stone steps become solid granite hewn from the
+bedrock as you descend.&lt;&#x2F;p&gt;
+&lt;p&gt;The staircase is regular; the water does not pool unless obstructed by
+fleshy outgrowths. Your way is occasionally impeded by smaller
+fleshburgs and mucous membranes which can be overcome by brute force. As
+you do so, the walls pulsate furiously. Risk of tripping on the slick,
+uneven floor. There is no source of light other than that which you
+bring.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-12&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    2. The Upper Shaft
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;You emerge into a larger space. This is a shaft about 20m in diameter --
+your light source might not reach all the way to the other side. The
+torrent flowing down the staircase sluices out over the edge of a
+walkway that curves to the left along the wall of the shaft, and which
+descends in as another staircase, all cut into the rock.&lt;&#x2F;p&gt;
+&lt;p&gt;If you inspect the walls, you see that there are oil lamps embedded in
+sconces in the wall. You could light them if you wish. This is true of
+all the subsequent rooms; larger rooms have braziers.&lt;&#x2F;p&gt;
+&lt;p&gt;The walls of the shaft are thick with the fleshy growths. At the bottom
+of the staircase, a long way down, is a circular sphincter that leads to
+the digestion chamber. The floor slopes down into the centre of the
+room. Water coming down from above flows down into the sphincter.&lt;&#x2F;p&gt;
+&lt;p&gt;If you fall from above, you fall down into the digestion chamber.&lt;&#x2F;p&gt;
+&lt;p&gt;At the bottom of the shaft, there is a locked door which leads to a long
+staircase.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-13&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    3. The Bone Chapel
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The approach to this room is dark. Upon entering it, however, rows of
+upside-down candles burst into flame, illuminating a shadowy nave and
+vaulted ceilings in the distance above. There are pews to either side of
+the nave, made of polished bone. At the end of the nave is an altar,
+upon which lie 3 horse skulls.&lt;&#x2F;p&gt;
+&lt;p&gt;As you approach the horse skulls they glow with a sickly green light.
+You hear the galloping and screaming of three ghostly stallions. The
+skulls float into the air and approach you. They speak to you, offering
+assistance in exchange for a portion of your soul. If you accept, roll
+d6 on the table for the souls merchant. They vanish, and a silver key
+appears on the altar. If you refuse, they vanish, and the bone pews
+reassemble themselves into d6 skeletal warriors! If you beat them, a
+silver key appears on the altar.&lt;&#x2F;p&gt;
+&lt;p&gt;The silver key unlocks the door at the bottom of the Upper Shaft.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-14&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    4. The Armoury
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;This room seems to have escaped the worst of the creeping flesh growth.
+A vial of life elixir sits on a pedestal in the middle of the room.
+Racks of rusty weapons and armour line the walls. At the far side of the
+room is a chest containing d6 items.&lt;&#x2F;p&gt;
+&lt;p&gt;In here is one of the plaguebearing snakebirds. It is roosting on the
+ceiling. You can spot it with a PRESENCE check DR12. If you approach the
+pedestal, it flies down to attack you.&lt;&#x2F;p&gt;
+&lt;p&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;NAME&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;PLAGUERIDDEN SNAKEBIRD&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ARMOUR&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;FEATHERY HIDE D2&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;HP&lt;&#x2F;th&gt;
+            &lt;td&gt;8&lt;&#x2F;td&gt;
+            &lt;th&gt;MORALE&lt;&#x2F;th&gt;
+            &lt;td&gt;8&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;DAMAGE&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;PUTRID FANGS D4*&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;4&quot;&gt;&lt;pre&gt;* On receiving damage roll d10. On a 1, become INFECTED. Your 
+  skin is covered in weeping sores; take d2 damage per day.&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+    &lt;&#x2F;table&gt;
+&lt;&#x2F;p&gt;&lt;h3 id=&quot;-15&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    5. The Digestion Chamber
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;An organic sac which hangs in a larger stone chamber. The sac is filled
+with acid and half-digested flesh. It can be cut.&lt;&#x2F;p&gt;
+&lt;p&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;NAME&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;DIGESTION CHAMBER&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ARMOUR&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;-&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;HP&lt;&#x2F;th&gt;
+            &lt;td&gt;24&lt;&#x2F;td&gt;
+            &lt;th&gt;MORALE&lt;&#x2F;th&gt;
+            &lt;td&gt;-&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;DAMAGE&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;STOMACH ACID D4*&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;4&quot;&gt;&lt;pre&gt;* You cannot dodge stomach acid. This only affects you if 
+  you are inside the stomach.
++ The digestion chamber takes 6x damage from inside.&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+    &lt;&#x2F;table&gt;
+&lt;&#x2F;p&gt;&lt;h3 id=&quot;-16&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    6. The Torture Vault
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Hundreds of dormant snakebirds roost on the ceiling. If you attack the
+digestion chamber, d4 snakebirds wake up and attack you.&lt;&#x2F;p&gt;
+&lt;p&gt;The floor of the room is lined with skulls and bones. Skulls are piled
+against the wall, which are lined with disturbing paintings and
+instruments of torture. Some of these could be usable weapons. Presence
+is lowered by 1.&lt;&#x2F;p&gt;
+&lt;p&gt;A hole in the middle of this room leads to a sump where the blood of the
+sacrifices was pooled. This is depicted in the paintings on the walls,
+which show people being dismembered, disembowelled, exsanguinated etc,
+in this room.Work is performed by the slaves of the snakebirds, in their
+honour. The slaves eventually either share the same fate, or are
+depicted covered in sores and pustules and are thrown into the sump.&lt;&#x2F;p&gt;
+&lt;p&gt;Where there is furniture, it is typically made from polished bone. This
+includes the picture frames.&lt;&#x2F;p&gt;
+&lt;p&gt;The digestion chamber is in the centre of the room -- you may or may not
+have slashed your way out. Great cords flesh and veins spiral round it
+and lead up to the shaft.&lt;&#x2F;p&gt;
+&lt;p&gt;The digestion chamber blocks the stairs leading down to the lower shaft.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-17&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    6.1 Return to the Torture Vault
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;If you enter the Torture Vault after the Fleshgod has been killed, you
+hear a roaring from below. A tide of gore erupts into the Vault. D3+1
+fleshy tendrils sprout from the walls and floor. The gore vortex scours
+the room, and you are thrown to the ground; snakebirds are torn from the
+ceiling and eviscerated in mid-air. The rusted instruments of torture
+around the room are swept up in the vortex, and a great armoured serpent
+of flesh and bone is formed in the middle of the room. The Fleshgod is
+back!&lt;&#x2F;p&gt;
+&lt;p&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;NAME&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;FLESHGOD (FINAL FORM)&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ARMOUR&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;RUSTED SHELL D4&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;HP&lt;&#x2F;th&gt;
+            &lt;td&gt;30&lt;&#x2F;td&gt;
+            &lt;th&gt;MORALE&lt;&#x2F;th&gt;
+            &lt;td&gt;-&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;DAMAGE&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;DEVOUR D2*, STOMACH ACID D4**
+&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;4&quot;&gt;&lt;pre&gt;* If the fleshgod hits you, test AGILITY DR14. If 
+  you fail, you are DEVOURED and end up in its stomach
+** You cannot dodge stomach acid. This only affects 
+   you if you are inside the stomach.
+
+You can cut your way out of his stomach (STRENGTH DR10). 
+This does 4x damage and his armour is negated.&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+    &lt;&#x2F;table&gt;
+&lt;&#x2F;p&gt;&lt;p&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;NAME&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;FLESH TENDRIL&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ARMOUR&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;-&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;HP&lt;&#x2F;th&gt;
+            &lt;td&gt;4&lt;&#x2F;td&gt;
+            &lt;th&gt;MORALE&lt;&#x2F;th&gt;
+            &lt;td&gt;-&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;DAMAGE&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;BASH D4*&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;4&quot;&gt;&lt;pre&gt;-&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+    &lt;&#x2F;table&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;When the fleshgod is finally killed, the earth shakes some more. This
+place is collapsing! You need to run back to the surface. As you ascend,
+rooms collapse behind you, and the flow of water from above intensifies.
+It&#x27;s difficult to make progress. It&#x27;s possible you will need to swim to
+the surface.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-18&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    7. The Sump
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;A drain from the torture vault leads to the sump, a subeterranean lake
+where the bodies and fluids of the snakebirds victims ended up. The
+great mass of flesh has achieved sentience and has been growing up
+through the dungeon trying to escape.&lt;&#x2F;p&gt;
+&lt;p&gt;The lower shaft leading down to the sump is really a drain. It has a
+ladder which leads most of the way down, but at the end you will need to
+drop. There is water at the bottom.&lt;&#x2F;p&gt;
+&lt;p&gt;When you land in the sump the water immediately starts to bubble around
+you. The piles of bones and gore and fleshy extrusions around you
+combine into the many-armed FLESHGOD, his giant snake-form bristling
+with skeletal arms and his face a grinning skull.&lt;&#x2F;p&gt;
+&lt;p&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;NAME&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;FLESHGOD (FIRST FORM)&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ARMOUR&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;RUSTED SHELL D4&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;HP&lt;&#x2F;th&gt;
+            &lt;td&gt;30&lt;&#x2F;td&gt;
+            &lt;th&gt;MORALE&lt;&#x2F;th&gt;
+            &lt;td&gt;-&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;DAMAGE&lt;&#x2F;th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;MANY ARMS D4-1*&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;4&quot;&gt;&lt;pre&gt;* The flesh god pummels you with its many arms; it 
+  makes 3 attacks per round.
++ If the cables connecting the fleshgod have been 
+  severed, the fleshgod’s health is 15.&lt;&#x2F;pre&gt;&lt;&#x2F;td&gt;
+        &lt;&#x2F;tr&gt;
+    &lt;&#x2F;table&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;When the fleshgod is killed, the earth shakes and a passageway opens
+leading up to the treasure room.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;-19&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    8. The Treasure Room
+&lt;&#x2F;span&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;D4+1 chests. 1 chest is cursed. 1 chest contains an item from the
+tenebrous reliquary. The rest contain random loot.&lt;&#x2F;p&gt;
+&lt;p&gt;Stairs from the treasure room lead back up to the torture vault.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-20&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    Appendix
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20230119-mbqs&#x2F;dungeon.png&quot; alt=&quot;Dungeon map&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-21&quot;&gt;&lt;span class=&quot;gothic&quot;&gt;
+    Rules
+&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1372heBerUrMiDONWURthu7kyVClOEdTv&#x2F;view?usp=sharing&quot;&gt;reference&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

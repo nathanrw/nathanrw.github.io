@@ -4,27 +4,21 @@
         <loc>https://nathanrw.dev/</loc>
     </url>
     <url>
-        <loc>https://nathanrw.dev/callofcthulhu/</loc>
-    </url>
-    <url>
-        <loc>https://nathanrw.dev/callofcthulhu/hpmfp/</loc>
-        <lastmod>2021-12-23</lastmod>
-    </url>
-    <url>
         <loc>https://nathanrw.dev/categories/</loc>
     </url>
     <url>
         <loc>https://nathanrw.dev/contexts/</loc>
     </url>
     <url>
-        <loc>https://nathanrw.dev/morkborg/</loc>
-    </url>
-    <url>
-        <loc>https://nathanrw.dev/morkborg/mbqs/</loc>
-        <lastmod>2023-01-19</lastmod>
-    </url>
-    <url>
         <loc>https://nathanrw.dev/posts/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/posts/20211223-hpmfp/</loc>
+        <lastmod>2021-12-23</lastmod>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/posts/20230119-mbqs/</loc>
+        <lastmod>2023-01-19</lastmod>
     </url>
     <url>
         <loc>https://nathanrw.dev/posts/20230407-monogame-on-mac/</loc>
@@ -84,6 +78,9 @@
         <loc>https://nathanrw.dev/tags/books/</loc>
     </url>
     <url>
+        <loc>https://nathanrw.dev/tags/callofcthulhu/</loc>
+    </url>
+    <url>
         <loc>https://nathanrw.dev/tags/contingency/</loc>
     </url>
     <url>
@@ -93,12 +90,24 @@
         <loc>https://nathanrw.dev/tags/gamedev/</loc>
     </url>
     <url>
+        <loc>https://nathanrw.dev/tags/horror/</loc>
+    </url>
+    <url>
         <loc>https://nathanrw.dev/tags/mac/</loc>
     </url>
     <url>
         <loc>https://nathanrw.dev/tags/monogame/</loc>
     </url>
     <url>
+        <loc>https://nathanrw.dev/tags/morkborg/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/tags/murdermystery/</loc>
+    </url>
+    <url>
         <loc>https://nathanrw.dev/tags/programming/</loc>
+    </url>
+    <url>
+        <loc>https://nathanrw.dev/tags/rpgs/</loc>
     </url>
 </urlset>

@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>nathanrw - murdermystery</title>
+	<link href="https://nathanrw.dev/tags/murdermystery/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nathanrw.dev"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-11-25T00:00:00+00:00</updated>
+	<id>https://nathanrw.dev/tags/murdermystery/atom.xml</id>
+	<entry xml:lang="en">
+		<title>The Curse of the Blood Eagle</title>
+		<published>2023-11-25T00:00:00+00:00</published>
+		<updated>2023-11-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://nathanrw.dev/posts/20231125-the-curse-of-the-blood-eagle/" type="text/html"/>
+		<id>https://nathanrw.dev/posts/20231125-the-curse-of-the-blood-eagle/</id>
+		<content type="html">&lt;div class=&quot;title&quot;&gt;
+    &lt;h1&gt;
+    &lt;img src=&quot;.&#x2F;images&#x2F;coin.png&quot; alt=&quot;Image of a coin with a face on it.&quot; width=&quot;400pt&quot;&gt;&lt;&#x2F;img&gt;
+    &lt;span class=&quot;pre-title&quot;&gt;The Curse of the&lt;span&gt; &lt;br&gt;
+    &lt;span class=&quot;main-title&quot;&gt;BLOOD EAGLE&lt;&#x2F;span&gt;
+    &lt;&#x2F;h1&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;contents&quot;&gt;Contents&lt;&#x2F;h1&gt;
+&lt;div class=&quot;columns&quot;&gt;
+&lt;!-- toc --&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;October, 1919. Almost a year has passed since the ending of the Great War, but
+its scars are still raw. You have received a mysterious summons to the
+Yorkshire estate of Count Halfdan Selby, a reclusive and eccentric armaments
+manufacturer famed for his delusions of grandeur and obsession with his
+dubiously-established norse heritage.&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;p&gt;Selby made the news just before the war, when a fabulous treasure trove of
+viking gold, thought to have been buried with a commander of the Great Heathen
+Army of 865, was discovered on his land by THE ARCHAEOLOGIST, who had been
+hired by the Count to inspect a barrow. Soon after its discovery, the gold
+disappeared and was never found. The initial suspicion of all involved, that
+it had been stolen by THE ARCHAEOLOGIST herself, was never proven.&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;p&gt;For your own reasons, on the dark and stormy night of the 20th of October
+1919, you arrive at the gates of Selby Manor; in your pocket is the single
+gold coin you acquired all those years ago…&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;i&gt;The Curse of the Blood Eagle&lt;&#x2F;i&gt; is a murder mystery party game for around
+20 people. It revolves around a treasure hunt wherein the guests search for
+clues and solve the mystery.&lt;&#x2F;p&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;Note:&lt;&#x2F;strong&gt; This has been played &lt;em&gt;once&lt;&#x2F;em&gt; with some ad hoc modifications. Please
+see the &lt;a href=&quot;https:&#x2F;&#x2F;nathanrw.dev&#x2F;posts&#x2F;20231125-the-curse-of-the-blood-eagle&#x2F;#errata&quot;&gt;&#x27;errata&#x27;&lt;&#x2F;a&gt; section.&lt;&#x2F;p&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;the-story&quot;&gt;The Story&lt;&#x2F;h1&gt;
+&lt;p&gt;Selby Manor, now an extensively-renovated National Trust property with a nice garden and tearoom, had stood empty for much of the 20th century after the terrible happenings of 1919…&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-great-heathen-army-of-865&quot;&gt;The Great Heathen Army of 865&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In the year 865, the Scandinavian King Ragnar Lodbrok was killed by Ælla, the King of Northumbria, who cast him into a pit of serpents. The slow worms, not being venomous, were in more danger from him than he was from them; nevertheless, he was killed by the fall.&lt;&#x2F;li&gt;
+&lt;li&gt;Vowing revenge, his three sons Halfdan Ragnarsson, Ivar the Boneless and Ubba mounted an invasion of England. They landed at Thanet and were bribed with gold by the people of Kent in exchange for peace. For more than a decade, they marched up and down the British Isles, looting and pillaging. The conquered territories became established as what was known as the Danelaw in 878.&lt;&#x2F;li&gt;
+&lt;li&gt;The size of the Great Heathen Army, as it was known, has been the subject of debate. Despite the name, historians estimate based on the capacity of a Viking ship, that it could have consisted of no more than 1000 men. Yes these men were able to rampage up and down the country.&lt;&#x2F;li&gt;
+&lt;li&gt;Some less reputable sources refer to an object known as the Ring of Multiplicity.. Supposedly this artefact was referenced obliquely in the Anglo-Saxon Chronicle, and gave its owner mystical powers, including the ability to transform base metals into gold, to prolong his life unnaturally, to be in many places at once or even to make phantasmatic copies of living people.&lt;&#x2F;li&gt;
+&lt;li&gt;This is indeed what happened. The three brothers set sail in three ships, with no more than 100 men in total. Halfdan, bearer of the ring, used it to create hundreds of copies of each of them, resulting in an army of 10,000 phantoms. In their terrifying white masks, they raided the monasteries of England.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-blood-eagle-and-the-selby-barrow&quot;&gt;The &lt;span class=&quot;gothic&quot;&gt;BLOOD EAGLE&lt;&#x2F;span&gt; and the Selby Barrow&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubba secretly coveted the Ring. One day, he set off with his brothers into the woods near what would become Selby Manor. There, his trusted men waited in ambush, ready to slay his brothers so that he could take it for himself. Yet Ivar and Halfdan were able, through their own cunning or through the power of the Ring, to overcome their attackers. Ubba was captured and his men were slain. Ivar, however, was mortally wounded. For the slaying of Ivar, Ubba was dealt the ultimate punishment. He was taken to the woods, and staked to the ground, where Halfdan implored the gods to curse him forever. &lt;i&gt;Legends tell of the &lt;b&gt;BLOOD EAGLE&lt;&#x2F;b&gt; which burst from his chest and flew away.&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Halfdan raised a barrow in which the remains of his brothers were interred. As weregild for the murder, all the wealth of Ubba’s household was confiscated; this hoard of coins was buried with Ivar. Along with the coins, Halfdan left the Ring – he blamed it for corrupting the heart of his brother. Ubba was interred at the opposite end of the barrow, impaled on a pair of swords.&lt;&#x2F;li&gt;
+&lt;li&gt;The gold is coveted by the angry spirit of Ubba, imprisoned in the form of the BLOOD EAGLE. All who touch it are cursed. The swords impaling Ubba keep his angry spirit in check. But if they are removed, he will come for all who touch his gold.&lt;&#x2F;li&gt;
+&lt;li&gt;The brothers Ivar and Ubba were said to have died much later. This is because they were copied using the Ring. Phantoms created by the Ring are under the control of the ringbearer that created them.
+Eventually Halfdan Ragnarsson and all of the phantoms had died in battle, and the Ring of Multiplicity passed out of history… Until now!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;halfdan-selby&quot;&gt;Halfdan Selby&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Halfdan Selby is an eccentric industrialist who inherited the family textile mill in Bradford, using this fortune to branch out into armaments manufacture. This proved lucrative during the Boer War, and he used the proceeds to purchase Selby Manor, an estate he believed to have previously belonged to his ancestors.&lt;&#x2F;li&gt;
+&lt;li&gt;He is obsessed with his family heritage, believing himself to be descended from a line of Jarls of the Danelaw. He pulled some strings with friends in high places aiming to get himself made an Earl; he had to settle with being a Viscount instead – he goes by Count hoping that nobody will notice.&lt;&#x2F;li&gt;
+&lt;li&gt;His real reason for wanting the Selby Estate is because he has stumbled on esoteric accounts of the Ring of Multiplicity. He believes that if it can be found, he can study it and use it for military purposes. (He also believes it to be rightfully his.) The last location where it was hinted to be was here…&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-incident-of-1913&quot;&gt;The Incident of 1913&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Selby immediately began searching his lands, discreetly, for Viking burial sites. It was not until several years later, however, that he stumbled upon the entrance to the Selby Barrow. It did not take much poking about to find the Ring. Halfdan pocketed this, along with a gold coin and some interesting swords for good measure, and then contacted the ARCHAEOLOGIST about the barrow.&lt;&#x2F;li&gt;
+&lt;li&gt;The ring proved difficult to master. Selby, of course, immediately put it on, only for it to do nothing. It was just an ordinary gold band.&lt;&#x2F;li&gt;
+&lt;li&gt;It was not until he brought it into contact with the coin he had taken that he started to notice some effect. He was able to make a single phantom copy of himself which lasted for a few minutes. The coin was transmuted into lead. Immediately the night air was pierced by a shriek, and he heard a buffeting sound as if from the wings of some giant bird. Whenever he turned, in the corner of his vision was the image of the BLOOD EAGLE. He knew he had to recover the coins.&lt;&#x2F;li&gt;
+&lt;li&gt;He stole the Selby Hoard and sequestered it in the Manor, dropping hints to implicate the ARCHAEOLOGIST. The angry spirit seemed to have been placated. For now…&lt;&#x2F;li&gt;
+&lt;li&gt;Tentative experiments with ordinary non-cursed gold have allowed Selby to unlock some of the ring’s powers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;selby-manor-during-the-great-war&quot;&gt;Selby Manor During the Great War&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Part of Selby Manor was taken over by the Government during the War and used as a hospital.&lt;&#x2F;li&gt;
+&lt;li&gt;Many people who were stationed there have bloodcurdling stories to tell of the place, though skeptics are inclined to disbelieve them.&lt;&#x2F;li&gt;
+&lt;li&gt;As the years passed, and the Great War only grew the coffers of Selby’s armaments factory, he began to see the BLOOD EAGLE more and more frequently. He knew that some coins were still missing, and that he would have to recover them…&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-mysterious-summons-of-1919&quot;&gt;The Mysterious Summons of 1919&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Through whatever means, natural or supernatural, Selby has tracked down all of the bearers of cursed coins, and has issued them with an invitation to his manor. An invitation they can’t refuse…&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;span class=&quot;gothic&quot;&gt;BLOOD EAGLE&lt;&#x2F;span&gt;, the accursed spirit of Ubba, wants to recover all of the coins so that it can free itself and exact revenge on the world.
+&lt;ul&gt;
+&lt;li&gt;It can only be contained by returning the viking swords to Ubba’s remains.&lt;&#x2F;li&gt;
+&lt;li&gt;It cannot fully manifest itself in the world without recovering all of the coins, but it can influence people and cause them to experience strange things. It is controlling Halfdan Selby.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;sequence&quot;&gt;Sequence&lt;&#x2F;h1&gt;
+&lt;p&gt;The scenario proceeds as follows.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;introduction-1&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;Instruct the guests to assemble in the dining room at 20:00.&lt;&#x2F;p&gt;
+&lt;p&gt;The guests assemble in the dining room at the appointed time. Halfdan Selby is DEAD.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You see before you the body of Halfdan Selby, the man who invited you all here
+and whom you know only from his image in the newspapers; any previous dealings
+you might have had with him having been undertaken by his servants. He is
+slumped at a seat at the table in the grand dining hall, a room as baroque
+with gothic ornament as the shadowy entrance hall from which you just emerged;
+the walls, adorned with tapestries and armaments, loom upwards into darkness.
+Your surroundings are dimly lit by inadequate electric lamplight and from the
+glow of a fire in the great hearth; the occasional flash of lightning from the
+storm outside fills the room through enormous stained-glass windows that are
+hammered by raindrops and which rattle with the blowing gale.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;b&gt;Sound: storm&lt;&#x2F;b&gt;&lt;br&#x2F;&gt;
+&lt;b&gt;Sound: fireplace&lt;&#x2F;b&gt;&lt;&#x2F;p&gt;
+&lt;hr&#x2F;&gt;
+&lt;h2 id=&quot;treasure-hunt&quot;&gt;Treasure Hunt&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Out of the corner of your eye, in the shadows, you each occasionally glimpse the
+face of Selby. Are you imagining it? Or does his spirit yet linger here?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Read out the rules:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aim of the game is to search the house for clues&lt;&#x2F;li&gt;
+&lt;li&gt;If you see a padlock on something, that thing is &lt;strong&gt;LOCKED&lt;&#x2F;strong&gt;. You &lt;b&gt;&lt;i&gt;must not open or move it.&lt;&#x2F;i&gt;&lt;&#x2F;b&gt; Guess where the codes are…&lt;&#x2F;li&gt;
+&lt;li&gt;Notes represent &lt;strong&gt;ITEMS.&lt;&#x2F;strong&gt; Mostly these are texts, but if you couldn’t logically pick something up then don’t!&lt;&#x2F;li&gt;
+&lt;li&gt;You &lt;strong&gt;MIGHT&lt;&#x2F;strong&gt; be in possession of valuable information already.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Next to the body is a CLUE. Someone can READ IT OUT to the group.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;b&gt;Clue: The Body of Halfdan Selby&lt;&#x2F;b&gt;&lt;br&#x2F;&gt;
+&lt;b&gt;Clue: The Bloody Note&lt;&#x2F;b&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You are locked inside. You have no choice but to search the house and talk to your fellow guests for clues as to your predicament.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;prep&quot;&gt;Prep&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hide clues throughout house&lt;&#x2F;li&gt;
+&lt;li&gt;Four locks
+&lt;ul&gt;
+&lt;li&gt;Locked room A&lt;&#x2F;li&gt;
+&lt;li&gt;Locked room B&lt;&#x2F;li&gt;
+&lt;li&gt;Sword 1&lt;&#x2F;li&gt;
+&lt;li&gt;Sword 2&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Locked room A
+&lt;ul&gt;
+&lt;li&gt;Sword 1, locked&lt;&#x2F;li&gt;
+&lt;li&gt;Sword 2, locked&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Locked room B
+&lt;ul&gt;
+&lt;li&gt;Ubba’s remains&lt;&#x2F;li&gt;
+&lt;li&gt;The hoard&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Main room
+&lt;ul&gt;
+&lt;li&gt;Laptop&lt;&#x2F;li&gt;
+&lt;li&gt;Speaker&lt;&#x2F;li&gt;
+&lt;li&gt;Lights&lt;&#x2F;li&gt;
+&lt;li&gt;Suitcase with extra props&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Guests
+&lt;ul&gt;
+&lt;li&gt;Coin to each guest&lt;&#x2F;li&gt;
+&lt;li&gt;Provide bird to GAMEKEEPER&lt;&#x2F;li&gt;
+&lt;li&gt;Pens &#x2F; paper&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;puzzles&quot;&gt;Puzzles&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;lock-1&quot;&gt;Lock 1&lt;&#x2F;h4&gt;
+&lt;p&gt;Door to the sword room. 2334, note on a scrap of paper.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;lock-2&quot;&gt;Lock 2&lt;&#x2F;h4&gt;
+&lt;p&gt;Door to the hoard. This will be the hardest puzzle.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code is in an encrypted message.&lt;&#x2F;li&gt;
+&lt;li&gt;Secret key given by crossword puzzle.&lt;&#x2F;li&gt;
+&lt;li&gt;9234&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;lock-3&quot;&gt;Lock 3&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sword, 1143, BLOD note&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;lock-4&quot;&gt;Lock 4&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sword, 3458, as letters ROT13 encoded.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr&#x2F;&gt;
+&lt;h2 id=&quot;event-murder-in-the-dark&quot;&gt;Event: Murder in the Dark&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;b&gt;Trigger: The guests open either the door to Ubba’s remains, or to one of the swords.&lt;&#x2F;b&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;When it seems around the halfway point has been reached, sound the gong to summon the guests back to the dining room.&lt;&#x2F;p&gt;
+&lt;p&gt;Explain what is about to happen&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;You must stand facing the wall with a blindfold on (or go somewhere in the house, TBD)&lt;&#x2F;li&gt;
+&lt;li&gt;The lights will go out&lt;&#x2F;li&gt;
+&lt;li&gt;If the killer taps you on the shoulder, wait for the signal, which will be a sound&lt;&#x2F;li&gt;
+&lt;li&gt;At this point, make the most bloodcurdling scream you can! You are dead!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As you enter the dining room, all lights in the house go out. (Turn off the
+lights.) You find yourselves in complete darkness… One among you senses their
+moment!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Tap a couple of people on the shoulder.&lt;&#x2F;li&gt;
+&lt;li&gt;Return to the laptop, and play the sound.&lt;&#x2F;li&gt;
+&lt;li&gt;Dead people die.&lt;&#x2F;li&gt;
+&lt;li&gt;Turn the lights back on.&lt;&#x2F;li&gt;
+&lt;li&gt;Place markers and clues for dead people.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Someone should read the clues.&lt;&#x2F;p&gt;
+&lt;p&gt;Dead people accompany me to another room. I will go there and brief them shortly.&lt;&#x2F;p&gt;
+&lt;p&gt;The others can continue their search.&lt;&#x2F;p&gt;
+&lt;hr&#x2F;&gt;
+&lt;h2 id=&quot;event-the-menacing-phantoms&quot;&gt;Event: The Menacing Phantoms&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;b&gt;Trigger: The guests open the door to Ubba’s remains (if they have unlocked a sword) or they unlock a sword (if they have unlocked Ubba’s remains).&lt;&#x2F;b&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The killing should have taken place at around the halfway point or after, when it won’t be long until the end of the mystery.&lt;&#x2F;p&gt;
+&lt;p&gt;The dead people should equip themselves with masks and cloaks and run in to menace the other guests!&lt;&#x2F;p&gt;
+&lt;hr&#x2F;&gt;
+&lt;h2 id=&quot;event-end&quot;&gt;Event: End&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;To contain the angry spirit of the blood eagle, the remains of Ubba must again be impaled upon the swords. This is what Halfdan Selby has been trying to do, when he has been able to resist the influence of the blood eagle.&lt;&#x2F;li&gt;
+&lt;li&gt;To release the angry spirit of the blood eagle, all of the coins must be placed near Ubba’s remains. This is what the blood eagle wants, and what it has been trying to force Halfdan Selby to do&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If the curse is broken, the real Halfdan Selby, possessed by the Blood Eagle, is found dead in the dining room next to the original body. He has two parallel wounds in his skull, as if impaled on two swords...&lt;&#x2F;p&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;handouts-and-clues&quot;&gt;Handouts and clues&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;guest-introduction-handout&quot;&gt;Guest Introduction Handout&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;October, 1919. Almost a year has passed since the ending of the Great War, but
+its scars are still raw. You have received a mysterious summons to the
+Yorkshire estate of Count Halfdan Selby, a reclusive and eccentric armaments
+manufacturer famed for his delusions of grandeur and obsession with his
+dubiously-established norse heritage.&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;p&gt;Selby made the news just before the war, when a fabulous treasure trove of
+viking gold, thought to have been buried with a commander of the Great Heathen
+Army of 865, was discovered on his land by THE ARCHAEOLOGIST, who had been
+hired by the Count to inspect a barrow. Soon after its discovery, the gold
+disappeared and was never found. The initial suspicion of all involved, that
+it had been stolen by THE ARCHAEOLOGIST herself, was never proven.&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;p&gt;For your own reasons, on the dark and stormy night of the 20th of October
+1919, you arrive at the gates of Selby Manor; in your pocket is the single
+gold coin you acquired all those years ago…&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr&#x2F;&gt;
+&lt;h2 id=&quot;clues&quot;&gt;Clues&lt;&#x2F;h2&gt;
+&lt;p&gt;Each clue should be placed in an envelope and hidden. Some clues are more
+important than others; special care should be taken arround puzzle dependencies.&lt;&#x2F;p&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;h3 id=&quot;the-body&quot;&gt;The Body&lt;&#x2F;h3&gt;
+&lt;p&gt;Selby is dead. Most definitely dead. This is the deadest you’ve ever seen anyone or anything – even those of you who were in the trenches. &lt;&#x2F;p&gt;
+&lt;p&gt;When you realise that &lt;b&gt;the body has been nailed to the table, and that the lungs have been removed by sawing through the ribcage,&lt;&#x2F;b&gt; you are surprised that there is so little blood…&lt;&#x2F;p&gt;
+&lt;p&gt;There is nobody else in the house. Is there? &lt;b&gt;Which one of you did this?&lt;&#x2F;b&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;h3 id=&quot;the-body-of&quot;&gt;The Body of _______&lt;&#x2F;h3&gt;
+&lt;p&gt;Your fellow guest is dead. &lt;i&gt;Could you be next?&lt;&#x2F;i&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The cause of death appears to be &lt;i&gt;bludgeoning to the back of the head.&lt;&#x2F;i&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;2334.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;alnum.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;alphabet.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;armoury.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;barrow_location.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;blod.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;brewer.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;bugle.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;burial.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;capacity.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;coin.png&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;crossword.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;crossword_answers.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;dig_site_diagram.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;hoard.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;inventory.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;jutland.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;last_puzzle.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;lead.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;lindisfarne.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;lookalike.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;manor_photo.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;mask.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;nurse.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;progress.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;qrsv.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;quarelled.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;remains.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;rot13.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;scientist.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;table1.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;table2.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;table3.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;table_note.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;telegraaf.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;telegraph_and_argus.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;thanet.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;the_blood_eagle.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;traitor.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;vengeance.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;clue&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;images&#x2F;weregild.jpg&quot;&gt;&lt;&#x2F;img&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;characters&quot;&gt;Characters&lt;&#x2F;h1&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-archaeologist&quot;&gt;The Archaeologist&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;An archaeologist specialising in Anglo-Saxon burial practices&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;Hired by Halfdan Selby to investigate the Selby Hoard&lt;&#x2F;b&gt;, discovered on his land just before the war&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;Accused&lt;&#x2F;b&gt; of stealing the hoard when &lt;b&gt;it went missing&lt;&#x2F;b&gt;. There was not enough evidence to convict you.
+&lt;ul&gt;
+&lt;li&gt;You in fact made off with a single coin.&lt;&#x2F;li&gt;
+&lt;li&gt;The CONSTABLE has his eye on you.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;You are are a &lt;strong&gt;kleptomaniac&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Find the rest of the Selby Hoard and clear your name. &lt;em&gt;It belongs in a museum!&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Steal at least 5 objects from other people and keep them hidden&lt;&#x2F;li&gt;
+&lt;li&gt;Avoid the attention of the CONSTABLE&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-scientist&quot;&gt;The Scientist&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-1&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;A research chemist working in the experimental lab of the Selby Armaments co, which was shut down at the beginning of the war in favour of more practical pursuits&lt;&#x2F;li&gt;
+&lt;li&gt;Secretly pursuing your own alchemical experiments in search of the &lt;b&gt;philosophers stone&lt;&#x2F;b&gt;, which will allow you to turn lead into gold and live forever&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;You believe the Selby Hoard to have been created using the philosopher’s stone&lt;&#x2F;b&gt;, that Selby is in possession of it, and that this is why he closed your lab.&lt;&#x2F;li&gt;
+&lt;li&gt;When your lab was shut down, and before the Selby Hoard vanished, you made off with a single coin as a sample&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-1&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Find Selby’s magical artefact&lt;&#x2F;li&gt;
+&lt;li&gt;Mix a magical elixir from five different ingredients and have someone drink it&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-engineer&quot;&gt;The Engineer&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-2&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Mr. REDACTED Warner Esq.&lt;&#x2F;li&gt;
+&lt;li&gt;An engineer and autocar racer&lt;&#x2F;li&gt;
+&lt;li&gt;Famous for managing to come last in a race where every other car was rendered inoperable by a &lt;b&gt;freak seagull attack&lt;&#x2F;b&gt;, but you have not been seen racing in years…&lt;&#x2F;li&gt;
+&lt;li&gt;During a visit to the Selby estate following a professional visit to the Armaments Factory, Halfdan Selby showed you his prized Selby Hoard.&lt;&#x2F;li&gt;
+&lt;li&gt;In an uncharacteristic episode of larceny, &lt;b&gt;you pocketed a single coin&lt;&#x2F;b&gt;, which you have been &lt;i&gt;unable to put down ever since&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Since taking up the coin, you began to notice that &lt;i&gt;strange things had started to happen to your motor racing opponents…&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-2&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Find out the truth about the cursed coin!&lt;&#x2F;li&gt;
+&lt;li&gt;Engage every other guest in conversation about motor cars&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-mathematician&quot;&gt;The Mathematician&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-3&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;A mathematical prodigy from an early age, you are an assistant lecturer at the University of Birmingham&lt;&#x2F;li&gt;
+&lt;li&gt;Over the course of the war, you became known for your increasingly &lt;b&gt;eccentric theories about the structure of the universe resembling that of a giant crossword puzzle.&lt;&#x2F;b&gt; You now refuse conventional mathematical notation entirely, and your lectures exclusively assume the crossword format.&lt;&#x2F;li&gt;
+&lt;li&gt;Before the war, you gave an after-dinner lecture on mathematics to an exclusive group, which was attended by Count Halfdan Selby. Selby presented an array of gold coins from a barrow discovered on his land. &lt;b&gt;That night, you found a single gold coin in your purse. It has been there ever since.&lt;&#x2F;b&gt; It is your precious.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-3&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Solve at least one crossword puzzle, and explain at length to the other guests how this validates your theories&lt;&#x2F;li&gt;
+&lt;li&gt;Discreetly return the coin – but can you let it go?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-aristrocrat&quot;&gt;The Aristrocrat&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-4&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Dirkjan van Sprinkle&lt;&#x2F;li&gt;
+&lt;li&gt;A disgraced aristocrat from the Netherlands, you entered Britain disguised as a Belgian refugee after gambling away your entire fortune and fleeing your creditors.&lt;&#x2F;li&gt;
+&lt;li&gt;Years before your descent into bankruptcy, whilst on a shooting tour of Britain’s moors, &lt;b&gt;you attended a public fête held at Selby Manor in celebration of the discovery of the Hoard.&lt;&#x2F;b&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Afterwards, &lt;b&gt;you won a mysterious gold coin in a game of cards&lt;&#x2F;b&gt; with the stablehands. &lt;i&gt;Since that victory, your luck has run dry…&lt;&#x2F;i&gt; but you can’t bring yourself to part with it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-4&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtain more of the gold coins for yourself so that you can pay off your creditors and return home&lt;&#x2F;li&gt;
+&lt;li&gt;Either win or lose something by engaging in gambling&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-soldier&quot;&gt;The Soldier&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-5&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Sgt. &#x27;Pepper&#x27; Collins&lt;&#x2F;li&gt;
+&lt;li&gt;A decorated war veteran. At the Somme, when your battalion was out of ammunition, you stole all of the ground black pepper from the officer’s mess and chucked it into the German barracks during a surprise attack, making them all sneeze and thus incapacitating them, giving you chance to escape.&lt;&#x2F;li&gt;
+&lt;li&gt;Upon attempting to do this again, you were immediately shot by an incredulous German and spent the rest of the war recuperating at Selby Manor, part of which had been repurposed as a hospital.&lt;&#x2F;li&gt;
+&lt;li&gt;On your last day in hospital, you left your bed to explore. In an attic room, you came across a photograph of an old coin. As you peered at the image, eventually you blinked – and the coin was gone! &lt;i&gt;Only later did you feel the weight in your pocket…&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-5&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Always carry a pepper grinder on your person, and place it in front of you when seated&lt;&#x2F;li&gt;
+&lt;li&gt;Do not allow yourself to be photographed, lest you be trapped within…&lt;&#x2F;li&gt;
+&lt;li&gt;Return the coin to the photograph from whence it came&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-heiress&quot;&gt;The Heiress&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-6&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;You are the Viscountess Halesmount.&lt;&#x2F;li&gt;
+&lt;li&gt;Your wealthy parents died in a tragic accident when their canal boat collided with a bridge at 2mph and subsequently exploded, like in the movies. Your childhood interest in explosives and absence at the scene were not deemed to be suspicious at the time.&lt;&#x2F;li&gt;
+&lt;li&gt;Your inheritance has left you independently wealthy. You used your society connections to secure a tour of the Selby Armaments Factory firing range, &lt;i&gt;where you happened across a curious gold coin in a bomb crater.&lt;&#x2F;i&gt; You have kept it with you ever since.&lt;&#x2F;li&gt;
+&lt;li&gt;Since that time, &lt;b&gt;electrical appliances have behaved strangely around you.&lt;&#x2F;b&gt; You are now careful to have your servants turn the lights on and off for you, in case of incidents.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-6&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You must not operate any electrical device, whether this be a light switch or the kettle. You mustn’t explain why.&lt;&#x2F;li&gt;
+&lt;li&gt;Find out why you have become cursed&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-ornithologist&quot;&gt;The Ornithologist&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-7&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;An esteemed ornithologist, a renowned authority on birds&lt;&#x2F;li&gt;
+&lt;li&gt;Your London townhouse is bursting at the seams with your collection of taxidermied birds. You aim to collect one of every bird. &lt;&#x2F;li&gt;
+&lt;li&gt;Having collected nearly every mundane bird known to man, your attention has turned to the esoteric. You were struck by a paper published by the ARCHEOLOGIST after the discovery of the Selby Hoard on the subject of certain pictograms found in the Selby Barrow, depicting all sorts of fantastical birds.&lt;&#x2F;li&gt;
+&lt;li&gt;Some time after this, the hoard vanished. Nevertheless, you surreptitiously arranged to visit the barrow when Count Selby was away on business. Whilst the pictograms of the barrow were indeed fantastical, there was nothing to link them to anything you could have shot and stuffed. &lt;b&gt;But as you left the barrow, you were menaced by a murder of crows.&lt;&#x2F;b&gt; Staggering back under the onslaught, you tripped and fell back inside the barrow. Your questing fingers closed around something cold and metallic. Instantly, the angry birds departed. You put the gold coin into your pocket.&lt;&#x2F;li&gt;
+&lt;li&gt;One face of the coin &lt;b&gt;depicts the ‘blood eagle’ ritual method of execution,&lt;&#x2F;b&gt; otherwise appearing only twice in Norse literature. &lt;b&gt;You have become more and more convinced, in the years since, that, rather than an unspeakable torture, these examples actually refer to a rare type of bird&lt;&#x2F;b&gt; with an unusual habit of predation on human beings. You occasionally sneak back to the barrow to try to find it…&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-7&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The GAMEKEEPER’s bird is an interesting specimen and would look very handsome in your collection of stuffed birds&lt;&#x2F;li&gt;
+&lt;li&gt;Find evidence of the BLOOD EAGLE&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-gamekeeper&quot;&gt;The Gamekeeper&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-8&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;You are the gamekeeper on the Selby estate. You never saw much of the man himself, but you know the 300 acres like the back of your hand.&lt;&#x2F;li&gt;
+&lt;li&gt;Whilst secretly poaching game on the Selby estate four years ago, you stumbled across a gold coin in the mud. You picked it up, and kept it for yourself.&lt;&#x2F;li&gt;
+&lt;li&gt;Since this time, game animals have been nowhere to be found as you walked the woods of the estate. They have developed an uncanny ability to avoid you. The exception to this is your pet bird, SPECKLED JIM, who came to your window one day and who seems fascinated by the coin.&lt;&#x2F;li&gt;
+&lt;li&gt;SPECKLED JIM tells you that the coin is yours and you should protect it. You trust SPECKLED JIM. But the others won’t understand if you tell them about his words.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-8&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You will be given a BIRD. Protect it with your life.&lt;&#x2F;li&gt;
+&lt;li&gt;Beware the ORNITHOLOGIST. Protect your bird from her.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-commodore&quot;&gt;The Commodore&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-9&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Cdre. REDACTED Robinson&lt;&#x2F;li&gt;
+&lt;li&gt;You, Commodore Robinson, served in the Great War as part of Britain’s Grand Fleet, participating in the Battle of Jutland in the North Sea aboard HMS Agincourt. The ship sustained no damage and was recently put into reserve, but you affect a limp and talk about ‘the old war wound’ nonetheless – you find it easier to explain than the real reason for your early retirement…&lt;&#x2F;li&gt;
+&lt;li&gt;A keen rambler, whilst on holiday in 1913 visiting relatives in Yorkshire, &lt;b&gt;you stumbled upon the Selby Hoard before its official discovery.&lt;&#x2F;b&gt; You felt it best that the find should remain where it belonged, in the ground, but you could not resist the urge to take a &lt;i&gt;single coin&lt;&#x2F;i&gt; for yourself…&lt;&#x2F;li&gt;
+&lt;li&gt;Departing Scapa Flow on 30th May 1916, gripping your lucky coin, you were seized by an ill feeling that intensified as you headed into the North Sea. On the afternoon of the 31st of May, the ship became embroiled in a &lt;b&gt;thick bank of fog.&lt;&#x2F;b&gt; On deck, at the edges of your vision, you caught glimpses of figures rowing wooden boats back towards England – yet when you looked directly, there was nothing there. Just as they appeared to be gone, &lt;i&gt;you turned around and came face to face with an apparition who attempted to seize your coin!&lt;&#x2F;i&gt; Falling backwards to the deck, you let out a scream, only to emerge from the fog into the guns of the High Seas Fleet…&lt;&#x2F;li&gt;
+&lt;li&gt;Since that time, &lt;b&gt;you have avoided water-based travel in all its forms,&lt;&#x2F;b&gt; which has somewhat hampered your naval career&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-9&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Affect a limp the entire time. Do not allow your leg to be inspected, as there is nothing really wrong with it.&lt;&#x2F;li&gt;
+&lt;li&gt;You must avoid conversations about swimming&lt;&#x2F;li&gt;
+&lt;li&gt;Find out why the coin has so afflicted you&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-paleographer&quot;&gt;The Paleographer&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-10&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Ms. REDACTED Rosetta&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;A self-taught linguistic expert of extraordinary talent,&lt;&#x2F;b&gt; you made a name for yourself as part of Lord Carnarvon’s excavations in Deir el-Bahri, successfully translating a number of hieroglyphic passages which had perplexed your peers.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;When the Selby Barrow was discovered, you were part of the investigation&lt;&#x2F;b&gt; along with the ARCHAEOLOGIST. You became fascinated with a curious inscription with which each of the coins in the hoard had seemingly been defaced – letters in a script resembling Old Norse, but which made no sense. You secretly kept a coin for yourself, to study.&lt;&#x2F;li&gt;
+&lt;li&gt;In the years since, &lt;b&gt;you have made no progress in translating the letters,&lt;&#x2F;b&gt; which appear never to be the same on re-inspection. You have become convinced that this is evidence of the &lt;i&gt;profane nature of the act of writing itself&lt;&#x2F;i&gt; – and you now refuse to put pen to paper, publishing work only via dictation.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-10&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You may not engage in the act of writing&lt;&#x2F;li&gt;
+&lt;li&gt;Discover the true nature of the cursed script&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-botanist&quot;&gt;The Botanist&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-11&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;A talented amateur botanist and all-round nature lover,&lt;&#x2F;b&gt; you, Lady Moffatt, first gained &lt;b&gt;notoriety&lt;&#x2F;b&gt; when you &lt;b&gt;launched a prison break to free Robert, an American Black Bear&lt;&#x2F;b&gt; being held in captivity in the bearpit of the Sheffield Botanical Gardens. Rumour has it that Robert is now living peacefully in the extensive parkland of your Sheffield estate, Wentworth Woodhouse.&lt;&#x2F;li&gt;
+&lt;li&gt;Having heard rumours of a rare species of plant that grows only on an overgrown barrow somewhere on the Selby estate, you mounted a stealthy expedition in the summer of 1913. Securing an invitation to the Manor, you absconded to the grounds after dinner, walking deep into the woods. You &lt;i&gt;did not&lt;&#x2F;i&gt; find the Selby Barrow, but, close to turning back in frustration, you did catch the &lt;i&gt;glint of gold&lt;&#x2F;i&gt; near the base of a tree. &lt;b&gt;You pocketed the coin.&lt;&#x2F;b&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Since this day, you have noticed that the plants of the world have become quite talkative; you don’t know how you could have missed it before. You are sure that those special plants at the barrow would have something remarkable to say…&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-11&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The GAMEKEEPER’s bird SPECKLED JIM yearns for freedom! Liberate him!&lt;&#x2F;li&gt;
+&lt;li&gt;Learn more about the plants of the estate&lt;&#x2F;li&gt;
+&lt;li&gt;Whenever you meet a plant, &lt;i&gt;you must talk to it&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-constable&quot;&gt;The Constable&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-12&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;You, the local policeman, joined the war effort in 1914. In 1917 &lt;b&gt;you took a shrapnel wound to the head, and pieces of metal remain lodged to this day in your brain&lt;&#x2F;b&gt; – the doctors advised you that any sudden movements or even a profound psychological shock could result in a &lt;i&gt;‘cataclysmic neurological event’.&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;You ran the original investigation into the disappearance of the Selby Hoard. &lt;i&gt;You suspected the ARCHAEOLOGIST the entire time,&lt;&#x2F;i&gt; but never found enough evidence to make a conviction stick. At the time, you &lt;b&gt;impounded the single remaining coin as evidence.&lt;&#x2F;b&gt; Somehow, you neglected to return it, and kept it in your pocket after clearing out the evidence room one day.&lt;&#x2F;li&gt;
+&lt;li&gt;The coin accompanied you to the trenches. On the day you were wounded, the bullet deflected from the coin in your breast pocket and hit you square in the head. Ever since, when the coin and your &lt;b&gt;government-issued cranium&lt;&#x2F;b&gt; come close together, they begin to vibrate in unison. You think this gives you valuable insights.&lt;&#x2F;li&gt;
+&lt;li&gt;You are sure there should be more evidence at Selby Manor, and you are &lt;i&gt;buzzing&lt;&#x2F;i&gt; to find it with your newfound powers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-12&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Gather enough evidence to convict the ARCHAEOLOGIST &lt;i&gt;(you know it was her what done it, see.)&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Make a note of any criminality that you observe&lt;&#x2F;li&gt;
+&lt;li&gt;When stuck, try holding your coin to your head and going ‘bzzzzzz’&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-clairvoyant&quot;&gt;The Clairvoyant&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-13&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Mystic Maggie&lt;&#x2F;li&gt;
+&lt;li&gt;The greatest clairvoyant of her age, she regurgitates ectoplasm in particularly challenging séances. With the help of her spirit guide, Patricia, Maggie has comforted many a grieving war widow and mother in the wake of the Great War. &lt;&#x2F;li&gt;
+&lt;li&gt;You were in your fortune teller’s tent at a public fete on the grounds of Selby Manor when a mysterious stranger entered. You recall nothing of their appearance; the one thing you do remember is that they paid you for a palm reading with a &lt;i&gt;large gold coin,&lt;&#x2F;i&gt; which you have kept to this day.&lt;&#x2F;li&gt;
+&lt;li&gt;When you hold the coin, you feel a greater connection to the spirit world. Sometimes you can almost see Patricia at the edge of your vision. &lt;i&gt;But are the living starting to fade away, or is your mind merely playing tricks on you?&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-13&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Give tarot card readings to 3 other guests&lt;&#x2F;li&gt;
+&lt;li&gt;Speak to Patricia in the manner of Derek Acorah talking to Sam&lt;&#x2F;li&gt;
+&lt;li&gt;Find out more about the mysterious coin&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-photographer&quot;&gt;The Photographer&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-14&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;You worked for the family portraiture business, CEFW Portraiture Parlour, before volunteering as an auxiliary nurse in 1914. Armed with your trusty Vest Pocket Kodak, you saw action in Salonika, treating men injured whilst fighting the Bulgarian Army on the Macedonian front in the battles of Horseshoe Hill, and at Doiran in 1917, documenting the experience on camera.&lt;&#x2F;li&gt;
+&lt;li&gt;Before the war, you visited a public fete on the grounds of Selby Manor. On display is a glass case containing samples of gold coins from the newly discovered Selby Hoard. You snapped a picture of one of them. In the darkroom a few days later, on your lunch break, you developed your personal photographs from the trip. &lt;b&gt;The coin had vanished from the image.&lt;&#x2F;b&gt; &lt;i&gt;It was not until later that you found it had turned up in your pocket…&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-14&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The SOLDIER has an interesting face. Take a photograph of the SOLDIER.&lt;&#x2F;li&gt;
+&lt;li&gt;Learn more about the mysterious coins&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr&#x2F;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-brewer&quot;&gt;The Brewer&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-15&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: REDACTED&lt;&#x2F;li&gt;
+&lt;li&gt;You led a quiet life tending to your allotment, in the hopes of cultivating the perfect hop for beer brewing. But after a mishap with an overly-energetic still you were never quite the same, and your crop-splicing drew the attention of the Authorities. When War broke out, you were spirited away to a covert government establishment somewhere in West Yorkshire, where &lt;i&gt;strange experiments were underway in a bid to win the War by whatever means necessary…&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;You are haunted by the memories of your unholy creations, brought to life by you and the other boffins at &lt;b&gt;PROJECT T.R.I.F.F.I.D.&lt;&#x2F;b&gt; When the sight of these nightmare creatures became too much, you burned the greenhouses to the ground, resulting in your being sent to convalesce at the nearby military hospital at Selby Manor. But even at the manor, you weren’t safe from the vegetable menace; you set about razing the greenhouses there too. In the ashes, you noticed a single gold coin, which you managed to keep hold of even after being thrown out of the hospital.&lt;&#x2F;li&gt;
+&lt;li&gt;Since taking up the coin, your nightmares of hostile plantlife have only worsened. You have become convinced that the TRIFFID command centre is somewhere on the manor grounds.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-15&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Have 6 other guests try your homebrew&lt;&#x2F;li&gt;
+&lt;li&gt;Be alert for people talking to plants – those plants could be TRIFFIDS.&lt;&#x2F;li&gt;
+&lt;li&gt;Find out what is going on at the manor&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-nurse&quot;&gt;The Nurse&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-16&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NAME: Nurse Beaudouin&lt;&#x2F;li&gt;
+&lt;li&gt;You, Nurse Beaudouin, served as a volunteer nurse at Selby Manor military hospital during the war.&lt;&#x2F;li&gt;
+&lt;li&gt;When you arrived, the other nurses warned you to stay out of the dark and dusty corridors at night. Yet the house seemed perfectly ordinary; the most unnatural occurrence being the snoring of Nurse Beatrice…&lt;&#x2F;li&gt;
+&lt;li&gt;One night, you and your colleagues stayed up late drinking &lt;b&gt;absinthe&lt;&#x2F;b&gt; smuggled in from France by one of the wounded soldiers in your care. Nurse Beatrice, ever the butt of the joke, was dared to venture into the abandoned wine cellars of the manor alone and bring back a bottle. When she did not return, concerned, you went after her. &lt;b&gt;The unspeakable horror you witnessed in the cellar left an indelible mark on your psyche.&lt;&#x2F;b&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;You have no recollection of subsequent events yourself,&lt;&#x2F;b&gt; but you are told by the other nurses that &lt;i&gt;you ran screaming from the cellar and raised the alarm.&lt;&#x2F;i&gt; Yet when you returned to the cellar with the police, &lt;i&gt;it was as if nothing had happened.&lt;&#x2F;i&gt; &lt;b&gt;Nurse Beatrice was never seen again,&lt;&#x2F;b&gt; and was assumed to have absconded. What you saw was put down to the influence of the ‘green fairy’ – &lt;i&gt;there is no way that so much blood could have left no trace…&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Later, you found in your pocket a &lt;i&gt;bloodstained gold coin.&lt;&#x2F;i&gt; You have never told anyone of this. &lt;i&gt;When you hold it to your ear it whispers faintly of ‘the blood eagle…’&lt;&#x2F;i&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-16&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bandage the Commodore’s leg&lt;&#x2F;li&gt;
+&lt;li&gt;Find out what really happened to Nurse Beatrice&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;div class=&quot;character&quot;&gt;
+&lt;h2 id=&quot;the-art-historian&quot;&gt;The Art Historian&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;who-you-are-17&quot;&gt;Who you are&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You are an Art Historian who specialises in paintings&lt;&#x2F;li&gt;
+&lt;li&gt;You came to the manor to establish the provenance of &lt;&#x2F;li&gt;
+&lt;li&gt;Found out it was a forgery&lt;&#x2F;li&gt;
+&lt;li&gt;Paid off with a gold coin. But who knows how to cash in a gold coin. Kept in desk drawer in office.&lt;&#x2F;li&gt;
+&lt;li&gt;Over the years since, you have suffered from memory loss. The one thing that is always clear is the moment you picked up the coin.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;goals-17&quot;&gt;Goals&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Give at least 5 business cards out to people so that they remember you&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;errata&quot;&gt;Errata&lt;&#x2F;h1&gt;
+&lt;p&gt;Things that aren&#x27;t quite right.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;characters-1&quot;&gt;Characters&lt;&#x2F;h2&gt;
+&lt;p&gt;Characters and clues have been anonymised, so things might look or sound a bit weird.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;source-images&quot;&gt;Source images&lt;&#x2F;h2&gt;
+&lt;p&gt;I need to go through and check I can actually use various source images, and
+change things where not.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;crossword&quot;&gt;Crossword&lt;&#x2F;h2&gt;
+&lt;p&gt;The crossword ended up in a scrambled order. The correct order is (now)
+annotated on the clue.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cipher-puzzle&quot;&gt;Cipher Puzzle&lt;&#x2F;h2&gt;
+&lt;p&gt;The final cipher puzzle proved to be possible, but too intricate for the party
+setting. It should be simplified to reduce the number of arithmetic operations
+you need to get right.&lt;&#x2F;p&gt;
+&lt;p&gt;The source code of the script I used to implement it is here:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Python &quot;&gt;&lt;code class=&quot;language-Python&quot; data-lang=&quot;Python&quot;&gt;&lt;span&gt;letters = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;chr&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;ord&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;a&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;) + i) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;26&lt;&#x2F;span&gt;&lt;span&gt;)]
+&lt;&#x2F;span&gt;&lt;span&gt;numbers = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;chr&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;ord&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;) + i) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;)]
+&lt;&#x2F;span&gt;&lt;span&gt;punctuation = [&amp;quot; &amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;]
+&lt;&#x2F;span&gt;&lt;span&gt;characters = letters + numbers + punctuation
+&lt;&#x2F;span&gt;&lt;span&gt;mapping = {c:i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i, c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;enumerate&lt;&#x2F;span&gt;&lt;span&gt;(characters)}
+&lt;&#x2F;span&gt;&lt;span&gt;nchar = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;(characters)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;l2n&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;l&lt;&#x2F;span&gt;&lt;span&gt;): &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;mapping[l]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;n2l&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;): &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;characters[n]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;offset&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;secret&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;l2n&lt;&#x2F;span&gt;&lt;span&gt;(secret[i % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;(secret)]) % (nchar - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span&gt;)) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;rot&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;text&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;secret&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    chars = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n2l&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;l2n&lt;&#x2F;span&gt;&lt;span&gt;(c) + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;offset&lt;&#x2F;span&gt;&lt;span&gt;(secret, i)) % nchar) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i, c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;enumerate&lt;&#x2F;span&gt;&lt;span&gt;(text)]
+&lt;&#x2F;span&gt;&lt;span&gt;    mapped = &amp;quot;&amp;quot;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(chars)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;mapped
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;unrot&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;text&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;secret&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    chars = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n2l&lt;&#x2F;span&gt;&lt;span&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;l2n&lt;&#x2F;span&gt;&lt;span&gt;(c) + (nchar - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;offset&lt;&#x2F;span&gt;&lt;span&gt;(secret, i))) % nchar) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i, c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;enumerate&lt;&#x2F;span&gt;&lt;span&gt;(text)]
+&lt;&#x2F;span&gt;&lt;span&gt;    mapped = &amp;quot;&amp;quot;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(chars)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;mapped
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#secret = &amp;quot;f22&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;secret = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;deadbeef&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;********&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;TABLE&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;characters:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; % c, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;l2n&lt;&#x2F;span&gt;&lt;span&gt;(c))
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;********&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;SECRET=&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, secret)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;DIGEST=&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &amp;quot;&amp;quot;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;([&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;offset&lt;&#x2F;span&gt;&lt;span&gt;(secret, i)) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;(secret))]))
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;val = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;rot&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;the code is 9234&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, secret)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#val = rot(&amp;quot;hello world&amp;quot;, secret)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#val = rot(&amp;quot;yes&amp;quot;, secret)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;encoded&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, val)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;decoded&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;unrot&lt;&#x2F;span&gt;&lt;span&gt;(val, secret))
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;with bad key &amp;#39;foobar&amp;#39;:&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;unrot&lt;&#x2F;span&gt;&lt;span&gt;(val, &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;foobar&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is based on the &#x27;rot13&#x27; or &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Caesar_cipher&quot;&gt;Caesar
+cipher&lt;&#x2F;a&gt;, modified such that the
+value of the rotation for each letter is determined by the corresponding letter
+in a secret key at the same index.&lt;&#x2F;p&gt;
+&lt;p&gt;One problem with this is that only programmers know about the modulus operator,
+other people aren&#x27;t used to thinking in this way.&lt;&#x2F;p&gt;
+&lt;p&gt;I think a good simplification would be to remove the &lt;code&gt;-7&lt;&#x2F;code&gt; and &lt;code&gt;+3&lt;&#x2F;code&gt; from
+&lt;code&gt;offset()&lt;&#x2F;code&gt;. These were indended to avoid the offset being too small. But I don&#x27;t
+think that&#x27;s really important since the secret key is chosen ahead of time. They
+aren&#x27;t really adding anything, and contribute to a lot of error-prone
+arithmetic.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;missing-clues&quot;&gt;Missing clues&lt;&#x2F;h2&gt;
+&lt;p&gt;Some character sheets hint at clues that don&#x27;t exist. I ran out of time to make
+them.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;clue-formatting&quot;&gt;Clue formatting&lt;&#x2F;h2&gt;
+&lt;p&gt;Clues are currently jpegs as this was quickest; clue text should be transcribed
+and formatted properly.&lt;&#x2F;p&gt;
+&lt;hr&#x2F;&gt;
+&lt;h1 id=&quot;unused-ideas&quot;&gt;Unused Ideas&lt;&#x2F;h1&gt;
+&lt;p&gt;Some things I thought of doing, but did not have time for or couldn&#x27;t quite
+figure out.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;During the &#x27;murder in the dark&#x27; section, whilst the murders are happening,
+play a &lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Av1_AE--4Xw?feature=shared&amp;amp;t=58&quot;&gt;suitably&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;19XuxziBaH4?feature=shared&amp;amp;t=158&quot;&gt;ominous&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=4KeuUyzEi1c&quot;&gt;snippet&lt;&#x2F;a&gt; of
+&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;PhXQEUEFAx0?feature=shared&amp;amp;t=87&quot;&gt;music&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Use remote control lights for flashes of lightning&lt;&#x2F;li&gt;
+&lt;li&gt;Use a short throw projector to establish atmosphere, project images of the
+house, fireplace etc.&lt;&#x2F;li&gt;
+&lt;li&gt;Use a portable record player as a &#x27;gramophone&#x27; and pretend to play a recorded
+message on it.&lt;&#x2F;li&gt;
+&lt;li&gt;&#x27;Sanity&#x27; or &#x27;horror&#x27; system whereby certain clues become accessible to you
+after you have sustained sufficient &#x27;psychic damage&#x27;&lt;&#x2F;li&gt;
+&lt;li&gt;Scatter speakers throughout the house with spooky sound effects. Use them for
+a jump scare.&lt;&#x2F;li&gt;
+&lt;li&gt;Have a room in complete darkness with unsettling sounds, a torch and battery
+can be found somewhere.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
