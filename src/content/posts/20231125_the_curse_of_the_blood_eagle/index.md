@@ -2,6 +2,11 @@
 title = "The Curse of the Blood Eagle"
 date = "2023-11-25"
 template = "bloodeagle.html"
+sorted_by = "date"
+[taxonomies]
+tags=["murdermystery", "horror"]
+contexts=[]
+categories=[]
 +++
 
 <div class="title">

@@ -2,6 +2,11 @@
 title = "Hercule Poirot's Machine for Pigs"
 date = "2021-12-23"
 template = "poirot.html"
+sorted_by = "date"
+[taxonomies]
+tags=["callofcthulhu", "rpgs", "horror"]
+contexts=[]
+categories=[]
 +++
 
 <div class="poirot-title">

@@ -18,9 +18,9 @@ a computer programmer in Birmingham, UK
   - crpgs, '4x', simulation, horror, ...
 - tabletop games
   - rpgs
-    - [call of cthulhu](./callofcthulhu)
+    - [call of cthulhu](./tags/callofcthulhu)
       - [hercule poirot's machine for pigs][hpmfp], a scenario for [Call of Cthulhu][coc]
-    - [MÖRK BORG](./morkborg)
+    - [MÖRK BORG](./tags/morkborg)
       - [MÖRK BORG quick start][mbqs], a scenario for [MÖRK BORG][mb]
   - board games
     - mansions of madness, ...
@@ -59,8 +59,8 @@ a simple, fast, no-nonsense website
 [pirata-one]: https://fonts.google.com/specimen/Pirata+One
 [creepster]: https://fonts.google.com/specimen/Creepster
 [merriweather]: https://fonts.google.com/specimen/Merriweather
-[hpmfp]: ./callofcthulhu/hpmfp
-[mbqs]: ./morkborg/mbqs
+[hpmfp]: ./posts/20211223-hpmfp/
+[mbqs]: ./posts/20230119-mbqs/
 [coc]: https://www.chaosium.com/call-of-cthulhu-rpg/
 [mb]: https://morkborg.com/
 [40k-army-lists]: https://nathanrw.github.io/40k_army_lists/

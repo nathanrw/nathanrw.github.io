@@ -2,6 +2,11 @@
 title = "MÖRK BORG Quick Start"
 date = "2023-01-19"
 template = "morkborg.html"
+sorted_by = "date"
+[taxonomies]
+tags=["morkborg", "rpgs"]
+contexts=[]
+categories=[]
 +++
 
 This is a simple introductory scenario I made for [MÖRK BORG][morkborg] based on
