@@ -943,12 +943,6 @@ change things where not.
 The crossword ended up in a scrambled order. The correct order is (now)
 annotated on the clue.
 
-## Codes
-
-When running the scenario, I swapped two of the codes around to ensure that the
-easiest ones came first. But I can't remember what I did, so what is here is
-what I originally wrote, not what was done.
-
 ## Cipher Puzzle
 
 The final cipher puzzle proved to be possible, but too intricate for the party
