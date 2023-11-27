@@ -177,7 +177,7 @@ Door to the sword room. 2334, note on a scrap of paper.
 
 #### Lock 2
 Door to the hoard. This will be the hardest puzzle.
-- Core is in an encrypted message.
+- Code is in an encrypted message.
 - Secret key given by crossword puzzle.
 - 9234
 
