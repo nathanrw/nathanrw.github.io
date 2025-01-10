@@ -1,5 +1,9 @@
 {% extends "no-style-please/templates/base.html" %}
+{% import "macros.html" as macros %}
 {% block css %}
 <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}"/>
 <link rel="stylesheet" href="{{ get_url(path='extra.css', trailing_slash=false) | safe }}"/>
 {% endblock css %}
+{% block content %}
+{{ page.content | replace(from="<!-- toc -->", to=macros::toc(page=page)) | safe }}
+{% endblock content %}

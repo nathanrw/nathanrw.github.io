@@ -1,0 +1,5 @@
+{% extends "page.html" %}
+{% import "macros.html" as macros %}
+{% block content %}
+{{ page.content | replace(from="<!-- toc -->", to=macros::toc(page=page)) | safe }}
+{% endblock content %}
